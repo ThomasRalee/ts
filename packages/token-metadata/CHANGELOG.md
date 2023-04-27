@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.11.0](https://github.com/ThomasRalee/ts/compare/@thomasralee/token-metadata@1.10.40...@thomasralee/token-metadata@1.11.0) (2023-04-27)
+
+**Note:** Version bump only for package @thomasralee/token-metadata
+
+
+
+
+
 ## [1.10.40](https://github.com/ThomasRalee/ts/compare/@thomasralee/token-metadata@1.10.39...@thomasralee/token-metadata@1.10.40) (2023-04-27)
 
 **Note:** Version bump only for package @thomasralee/token-metadata

@@ -69,7 +69,7 @@
     "shx": "^0.3.2",
     "snakecase-keys": "^5.4.1"
   },
-  "gitHead": "35bd09035587be3fd170cc48b5c13f231e699a79",
+  "gitHead": "e564ae8ce90d378334ee881c2da997d883ba9827",
   "typedoc": {
     "entryPoint": "./src/index.ts",
     "readmeFile": "./README.md",

@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.10.11](https://github.com/ThomasRalee/ts/compare/@thomasralee/exceptions@1.10.10...@thomasralee/exceptions@1.10.11) (2023-04-27)
+
+**Note:** Version bump only for package @thomasralee/exceptions
+
 ## [1.10.10](https://github.com/ThomasRalee/ts/compare/@thomasralee/exceptions@1.10.9...@thomasralee/exceptions@1.10.10) (2023-04-27)
 
 **Note:** Version bump only for package @thomasralee/exceptions

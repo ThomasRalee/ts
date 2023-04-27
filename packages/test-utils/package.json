@@ -1,5 +1,5 @@
 {
-  "name": "@injectivelabs/test-utils",
+  "name": "@thomasralee/test-utils",
   "description": "List of test-utils and helper functions that can be reused throughout Injective's projects.",
   "version": "1.10.3",
   "sideEffects": "false",

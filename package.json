@@ -1,5 +1,5 @@
 {
-  "name": "@injectivelabs/injective-ts",
+  "name": "@thomasralee/injective-ts",
   "version": "0.0.1",
   "main": "index.js",
   "private": "true",
@@ -12,6 +12,7 @@
     ]
   },
   "scripts": {
+    "prepare": "husky install",
     "build": "lerna run --parallel build",
     "build:docs": "yarn typedoc",
     "lerna:publish:prerelease": "lerna publish --conventional-commits --conventional-prerelease",

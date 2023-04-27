@@ -12,7 +12,8 @@ import {
 import { orderSideToOrderType } from '../../utils/exchange'
 
 export class UiSpotTransformer {
-  static orderSideToOrderType = orderSideToOrderType
+  static orderSideToOrderType: typeof orderSideToOrderType =
+    orderSideToOrderType
 
   static spotMarketToUiSpotMarket(
     market: UiBaseSpotMarketWithToken,

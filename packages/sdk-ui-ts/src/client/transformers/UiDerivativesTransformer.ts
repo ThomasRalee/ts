@@ -16,7 +16,8 @@ import {
 import { orderSideToOrderType } from '../../utils/exchange'
 
 export class UiDerivativeTransformer {
-  static orderSideToOrderType = orderSideToOrderType
+  static orderSideToOrderType: typeof orderSideToOrderType =
+    orderSideToOrderType
 
   static derivativeMarketToUiDerivativeMarket<
     T extends

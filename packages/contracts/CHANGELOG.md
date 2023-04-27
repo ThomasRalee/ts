@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.10.19-beta.0](https://github.com/ThomasRalee/ts/compare/@thomasralee/contracts@1.11.0...@thomasralee/contracts@1.10.19-beta.0) (2023-04-27)
+
+**Note:** Version bump only for package @thomasralee/contracts
+
+
+
+
+
 ## [1.10.18](https://github.com/ThomasRalee/ts/compare/@thomasralee/contracts@1.10.17...@thomasralee/contracts@1.10.18) (2023-04-27)
 
 **Note:** Version bump only for package @thomasralee/contracts

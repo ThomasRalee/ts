@@ -1,12 +1,12 @@
-import { IndexerGrpcMitoTransformer } from '../transformers'
-import { IndexerModule } from '../types'
 import {
   UnspecifiedErrorCode,
   GrpcUnaryRequestException,
 } from '@thomasralee/exceptions'
 import { InjectiveMetaRpc } from '@injectivelabs/indexer-proto-ts'
-import { getGrpcIndexerWebImpl } from '../../BaseIndexerGrpcWebConsumer'
 import { MitoApi } from '@injectivelabs/mito-proto-ts'
+import { IndexerGrpcMitoTransformer } from '../transformers'
+import { IndexerModule } from '../types'
+import { getGrpcIndexerWebImpl } from '../../BaseIndexerGrpcWebConsumer'
 
 /**
  * @category Indexer Grpc API
@@ -29,12 +29,12 @@ export class IndexerGrpcMitoApi {
   }) {
     const request = MitoApi.GetVaultRequest.create()
 
-    if (contractAddress) {
-      request.contractAddress = contractAddress
-    }
-
     if (slug) {
       request.slug = slug
+    }
+
+    if (contractAddress) {
+      request.contractAddress = contractAddress
     }
 
     try {

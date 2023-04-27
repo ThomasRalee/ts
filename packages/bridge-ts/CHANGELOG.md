@@ -3,6 +3,84 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.10.64 (2023-04-27)
+
+
+### Bug Fixes
+
+* base64 instead of binary ([5db26dc](https://github.com/ThomasRalee/ts/commit/5db26dc4ad1c3a2144c29a3dc87849548c39568f))
+* broadcast method ([870b68c](https://github.com/ThomasRalee/ts/commit/870b68c2eb2d82e198be70ca1ddf6a597a70cdb1))
+* build script ([6e8c15f](https://github.com/ThomasRalee/ts/commit/6e8c15f5d0c0d61e15766abb6217f3fa34cdf791))
+* circular deps updated wormhole sdk ([f8db6d1](https://github.com/ThomasRalee/ts/commit/f8db6d142430d0ec75a6b878d415277185083bcf))
+* confirm on injective ([ac18de9](https://github.com/ThomasRalee/ts/commit/ac18de98bfc27558e1bcef94b78766414ac8efb3))
+* createAssociatedTokenAddress ([a479244](https://github.com/ThomasRalee/ts/commit/a47924421eff335865079d0494f252427ae1f5b6))
+* dependency issue ([c90e1e2](https://github.com/ThomasRalee/ts/commit/c90e1e2e179d15ecb35fc7de510bcbfcb5349aa4))
+* dependency issue ([5cc2795](https://github.com/ThomasRalee/ts/commit/5cc27953cb120debe44ed048114e70dd14cdb055))
+* esm imports ([7ba5cf6](https://github.com/ThomasRalee/ts/commit/7ba5cf69a58a3d4bb677859737089592c081552a))
+* export grpc related fns ([83c8b3c](https://github.com/ThomasRalee/ts/commit/83c8b3c676196989bf91bb50661a4793e675e178))
+* fn args ([572ba41](https://github.com/ThomasRalee/ts/commit/572ba413ab69ff149a7489a7716c2117582cf428))
+* injective emitter addres ([7a2397c](https://github.com/ThomasRalee/ts/commit/7a2397cc401048e637554b1a711ff87a25149394))
+* InjectiveWormholeClient export ([9786634](https://github.com/ThomasRalee/ts/commit/97866340e8dc5f17fb4e1920c384f7f71b994c51))
+* market quantity decimals ([b34b4ee](https://github.com/ThomasRalee/ts/commit/b34b4ee743c8fdf2d95bdbe95e52a55694c7c20d))
+* marketing info undefined on contract ([72dce9f](https://github.com/ThomasRalee/ts/commit/72dce9f8f8372b1ea9169356d53c53765a6c8eee))
+* minor ([39b553b](https://github.com/ThomasRalee/ts/commit/39b553b40cd7623836268651e892e5ed10812828))
+* minor ([82f2708](https://github.com/ThomasRalee/ts/commit/82f2708bf0bf159df75568d0e4b3298abf99bca2))
+* minor ([6658fc0](https://github.com/ThomasRalee/ts/commit/6658fc01258051b626d23a10b545c245c91f93f6))
+* minor refactor ([74b5a53](https://github.com/ThomasRalee/ts/commit/74b5a53ba5cf55386682f09a22c9d99523998ca9))
+* moonbeam network chain id ([c492407](https://github.com/ThomasRalee/ts/commit/c492407562c09c53737ea984161a499b6fcca997))
+* moonbeam network chain id ([f03905f](https://github.com/ThomasRalee/ts/commit/f03905f28915462de92c2cf83b268cb477c07da5))
+* msg execute contract compat ([e15d04e](https://github.com/ThomasRalee/ts/commit/e15d04e9b9ec98c027b4e0b8cb4cc40b4ee398fd))
+* msg order ([86c7d7f](https://github.com/ThomasRalee/ts/commit/86c7d7fc0ff5de3e6029512ceb664ede2899df90))
+* msg type ([df0e725](https://github.com/ThomasRalee/ts/commit/df0e725f83adb195e492b48af19cd47fd6d06599))
+* networks for wormhole constants ([e4ccdfd](https://github.com/ThomasRalee/ts/commit/e4ccdfdcad79051361c3126da3149135023761d5))
+* order hash manager ([7db92b2](https://github.com/ThomasRalee/ts/commit/7db92b28f8214786e61dadad353da48c4b45cb7a))
+* provider binding ([1582e8d](https://github.com/ThomasRalee/ts/commit/1582e8d7efb2d8a848328e8e0d15eda8da4a2429))
+* provider in the constructor ([276b200](https://github.com/ThomasRalee/ts/commit/276b20021b37af983b75dc2a0d2229e9cb54cc3f))
+* pubkey for solana ([bb20b9f](https://github.com/ThomasRalee/ts/commit/bb20b9fc70105f2ba2fa3a32b6f71f2f16663587))
+* recipient address ([87f60d4](https://github.com/ThomasRalee/ts/commit/87f60d490a18063244b3f3a16daaf0f0bea0c576))
+* remove confirmation ([749d934](https://github.com/ThomasRalee/ts/commit/749d9347ee49836c197ae0527ce490826d3a3c5c))
+* script minor ([adb7c76](https://github.com/ThomasRalee/ts/commit/adb7c764ad00a0cfa38223cecf9b221873cd31b8))
+* timeout and blocktime ([b4e11cd](https://github.com/ThomasRalee/ts/commit/b4e11cdcafda875ab5a5cca00b8e818a55a9bf8a))
+* token metadata and minor wormhole ([e82724b](https://github.com/ThomasRalee/ts/commit/e82724bf95294d7483489ecf3a14d552b5d324fe))
+* txresponse interface ([d923fd4](https://github.com/ThomasRalee/ts/commit/d923fd48b93fd50e0923bcafa3faae93006ea238))
+* txresponse interface ([950461c](https://github.com/ThomasRalee/ts/commit/950461cc7695e28ec9f08ec1fed92e9cc095f317))
+* update moonbeam mainnet chain id ([2a17825](https://github.com/ThomasRalee/ts/commit/2a17825f004023202d3fc52c8988332773176270))
+* updated std fee based on gas ([0a86900](https://github.com/ThomasRalee/ts/commit/0a869004eacfaaa2fc1b1b0567937eb948bd1c59))
+* wallet provider in args ([fc849bc](https://github.com/ThomasRalee/ts/commit/fc849bc0f7c6866d48d4ddb5001d41adf41a371a))
+* wormhole client recipient ([7a59d0d](https://github.com/ThomasRalee/ts/commit/7a59d0d197505e35ceff2477b9e87da44d168cb4))
+
+
+### Features
+
+* added attest from solana to injective ([16eb6d1](https://github.com/ThomasRalee/ts/commit/16eb6d144bdb2091c728fe79bfa75296ee25cfd6))
+* added attest from solana to injective ([40f770e](https://github.com/ThomasRalee/ts/commit/40f770e54edb3179de1e76f252f379cd5e45a013))
+* added sol token metadata ([c991973](https://github.com/ThomasRalee/ts/commit/c991973ac4e6db312a83d5a426e77bb73d844bb8))
+* added solana sign transfer and confirm ([cbb334f](https://github.com/ThomasRalee/ts/commit/cbb334fdbe9f3227f3bdcb8df7506431df4842d5))
+* added testnet old endpoints ([79358b1](https://github.com/ThomasRalee/ts/commit/79358b1ce2f775cacb8c278a58caaea90a8e98bb))
+* bridge-ts initial ([4320b1c](https://github.com/ThomasRalee/ts/commit/4320b1c256b58caec7a08c33854f0bdde9681c3c))
+* broadcaster used instead of provider to support metamask ([bed89c0](https://github.com/ThomasRalee/ts/commit/bed89c0bbff34e74731885f5367f7276a0706383))
+* createAssociatedTokenAddress ([6d5e6b4](https://github.com/ThomasRalee/ts/commit/6d5e6b49b1e6195c3a1dbfdcd3ff16177452124c))
+* cw20 send args ([22ee502](https://github.com/ThomasRalee/ts/commit/22ee502ba8c7f6af165c85db15b21f5c826aed93))
+* decoupled wormhole clients ([72d7e6c](https://github.com/ThomasRalee/ts/commit/72d7e6c35c16b11feb4a64e8d8e84efa86561db6))
+* ethereum wormhole initial setup ([af78d52](https://github.com/ThomasRalee/ts/commit/af78d5257a1a4de021800ccbd6afb2d98bc82657))
+* explorer utils and generic types for wallet provider ([b31b3ff](https://github.com/ThomasRalee/ts/commit/b31b3ff3bf27e74208cf03f10ea8fff762b0cae9))
+* getting bridged wrapped tokens balance ([dc3e36b](https://github.com/ThomasRalee/ts/commit/dc3e36bbe95677acdff307b7207c490cec65ebca))
+* inj to sol ([82ebbde](https://github.com/ThomasRalee/ts/commit/82ebbde4db1f92ad88bf759c72bc3dbb1cc0cb11))
+* metamask provider for wh ([918db79](https://github.com/ThomasRalee/ts/commit/918db79567aea5f138955e09e67f68f7adce5316))
+* msgExecuteContract add typing support ([866c605](https://github.com/ThomasRalee/ts/commit/866c6059d2f54826f4d799500274b0a1d8984b06))
+* phantom support ([1a4c2ce](https://github.com/ThomasRalee/ts/commit/1a4c2cee38809b6219063f3e395582000b3eaffa))
+* provider instead of signer ([6990a84](https://github.com/ThomasRalee/ts/commit/6990a84df1f464c7b63e5cd2515604f3ba8fb80e))
+* redeem from sdk-ts not wormhole-sdk ([6492495](https://github.com/ThomasRalee/ts/commit/64924954d2e635c0d0098594ff18191beca300f5))
+* transfer native sol option ([ae17950](https://github.com/ThomasRalee/ts/commit/ae17950e0798235e0914a44c67128c58b457f279))
+* types fix ([b3c9dac](https://github.com/ThomasRalee/ts/commit/b3c9dacc5ffe377ac32179639c26be8024ad872c))
+* wormhole from eth ([38f279a](https://github.com/ThomasRalee/ts/commit/38f279a5d47cec4dd7debf7e0aeedee5c32c1754))
+* wormhole implemented ([8ec7dac](https://github.com/ThomasRalee/ts/commit/8ec7dacc9e98ee75820915bdca766a27b9c15694))
+* wormhole mainnet ([600926f](https://github.com/ThomasRalee/ts/commit/600926f6e14724cfcd1d78cc0789bca15a51426a))
+
+
+
+
+
 ## [1.10.63](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/bridge-ts@1.10.62...@injectivelabs/bridge-ts@1.10.63) (2023-04-26)
 
 **Note:** Version bump only for package @injectivelabs/bridge-ts

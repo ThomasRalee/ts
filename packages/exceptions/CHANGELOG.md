@@ -3,6 +3,69 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.10.7 (2023-04-27)
+
+
+### Bug Fixes
+
+* added more message maps ([830ea3c](https://github.com/ThomasRalee/ts/commit/830ea3c56809be2310036151b369c54cad9b1013))
+* added types for ethereum-utils, fixed bech32 import ([1bec7b4](https://github.com/ThomasRalee/ts/commit/1bec7b41a7b612f0f5f08292483c2090fc9a84d5))
+* assset service exception handling ([236916c](https://github.com/ThomasRalee/ts/commit/236916c888d0abd09fe970a092c0e76172079755))
+* bridge utils ([0961fca](https://github.com/ThomasRalee/ts/commit/0961fca000f812aa1d0b045764fa9c7dd126187c))
+* build script ([6e8c15f](https://github.com/ThomasRalee/ts/commit/6e8c15f5d0c0d61e15766abb6217f3fa34cdf791))
+* delegated fee false condition skip ([e88bd25](https://github.com/ThomasRalee/ts/commit/e88bd251a37e5a8930a13ade37ac588b0e6a81d5))
+* esm imports ([7ba5cf6](https://github.com/ThomasRalee/ts/commit/7ba5cf69a58a3d4bb677859737089592c081552a))
+* exception codes added ([f82a1fc](https://github.com/ThomasRalee/ts/commit/f82a1fcae5d5a9883dff4f15da4eff11e371769a))
+* fixed compiling issue with the assert package ([7e8f213](https://github.com/ThomasRalee/ts/commit/7e8f213d44bca4bb15329ee32cf843a11dc549ae))
+* lowercase address for hardware wallets ([705ec01](https://github.com/ThomasRalee/ts/commit/705ec01aec3e15b2a5c42c802fc3c572b7006804))
+* minor ([39b553b](https://github.com/ThomasRalee/ts/commit/39b553b40cd7623836268651e892e5ed10812828))
+* orderMask and twitter link ([0474569](https://github.com/ThomasRalee/ts/commit/047456994f5233ed099174cd7f96a34f29dfbce8))
+* package version update to prevent publishing error ([4c7ae5c](https://github.com/ThomasRalee/ts/commit/4c7ae5cf98fc4910fb349201bc693d83ec3f9f66))
+* proper parsing ([f2738eb](https://github.com/ThomasRalee/ts/commit/f2738ebed9d0f75a29ad439b5a62faddf5baa2cb))
+* renamed packages to avoid conflicts ([eca2fca](https://github.com/ThomasRalee/ts/commit/eca2fca05983a5b7b401ce85294c2f5e08c07011))
+* script minor ([adb7c76](https://github.com/ThomasRalee/ts/commit/adb7c764ad00a0cfa38223cecf9b221873cd31b8))
+* streams callbacks ([4984cdb](https://github.com/ThomasRalee/ts/commit/4984cdbc7485cd2c9e195aa4cbc83010b79ca920))
+* transaction exceptions ([2083bb8](https://github.com/ThomasRalee/ts/commit/2083bb80770b5ad954d2249d119ed72113f6b0c2))
+
+
+### Features
+
+* add grpc support for ninja api ([0445623](https://github.com/ThomasRalee/ts/commit/04456234d2efa44a692beeccaf89e38894e71081))
+* add unit test coverage for eip712 messages ([#75](https://github.com/ThomasRalee/ts/issues/75)) ([cf7e2fd](https://github.com/ThomasRalee/ts/commit/cf7e2fde727979fcf2187385d72b96efbed6d61a))
+* added context to exceptions ([ccfd06b](https://github.com/ThomasRalee/ts/commit/ccfd06b84fc1acb542e28f1d39ac251730750afa))
+* added description to the packages ([6970b67](https://github.com/ThomasRalee/ts/commit/6970b67427786cb92ef22e695d4a228e87a5cdf8))
+* added exchange exception ([3afa0c9](https://github.com/ThomasRalee/ts/commit/3afa0c9e03e9a0cebf98b202928893980239989a))
+* added execution side filter for spot market trades ([09ed791](https://github.com/ThomasRalee/ts/commit/09ed791559a167d5ed19d04c1cb03a7ae6d5e2c8))
+* added oracle streaming ([79a9661](https://github.com/ThomasRalee/ts/commit/79a9661b52acd4a672dc1f694ef6c1d44c940d61))
+* added timeout height ([c46c2f8](https://github.com/ThomasRalee/ts/commit/c46c2f8854ad8c23d61fb27c791db11bd438c316))
+* bridge-ts initial ([4320b1c](https://github.com/ThomasRalee/ts/commit/4320b1c256b58caec7a08c33854f0bdde9681c3c))
+* chainConsumer add support for MsgInstantSpotMarketLaunch ([4bc6a49](https://github.com/ThomasRalee/ts/commit/4bc6a49a125e58f2dd5dce2d1e6da8557b64a976))
+* compact error for reporting ([381dc6d](https://github.com/ThomasRalee/ts/commit/381dc6d58a171851aa57779e214b4d96c930cd50))
+* contract packages initial setup completed ([6d47818](https://github.com/ThomasRalee/ts/commit/6d47818ab3c9973e7138e60fef537d804ed4e5e8))
+* contract packages initial setup completed ([49ccff4](https://github.com/ThomasRalee/ts/commit/49ccff4b6ab20f3931eaa6cdbf17284ee78e7ad2))
+* cosmostation initial support ([ea941e5](https://github.com/ThomasRalee/ts/commit/ea941e554121c548af13e0129d2101038c924dde))
+* exception class name ([2e0bec4](https://github.com/ThomasRalee/ts/commit/2e0bec44c5b1c9f5ed5a97faa522a5dd90cb7084))
+* exception names ([14592d3](https://github.com/ThomasRalee/ts/commit/14592d3b2877be893d67b4c401208d42ed29a778))
+* exceptions part 2 ([1919620](https://github.com/ThomasRalee/ts/commit/191962094f9ec7036c54425e35c6aa476c70ea79))
+* experimental ledger support for keplr ([1afd947](https://github.com/ThomasRalee/ts/commit/1afd947a3714db9da63be89e862d5525ad15fc01))
+* funding payments, validator uptime, bridge txs ([e6265d4](https://github.com/ThomasRalee/ts/commit/e6265d4a1893701284c271e9e9715368a2cd1104))
+* initial exceptions setup ([6da9f2e](https://github.com/ThomasRalee/ts/commit/6da9f2eb2df2fcd2995fc9cd25a615dc607da253))
+* initial monorepo setup with initial set of packages ([99aab6c](https://github.com/ThomasRalee/ts/commit/99aab6c2a1913ab48ce1cc9558db4843be72ccb5))
+* luna and ust ([6e94041](https://github.com/ThomasRalee/ts/commit/6e9404121cba532b3ff0df3629b9e675c1d7ca1a))
+* map chain error exception by module ([1714e80](https://github.com/ThomasRalee/ts/commit/1714e80e1bbabc8807bc56ef2d0085bea0a481a2))
+* message map ([fd237b2](https://github.com/ThomasRalee/ts/commit/fd237b225dc9f82661e1fea2f6559de28798fafa))
+* sdk-ui-ts ([4c8f902](https://github.com/ThomasRalee/ts/commit/4c8f90262b0d7cf2df3038c23fda4a9e83bb8c6a))
+* setup indexer grpc account portfolio api and stream ([72d7d85](https://github.com/ThomasRalee/ts/commit/72d7d85e66e2932b60b3e6215d5cda11b036e6a5))
+* subaccount decoupled from spot to own package ([e017056](https://github.com/ThomasRalee/ts/commit/e0170563e643cbb1b8d483cc046f6ec2924a14a8))
+* transaction error handling ([d0bc738](https://github.com/ThomasRalee/ts/commit/d0bc738ab4b99248b81e3387dba5914974ae0c17))
+* tx exception handling ([36dbef7](https://github.com/ThomasRalee/ts/commit/36dbef7c8abaa5c18dceb3b369473a499ff129ee))
+* ui common services ([74f5099](https://github.com/ThomasRalee/ts/commit/74f5099cd603086a713d4fb436ad6a322e45ea25))
+* update supernova folder structure ([a220ecd](https://github.com/ThomasRalee/ts/commit/a220ecd97f94819ce839ac03facfa1a3c98f5b51))
+
+
+
+
+
 ## [1.10.6](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/exceptions@1.10.5...@injectivelabs/exceptions@1.10.6) (2023-04-18)
 
 

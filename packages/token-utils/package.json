@@ -1,6 +1,6 @@
 {
   "name": "@thomasralee/token-utils",
-  "version": "1.10.9",
+  "version": "1.10.10",
   "description": "Token Utils is a package for querying different data about tokens",
   "sideEffects": "false",
   "author": {

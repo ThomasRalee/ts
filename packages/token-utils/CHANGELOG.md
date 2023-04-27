@@ -3,6 +3,51 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.10.10 (2023-04-27)
+
+
+### Bug Fixes
+
+* asset service ([5968d23](https://github.com/ThomasRalee/ts/commit/5968d236efc2b98aecbde26a13823cb2fdad1dfe))
+* assset service exception handling ([236916c](https://github.com/ThomasRalee/ts/commit/236916c888d0abd09fe970a092c0e76172079755))
+* bridge utils ([0961fca](https://github.com/ThomasRalee/ts/commit/0961fca000f812aa1d0b045764fa9c7dd126187c))
+* build script ([6e8c15f](https://github.com/ThomasRalee/ts/commit/6e8c15f5d0c0d61e15766abb6217f3fa34cdf791))
+* coingecko api key ([1c770ce](https://github.com/ThomasRalee/ts/commit/1c770ce7399d8e59fb0c812a2440a6a040ca075a))
+* dependency cycle ([8567551](https://github.com/ThomasRalee/ts/commit/856755179ac526f415f108b90a7b6f58f3e3258d))
+* esm imports ([7ba5cf6](https://github.com/ThomasRalee/ts/commit/7ba5cf69a58a3d4bb677859737089592c081552a))
+* minor ([39b553b](https://github.com/ThomasRalee/ts/commit/39b553b40cd7623836268651e892e5ed10812828))
+* number formatting ([fb71ba9](https://github.com/ThomasRalee/ts/commit/fb71ba9559719bf67a73881e268a5b3cbdeb9fa3))
+* numbers converstion ([dcf9dfb](https://github.com/ThomasRalee/ts/commit/dcf9dfb14ce45486649915c061412ce32beb350c))
+* optional param for rounding ([bc0ec90](https://github.com/ThomasRalee/ts/commit/bc0ec90c28bdf3e990165c64af39a91b2895a3b0))
+* orderMask and twitter link ([0474569](https://github.com/ThomasRalee/ts/commit/047456994f5233ed099174cd7f96a34f29dfbce8))
+* price fetch from the asset service ([289b586](https://github.com/ThomasRalee/ts/commit/289b58667e3578c8b6bdae49d0d80f437bf0a48a))
+* redundant packages ([7e3f38e](https://github.com/ThomasRalee/ts/commit/7e3f38e9281c7d9eec7aeb9ba94e2fc48c70d52f))
+* rounding ([b269c9a](https://github.com/ThomasRalee/ts/commit/b269c9aec7048ce1ae4b7862ab2e88cb7c59e033))
+* script minor ([adb7c76](https://github.com/ThomasRalee/ts/commit/adb7c764ad00a0cfa38223cecf9b221873cd31b8))
+* timeout for coingecko ([a0a16c5](https://github.com/ThomasRalee/ts/commit/a0a16c5ca40d452cf50f9d6b2569df7810112054))
+* token utils coingecko api ([69c1533](https://github.com/ThomasRalee/ts/commit/69c15339bef85a9537a70ef1524debec413ddea2))
+
+
+### Features
+
+* add unit test coverage for eip712 messages ([#75](https://github.com/ThomasRalee/ts/issues/75)) ([cf7e2fd](https://github.com/ThomasRalee/ts/commit/cf7e2fde727979fcf2187385d72b96efbed6d61a))
+* added httpRestClient which handles timeout exceptions ([c200bc2](https://github.com/ThomasRalee/ts/commit/c200bc25fe67901ad80462166c5cc841449df6b8))
+* added new asset service ([59f846f](https://github.com/ThomasRalee/ts/commit/59f846fcd0939b8d2fd317773558681e2a8b424f))
+* added number conversion utils ([6912fb0](https://github.com/ThomasRalee/ts/commit/6912fb0ac1f5ffcfd11eff8980745593eabcd46f))
+* added toFixed variants ([f0194b4](https://github.com/ThomasRalee/ts/commit/f0194b496b04a65a6a1a479c74031ff1bbd83a7d))
+* bridge-ts initial ([4320b1c](https://github.com/ThomasRalee/ts/commit/4320b1c256b58caec7a08c33854f0bdde9681c3c))
+* chainConsumer add support for MsgInstantSpotMarketLaunch ([4bc6a49](https://github.com/ThomasRalee/ts/commit/4bc6a49a125e58f2dd5dce2d1e6da8557b64a976))
+* extended cg api ([1b4399f](https://github.com/ThomasRalee/ts/commit/1b4399f012fdf33e11825db7a62ba2d4240295c5))
+* funding payments, validator uptime, bridge txs ([e6265d4](https://github.com/ThomasRalee/ts/commit/e6265d4a1893701284c271e9e9715368a2cd1104))
+* initial exceptions setup ([6da9f2e](https://github.com/ThomasRalee/ts/commit/6da9f2eb2df2fcd2995fc9cd25a615dc607da253))
+* spot and derivative services and cleanup ([e638c67](https://github.com/ThomasRalee/ts/commit/e638c67db9ec2d8200aa0a9d47d458abb9e1ef46))
+* token price utils ([1d79620](https://github.com/ThomasRalee/ts/commit/1d796200d4f1fe0c09a71cd0318305983fdf44ad))
+* ui common services ([74f5099](https://github.com/ThomasRalee/ts/commit/74f5099cd603086a713d4fb436ad6a322e45ea25))
+
+
+
+
+
 ## [1.10.9](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/token-utils@1.10.8...@injectivelabs/token-utils@1.10.9) (2023-04-18)
 
 

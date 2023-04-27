@@ -3,6 +3,37 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.10.4 (2023-04-27)
+
+
+### Bug Fixes
+
+* added types for ethereum-utils, fixed bech32 import ([1bec7b4](https://github.com/ThomasRalee/ts/commit/1bec7b41a7b612f0f5f08292483c2090fc9a84d5))
+* bridge utils ([0961fca](https://github.com/ThomasRalee/ts/commit/0961fca000f812aa1d0b045764fa9c7dd126187c))
+* build script ([6e8c15f](https://github.com/ThomasRalee/ts/commit/6e8c15f5d0c0d61e15766abb6217f3fa34cdf791))
+* delegated fee false condition skip ([e88bd25](https://github.com/ThomasRalee/ts/commit/e88bd251a37e5a8930a13ade37ac588b0e6a81d5))
+* esm imports ([7ba5cf6](https://github.com/ThomasRalee/ts/commit/7ba5cf69a58a3d4bb677859737089592c081552a))
+* fixed compiling issue with the assert package ([7e8f213](https://github.com/ThomasRalee/ts/commit/7e8f213d44bca4bb15329ee32cf843a11dc549ae))
+* minor ([39b553b](https://github.com/ThomasRalee/ts/commit/39b553b40cd7623836268651e892e5ed10812828))
+* script minor ([adb7c76](https://github.com/ThomasRalee/ts/commit/adb7c764ad00a0cfa38223cecf9b221873cd31b8))
+
+
+### Features
+
+* add unit test coverage for eip712 messages ([#75](https://github.com/ThomasRalee/ts/issues/75)) ([cf7e2fd](https://github.com/ThomasRalee/ts/commit/cf7e2fde727979fcf2187385d72b96efbed6d61a))
+* add unit test for remaining eip 712 messages ([#77](https://github.com/ThomasRalee/ts/issues/77)) ([2584aa0](https://github.com/ThomasRalee/ts/commit/2584aa09eb3f410f911509a23aca753ba696d773))
+* added more packages initial versions ([c3bde24](https://github.com/ThomasRalee/ts/commit/c3bde245e1eb55174a1687ff9fe08074b9482506))
+* added oracle streaming ([79a9661](https://github.com/ThomasRalee/ts/commit/79a9661b52acd4a672dc1f694ef6c1d44c940d61))
+* added timeout height ([c46c2f8](https://github.com/ThomasRalee/ts/commit/c46c2f8854ad8c23d61fb27c791db11bd438c316))
+* bridge-ts initial ([4320b1c](https://github.com/ThomasRalee/ts/commit/4320b1c256b58caec7a08c33854f0bdde9681c3c))
+* chainConsumer add support for MsgInstantSpotMarketLaunch ([4bc6a49](https://github.com/ThomasRalee/ts/commit/4bc6a49a125e58f2dd5dce2d1e6da8557b64a976))
+* luna and ust ([6e94041](https://github.com/ThomasRalee/ts/commit/6e9404121cba532b3ff0df3629b9e675c1d7ca1a))
+* ui common services ([74f5099](https://github.com/ThomasRalee/ts/commit/74f5099cd603086a713d4fb436ad6a322e45ea25))
+
+
+
+
+
 ## [1.10.3](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/test-utils@1.10.2...@injectivelabs/test-utils@1.10.3) (2023-04-18)
 
 

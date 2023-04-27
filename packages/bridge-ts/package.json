@@ -1,7 +1,7 @@
 {
   "name": "@thomasralee/bridge-ts",
   "description": "Bridge utilities and abstractions in TypeScript to be used in Injective products",
-  "version": "1.10.63",
+  "version": "1.10.64",
   "sideEffects": "false",
   "author": {
     "name": "Bojan Angjelkoski",

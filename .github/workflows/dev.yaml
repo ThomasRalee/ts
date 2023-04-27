@@ -38,5 +38,5 @@ jobs:
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor}}@users.noreply.github.com"
 
-          npx lerna version minor --conventional-commits --conventional-prerelease --preid beta --yes --force-publish
-          npx lerna publish from-git --dist-tag next --yes
+          npx lerna version --conventional-commits --conventional-prerelease --preid beta --force-git-tag --yes
+          npx lerna publish from-git --force-git-tag --dist-tag next --yes --no-verify-access

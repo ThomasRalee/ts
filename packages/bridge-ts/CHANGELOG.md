@@ -3,14 +3,6 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-# [1.11.0](https://github.com/ThomasRalee/ts/compare/@thomasralee/bridge-ts@1.10.68...@thomasralee/bridge-ts@1.11.0) (2023-04-27)
-
-**Note:** Version bump only for package @thomasralee/bridge-ts
-
-
-
-
-
 ## [1.10.68](https://github.com/ThomasRalee/ts/compare/@thomasralee/bridge-ts@1.10.67...@thomasralee/bridge-ts@1.10.68) (2023-04-27)
 
 **Note:** Version bump only for package @thomasralee/bridge-ts

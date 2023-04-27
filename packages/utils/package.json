@@ -16,6 +16,9 @@
   "_moduleAliases": {
     "~utils": "dist"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "postinstall": "link-module-alias",
     "prepublish": "shx mkdir -p dist",
@@ -42,5 +45,5 @@
     "snakecase-keys": "^5.1.2",
     "store2": "^2.12.0"
   },
-  "gitHead": "8c986e9539b3e762bcd291bd71cbf4e4ca470168"
+  "gitHead": "c804a4ab91bdf44745930fb4578c4ddd4d11fb14"
 }

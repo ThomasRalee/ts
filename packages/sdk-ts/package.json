@@ -16,6 +16,9 @@
   "_moduleAliases": {
     "~sdk-ts": "dist"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "postinstall": "link-module-alias",
     "prepublish": "shx mkdir -p dist",
@@ -69,7 +72,7 @@
     "shx": "^0.3.2",
     "snakecase-keys": "^5.4.1"
   },
-  "gitHead": "8c986e9539b3e762bcd291bd71cbf4e4ca470168",
+  "gitHead": "c804a4ab91bdf44745930fb4578c4ddd4d11fb14",
   "typedoc": {
     "entryPoint": "./src/index.ts",
     "readmeFile": "./README.md",

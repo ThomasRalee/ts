@@ -12,6 +12,8 @@ const main = () => {
   packages.forEach((packageName) => {
     const path = `packages/${packageName}/dist`
 
+    console.log(path)
+
     if (!fs.existsSync(path)) {
       fs.mkdirSync(path)
     }

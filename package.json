@@ -12,6 +12,7 @@
     ]
   },
   "scripts": {
+    "postinstall": "node bootstrapEnv",
     "build": "lerna run --parallel build",
     "build:docs": "yarn typedoc",
     "lerna:publish:prerelease": "lerna publish --conventional-commits --conventional-prerelease",

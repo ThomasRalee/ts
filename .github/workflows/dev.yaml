@@ -22,7 +22,6 @@ jobs:
 
       - name: Build dependencies
         run: |
-          node bootstrapEnv
           npx lerna bootstrap
           yarn build
 

@@ -3,8 +3,11 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## 1.10.14 (2023-04-27)
+## [1.10.15](https://github.com/ThomasRalee/ts/compare/@thomasralee/contracts@1.10.14...@thomasralee/contracts@1.10.15) (2023-04-27)
 
+**Note:** Version bump only for package @thomasralee/contracts
+
+## 1.10.14 (2023-04-27)
 
 ### Bug Fixes
 
@@ -80,7 +83,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 * window type checking for node env ([b52faa5](https://github.com/ThomasRalee/ts/commit/b52faa56ed555475c4695c219a81a185ad79cf67))
 * zeroed out addresses for unused chains ([17792b8](https://github.com/ThomasRalee/ts/commit/17792b8b28cbc7ebb278f15ed29ea8fd2db6d6e8))
 
-
 ### Features
 
 * add support for devnet peggy and injective contract address ([3bd2c31](https://github.com/ThomasRalee/ts/commit/3bd2c31d7ae23489359f28490f52b0e94f4bce03))
@@ -133,1529 +135,780 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 * upated contracts packages with new deposit manager abi ([fdbee9d](https://github.com/ThomasRalee/ts/commit/fdbee9db3881e22d743e7def7f97ae79a4f32967))
 * updated deposit manager contract with addiotional methods ([866a5c1](https://github.com/ThomasRalee/ts/commit/866a5c1ebc335ba1f33cc6fdbd7dc0f631fa310f))
 
-
-
-
-
 ## [1.10.13](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.10.12...@injectivelabs/contracts@1.10.13) (2023-04-18)
-
 
 ### Bug Fixes
 
 * build script ([6e8c15f](https://github.com/InjectiveLabs/injective-ts/commit/6e8c15f5d0c0d61e15766abb6217f3fa34cdf791))
 
-
-
-
-
 ## [1.10.12](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.10.11...@injectivelabs/contracts@1.10.12) (2023-04-15)
-
 
 ### Bug Fixes
 
 * script minor ([adb7c76](https://github.com/InjectiveLabs/injective-ts/commit/adb7c764ad00a0cfa38223cecf9b221873cd31b8))
 
-
-
-
-
 ## [1.10.11](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.10.10...@injectivelabs/contracts@1.10.11) (2023-04-12)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.10.10](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.10.9...@injectivelabs/contracts@1.10.10) (2023-04-12)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.10.9](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.10.8...@injectivelabs/contracts@1.10.9) (2023-04-10)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.10.8](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.10.7...@injectivelabs/contracts@1.10.8) (2023-04-07)
-
 
 ### Bug Fixes
 
 * default gas limit ([9243800](https://github.com/InjectiveLabs/injective-ts/commit/92438002d7c678db49d52d3215f285a499b54bfd))
 
-
-
-
-
 ## [1.10.7](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.10.6...@injectivelabs/contracts@1.10.7) (2023-04-05)
-
 
 ### Bug Fixes
 
 * wallet issues ([a67b6fb](https://github.com/InjectiveLabs/injective-ts/commit/a67b6fb15666c2b2e9f4745b522dfc493981f918))
 
-
-
-
-
 ## [1.10.6](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.10.5...@injectivelabs/contracts@1.10.6) (2023-04-04)
-
 
 ### Bug Fixes
 
 * checksum addresss ([7ef9e14](https://github.com/InjectiveLabs/injective-ts/commit/7ef9e14c05eaab9d9d2d1e54622566eb83b1b8d7))
 
-
-
-
-
 ## [1.10.5](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.10.4...@injectivelabs/contracts@1.10.5) (2023-04-04)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.10.4](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.10.3...@injectivelabs/contracts@1.10.4) (2023-04-04)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.10.3](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.10.2...@injectivelabs/contracts@1.10.3) (2023-04-04)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.10.2](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.10.2-alpha.0...@injectivelabs/contracts@1.10.2) (2023-04-04)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.10.2-alpha.0](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.10.1...@injectivelabs/contracts@1.10.2-alpha.0) (2023-04-04)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.10.1](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.10.0...@injectivelabs/contracts@1.10.1) (2023-04-03)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 # [1.10.0](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.10.0-alpha.4...@injectivelabs/contracts@1.10.0) (2023-03-23)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 # [1.10.0-alpha.4](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.10.0-alpha.3...@injectivelabs/contracts@1.10.0-alpha.4) (2023-03-22)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 # [1.10.0-alpha.3](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.10.0-alpha.2...@injectivelabs/contracts@1.10.0-alpha.3) (2023-03-18)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 # [1.10.0-alpha.2](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.10.0-alpha.1...@injectivelabs/contracts@1.10.0-alpha.2) (2023-03-18)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 # [1.10.0-alpha.1](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.10.0-alpha.0...@injectivelabs/contracts@1.10.0-alpha.1) (2023-03-17)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.0.117](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.116...@injectivelabs/contracts@1.0.117) (2023-03-15)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.116](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.115...@injectivelabs/contracts@1.0.116) (2023-03-15)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.0.115](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.114...@injectivelabs/contracts@1.0.115) (2023-03-15)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.114](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.113...@injectivelabs/contracts@1.0.114) (2023-03-05)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.113](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.112...@injectivelabs/contracts@1.0.113) (2023-03-01)
-
 
 ### Bug Fixes
 
 * mapping to networks ([62bbc7b](https://github.com/InjectiveLabs/injective-ts/commit/62bbc7b6068bc67ccbf43d729661ad02e0b594ed))
 
-
-
-
-
 ## [1.0.112](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.111...@injectivelabs/contracts@1.0.112) (2023-03-01)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.0.111](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.110...@injectivelabs/contracts@1.0.111) (2023-03-01)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.110](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.109...@injectivelabs/contracts@1.0.110) (2023-02-23)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.0.109](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.108...@injectivelabs/contracts@1.0.109) (2023-02-23)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.108](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.108-alpha.0...@injectivelabs/contracts@1.0.108) (2023-02-20)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.0.108-alpha.0](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.107...@injectivelabs/contracts@1.0.108-alpha.0) (2023-02-20)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.107](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.106...@injectivelabs/contracts@1.0.107) (2023-02-15)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.0.106](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.105...@injectivelabs/contracts@1.0.106) (2023-02-15)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.105](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.104...@injectivelabs/contracts@1.0.105) (2023-02-13)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.0.104](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.103...@injectivelabs/contracts@1.0.104) (2023-02-13)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.103](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.102...@injectivelabs/contracts@1.0.103) (2023-02-09)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.0.102](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.101...@injectivelabs/contracts@1.0.102) (2023-02-08)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.101](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.100...@injectivelabs/contracts@1.0.101) (2023-02-06)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.0.100](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.99...@injectivelabs/contracts@1.0.100) (2023-02-06)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.99](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.98...@injectivelabs/contracts@1.0.99) (2023-02-06)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.0.98](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.97...@injectivelabs/contracts@1.0.98) (2023-02-03)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.97](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.96...@injectivelabs/contracts@1.0.97) (2023-01-27)
-
 
 ### Features
 
 * transfer method on ERC20 ([b9c8b73](https://github.com/InjectiveLabs/injective-ts/commit/b9c8b73e885d22fd189f4b5cc360a5b6d22a0aa3))
 
-
-
-
-
 ## [1.0.96](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.95...@injectivelabs/contracts@1.0.96) (2023-01-26)
-
 
 ### Features
 
 * added deployERC20 on peggy ([5f1f22e](https://github.com/InjectiveLabs/injective-ts/commit/5f1f22e95ab7d0a91d8957303325d75a6c7ede8f))
 
-
-
-
-
 ## [1.0.95](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.94...@injectivelabs/contracts@1.0.95) (2023-01-26)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.0.94](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.93...@injectivelabs/contracts@1.0.94) (2023-01-25)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.93](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.92...@injectivelabs/contracts@1.0.93) (2023-01-25)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.0.92](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.91...@injectivelabs/contracts@1.0.92) (2023-01-24)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.91](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.90...@injectivelabs/contracts@1.0.91) (2023-01-24)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.0.90](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.89...@injectivelabs/contracts@1.0.90) (2023-01-23)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.89](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.88...@injectivelabs/contracts@1.0.89) (2023-01-23)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.0.88](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.87...@injectivelabs/contracts@1.0.88) (2023-01-20)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.87](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.86...@injectivelabs/contracts@1.0.87) (2023-01-18)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.0.86](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.85...@injectivelabs/contracts@1.0.86) (2023-01-18)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.85](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.84...@injectivelabs/contracts@1.0.85) (2023-01-18)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.0.84](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.83...@injectivelabs/contracts@1.0.84) (2023-01-13)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.83](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.82...@injectivelabs/contracts@1.0.83) (2023-01-12)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.0.82](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.81...@injectivelabs/contracts@1.0.82) (2023-01-11)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.81](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.80...@injectivelabs/contracts@1.0.81) (2023-01-09)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.0.80](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.79...@injectivelabs/contracts@1.0.80) (2023-01-09)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.79](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.78...@injectivelabs/contracts@1.0.79) (2023-01-09)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.0.78](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.77...@injectivelabs/contracts@1.0.78) (2023-01-09)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.77](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.76...@injectivelabs/contracts@1.0.77) (2023-01-09)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.0.76](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.75...@injectivelabs/contracts@1.0.76) (2023-01-09)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.75](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.74...@injectivelabs/contracts@1.0.75) (2023-01-09)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.0.74](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.73...@injectivelabs/contracts@1.0.74) (2023-01-09)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.73](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.72...@injectivelabs/contracts@1.0.73) (2023-01-09)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.0.72](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.71...@injectivelabs/contracts@1.0.72) (2023-01-09)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.71](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.70...@injectivelabs/contracts@1.0.71) (2023-01-09)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.70](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.69...@injectivelabs/contracts@1.0.70) (2023-01-09)
-
 
 ### Features
 
 * added testnet old endpoints ([79358b1](https://github.com/InjectiveLabs/injective-ts/commit/79358b1ce2f775cacb8c278a58caaea90a8e98bb))
 
-
-
-
-
 ## [1.0.69](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.68...@injectivelabs/contracts@1.0.69) (2022-12-23)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.0.68](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.67...@injectivelabs/contracts@1.0.68) (2022-12-22)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.67](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.66...@injectivelabs/contracts@1.0.67) (2022-12-20)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.0.66](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.65...@injectivelabs/contracts@1.0.66) (2022-12-09)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.65](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.64...@injectivelabs/contracts@1.0.65) (2022-12-06)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.0.64](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.63...@injectivelabs/contracts@1.0.64) (2022-11-30)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.63](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.62...@injectivelabs/contracts@1.0.63) (2022-11-26)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.0.62](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.61...@injectivelabs/contracts@1.0.62) (2022-11-23)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.61](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.60...@injectivelabs/contracts@1.0.61) (2022-11-23)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.0.60](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.59...@injectivelabs/contracts@1.0.60) (2022-11-22)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.59](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.58...@injectivelabs/contracts@1.0.59) (2022-11-22)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.0.58](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.57...@injectivelabs/contracts@1.0.58) (2022-11-22)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.57](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.56...@injectivelabs/contracts@1.0.57) (2022-11-21)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.0.56](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.55...@injectivelabs/contracts@1.0.56) (2022-11-21)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.55](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.54...@injectivelabs/contracts@1.0.55) (2022-11-21)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.0.54](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.53...@injectivelabs/contracts@1.0.54) (2022-11-16)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.53](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.52...@injectivelabs/contracts@1.0.53) (2022-11-14)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.52](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.51...@injectivelabs/contracts@1.0.52) (2022-11-14)
-
 
 ### Features
 
 * bridge-ts initial ([4320b1c](https://github.com/InjectiveLabs/injective-ts/commit/4320b1c256b58caec7a08c33854f0bdde9681c3c))
 
-
-
-
-
 ## [1.0.51](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.50...@injectivelabs/contracts@1.0.51) (2022-11-06)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.0.50](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.49...@injectivelabs/contracts@1.0.50) (2022-11-03)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.49](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.48...@injectivelabs/contracts@1.0.49) (2022-11-03)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.48](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.47...@injectivelabs/contracts@1.0.48) (2022-11-01)
-
 
 ### Bug Fixes
 
 * testnet endpoints ([a016c9c](https://github.com/InjectiveLabs/injective-ts/commit/a016c9c69036249ee42bbd0d6501c33f874e2f51))
 
-
-
-
-
 ## [1.0.47](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.46...@injectivelabs/contracts@1.0.47) (2022-10-25)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.0.46](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.45...@injectivelabs/contracts@1.0.46) (2022-10-24)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.45](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.44...@injectivelabs/contracts@1.0.45) (2022-10-24)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.0.44](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.43...@injectivelabs/contracts@1.0.44) (2022-09-28)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.43](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.42...@injectivelabs/contracts@1.0.43) (2022-09-22)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.0.42](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.41...@injectivelabs/contracts@1.0.42) (2022-09-21)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.41](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.40...@injectivelabs/contracts@1.0.41) (2022-09-21)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.0.40](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.39...@injectivelabs/contracts@1.0.40) (2022-09-21)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.39](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.38...@injectivelabs/contracts@1.0.39) (2022-09-21)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.0.38](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.37...@injectivelabs/contracts@1.0.38) (2022-09-21)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.37](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.36...@injectivelabs/contracts@1.0.37) (2022-09-20)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.0.36](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.35...@injectivelabs/contracts@1.0.36) (2022-09-20)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.35](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.34...@injectivelabs/contracts@1.0.35) (2022-09-20)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.34](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.33...@injectivelabs/contracts@1.0.34) (2022-09-20)
-
 
 ### Features
 
 * exceptions part 2 ([1919620](https://github.com/InjectiveLabs/injective-ts/commit/191962094f9ec7036c54425e35c6aa476c70ea79))
 * initial exceptions setup ([6da9f2e](https://github.com/InjectiveLabs/injective-ts/commit/6da9f2eb2df2fcd2995fc9cd25a615dc607da253))
 
-
-
-
-
 ## [1.0.33](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.32...@injectivelabs/contracts@1.0.33) (2022-09-18)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.0.32](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.31...@injectivelabs/contracts@1.0.32) (2022-09-15)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.31](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.29...@injectivelabs/contracts@1.0.31) (2022-09-14)
-
 
 ### Features
 
 * add unit test coverage for eip712 messages ([#75](https://github.com/InjectiveLabs/injective-ts/issues/75)) ([cf7e2fd](https://github.com/InjectiveLabs/injective-ts/commit/cf7e2fde727979fcf2187385d72b96efbed6d61a))
 
-
-
-
-
 ## [1.0.30](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.29...@injectivelabs/contracts@1.0.30) (2022-09-14)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.0.29](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.28...@injectivelabs/contracts@1.0.29) (2022-09-13)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.28](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.27...@injectivelabs/contracts@1.0.28) (2022-09-09)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.0.27](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.26...@injectivelabs/contracts@1.0.27) (2022-09-07)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.26](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.25...@injectivelabs/contracts@1.0.26) (2022-09-07)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.0.25](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.24...@injectivelabs/contracts@1.0.25) (2022-09-07)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.24](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.23...@injectivelabs/contracts@1.0.24) (2022-08-30)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.23](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.22...@injectivelabs/contracts@1.0.23) (2022-08-23)
-
 
 ### Bug Fixes
 
 * orderMask and twitter link ([0474569](https://github.com/InjectiveLabs/injective-ts/commit/047456994f5233ed099174cd7f96a34f29dfbce8))
 
-
-
-
-
 ## [1.0.22](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.21...@injectivelabs/contracts@1.0.22) (2022-08-10)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.0.21](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.20...@injectivelabs/contracts@1.0.21) (2022-08-09)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.20](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.19...@injectivelabs/contracts@1.0.20) (2022-08-09)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.0.19](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.18...@injectivelabs/contracts@1.0.19) (2022-08-09)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.18](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.17...@injectivelabs/contracts@1.0.18) (2022-08-05)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.0.17](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.16...@injectivelabs/contracts@1.0.17) (2022-07-30)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.16](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.15...@injectivelabs/contracts@1.0.16) (2022-07-30)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.0.15](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.14...@injectivelabs/contracts@1.0.15) (2022-07-19)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.14](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.13...@injectivelabs/contracts@1.0.14) (2022-07-11)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.13](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.12...@injectivelabs/contracts@1.0.13) (2022-07-03)
-
 
 ### Bug Fixes
 
 * goerli contract address update ([56d3a2b](https://github.com/InjectiveLabs/injective-ts/commit/56d3a2bb4c15ab2b845f9e97a53240160efd8da5))
 
-
-
-
-
 ## [1.0.12](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.11...@injectivelabs/contracts@1.0.12) (2022-06-21)
-
 
 ### Bug Fixes
 
 * old peggy contract ([e32ff67](https://github.com/InjectiveLabs/injective-ts/commit/e32ff6700ae9bd06ee837c7f7de74ed4ffe90c6d))
 
-
-
-
-
 ## [1.0.11](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.10...@injectivelabs/contracts@1.0.11) (2022-06-21)
-
 
 ### Bug Fixes
 
 * old peggy contract ([a7f8647](https://github.com/InjectiveLabs/injective-ts/commit/a7f864757292e94c7205da45bb587d7cfc7b7b99))
 
-
-
-
-
 ## [1.0.10](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.9...@injectivelabs/contracts@1.0.10) (2022-06-21)
-
 
 ### Bug Fixes
 
 * old peggy contract ([54a9ae7](https://github.com/InjectiveLabs/injective-ts/commit/54a9ae772e0fccd2ec23e364237f73613316ec1c))
 
-
-
-
-
 ## [1.0.9](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.8...@injectivelabs/contracts@1.0.9) (2022-06-21)
-
 
 ### Bug Fixes
 
 * old peggy contract ([df1f352](https://github.com/InjectiveLabs/injective-ts/commit/df1f35280863980f4d59877fd101253cf53db117))
 
-
-
-
-
 ## [1.0.8](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.7...@injectivelabs/contracts@1.0.8) (2022-06-21)
-
 
 ### Bug Fixes
 
 * peggy testnet contract address ([1592087](https://github.com/InjectiveLabs/injective-ts/commit/159208772cc3156c6e49ffe58d7b023c0145005e))
 
-
-
-
-
 ## [1.0.7](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.6...@injectivelabs/contracts@1.0.7) (2022-06-21)
-
 
 ### Bug Fixes
 
 * contract address ([48aeaaa](https://github.com/InjectiveLabs/injective-ts/commit/48aeaaa302e6783e616f7c5e298dcae35ddae436))
 
-
-
-
-
 ## [1.0.6](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.5...@injectivelabs/contracts@1.0.6) (2022-06-21)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.5](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.4...@injectivelabs/contracts@1.0.5) (2022-06-21)
-
 
 ### Features
 
 * peggy upgrade ([b2e658f](https://github.com/InjectiveLabs/injective-ts/commit/b2e658f405dee42c62005c2cc623658068534878))
 
-
-
-
-
 ## [1.0.4](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.3...@injectivelabs/contracts@1.0.4) (2022-06-15)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.0.3](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.2...@injectivelabs/contracts@1.0.3) (2022-06-14)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [1.0.2](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@1.0.1...@injectivelabs/contracts@1.0.2) (2022-06-13)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [1.0.1](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.5.28...@injectivelabs/contracts@1.0.1) (2022-06-13)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [0.5.28](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.5.27...@injectivelabs/contracts@0.5.28) (2022-06-08)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [0.5.27](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.5.26...@injectivelabs/contracts@0.5.27) (2022-06-06)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [0.5.26](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.5.25...@injectivelabs/contracts@0.5.26) (2022-06-06)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [0.5.25](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.5.24...@injectivelabs/contracts@0.5.25) (2022-06-06)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [0.5.24](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.5.23...@injectivelabs/contracts@0.5.24) (2022-06-02)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [0.5.23](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.5.22...@injectivelabs/contracts@0.5.23) (2022-05-26)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [0.5.22](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.5.21...@injectivelabs/contracts@0.5.22) (2022-05-20)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [0.5.21](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.5.20...@injectivelabs/contracts@0.5.21) (2022-05-17)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [0.5.20](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.5.19...@injectivelabs/contracts@0.5.20) (2022-05-17)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [0.5.19](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.5.18...@injectivelabs/contracts@0.5.19) (2022-05-04)
-
 
 ### Bug Fixes
 
 * contract addresses ([321ac80](https://github.com/InjectiveLabs/injective-ts/commit/321ac800e08e8047911e0dcec02aa51d0d904a33))
 
-
-
-
-
 ## [0.5.18](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.5.17...@injectivelabs/contracts@0.5.18) (2022-04-28)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [0.5.17](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.5.16...@injectivelabs/contracts@0.5.17) (2022-04-28)
-
 
 ### Bug Fixes
 
 * version ([222b42c](https://github.com/InjectiveLabs/injective-ts/commit/222b42ccccc65daa02739b116744331dcdfffdcc))
 
-
-
-
-
 ## [0.5.16](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.5.13...@injectivelabs/contracts@0.5.16) (2022-04-28)
-
 
 ### Bug Fixes
 
 * removed examples ([a88625c](https://github.com/InjectiveLabs/injective-ts/commit/a88625c0f49e8bf4176905b0b5196be5c5e7ad31))
 
-
-
-
-
 ## [0.5.13](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.5.12...@injectivelabs/contracts@0.5.13) (2022-04-26)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [0.5.12](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.5.11...@injectivelabs/contracts@0.5.12) (2022-04-11)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [0.5.11](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.5.10...@injectivelabs/contracts@0.5.11) (2022-04-11)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [0.5.10](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.5.9...@injectivelabs/contracts@0.5.10) (2022-04-11)
-
 
 ### Bug Fixes
 
 * package sizes ([278037d](https://github.com/InjectiveLabs/injective-ts/commit/278037d244b780b30b1036127fe540ac74ca6557))
 
-
-
-
-
 ## [0.5.9](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.5.8...@injectivelabs/contracts@0.5.9) (2022-04-11)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [0.5.8](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.5.7...@injectivelabs/contracts@0.5.8) (2022-04-11)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [0.5.7](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.5.6...@injectivelabs/contracts@0.5.7) (2022-04-11)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [0.5.6](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.5.5...@injectivelabs/contracts@0.5.6) (2022-04-08)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [0.5.5](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.5.4...@injectivelabs/contracts@0.5.5) (2022-04-08)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [0.5.4](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.5.3...@injectivelabs/contracts@0.5.4) (2022-04-08)
-
 
 ### Bug Fixes
 
 * getContractAddressesForNetworkOrThrow method referencing wrong list of contract addresses ([ce4cdbb](https://github.com/InjectiveLabs/injective-ts/commit/ce4cdbb58f1bd01c9c00dfc968b02928540fa751))
 
-
-
-
-
 ## [0.5.3](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.5.2...@injectivelabs/contracts@0.5.3) (2022-04-08)
-
 
 ### Features
 
 * add support for devnet peggy and injective contract address ([3bd2c31](https://github.com/InjectiveLabs/injective-ts/commit/3bd2c31d7ae23489359f28490f52b0e94f4bce03))
 
-
-
-
-
 ## [0.5.2](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.5.1...@injectivelabs/contracts@0.5.2) (2022-03-21)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [0.5.1](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.5.0...@injectivelabs/contracts@0.5.1) (2022-03-18)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 # [0.5.0](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.3.0...@injectivelabs/contracts@0.5.0) (2022-03-16)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 # [0.3.0](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.3.0...@injectivelabs/contracts@0.3.0) (2022-03-16)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 # [0.3.0](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.2.1...@injectivelabs/contracts@0.3.0) (2022-03-16)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [0.2.1](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.1.14...@injectivelabs/contracts@0.2.1) (2022-03-13)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [0.1.14](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.1.13...@injectivelabs/contracts@0.1.14) (2022-03-13)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [0.1.13](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.1.12...@injectivelabs/contracts@0.1.13) (2022-03-11)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [0.1.12](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.1.11...@injectivelabs/contracts@0.1.12) (2022-03-10)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [0.1.11](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.1.10...@injectivelabs/contracts@0.1.11) (2022-03-10)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [0.1.10](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.1.5...@injectivelabs/contracts@0.1.10) (2022-03-09)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [0.1.5](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.1.2...@injectivelabs/contracts@0.1.5) (2022-03-09)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [0.1.2](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.1.1...@injectivelabs/contracts@0.1.2) (2022-03-09)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [0.1.1](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.1.0...@injectivelabs/contracts@0.1.1) (2022-03-09)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 # [0.1.0](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.111...@injectivelabs/contracts@0.1.0) (2022-03-09)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [0.0.111](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.110...@injectivelabs/contracts@0.0.111) (2022-03-08)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [0.0.110](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.109...@injectivelabs/contracts@0.0.110) (2022-03-01)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [0.0.109](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.108...@injectivelabs/contracts@0.0.109) (2022-03-01)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## 0.0.108 (2022-03-01)
-
 
 ### Bug Fixes
 
@@ -1708,7 +961,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 * window type checking for node env ([b52faa5](https://github.com/InjectiveLabs/injective-ts/commit/b52faa56ed555475c4695c219a81a185ad79cf67))
 * zeroed out addresses for unused chains ([17792b8](https://github.com/InjectiveLabs/injective-ts/commit/17792b8b28cbc7ebb278f15ed29ea8fd2db6d6e8))
 
-
 ### Features
 
 * added a new tx-utils package for reducing the size of the utils package ([d8e4786](https://github.com/InjectiveLabs/injective-ts/commit/d8e4786dd2082cbac2cf1f2ba36b66a038dfa9b0))
@@ -1752,152 +1004,79 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 * upated contracts packages with new deposit manager abi ([fdbee9d](https://github.com/InjectiveLabs/injective-ts/commit/fdbee9db3881e22d743e7def7f97ae79a4f32967))
 * updated deposit manager contract with addiotional methods ([866a5c1](https://github.com/InjectiveLabs/injective-ts/commit/866a5c1ebc335ba1f33cc6fdbd7dc0f631fa310f))
 
-
-
-
-
 ## [0.0.107](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.106...@injectivelabs/contracts@0.0.107) (2022-02-15)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [0.0.106](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.105...@injectivelabs/contracts@0.0.106) (2022-02-15)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [0.0.105](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.104...@injectivelabs/contracts@0.0.105) (2022-02-13)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [0.0.104](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.103...@injectivelabs/contracts@0.0.104) (2022-02-13)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [0.0.103](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.102...@injectivelabs/contracts@0.0.103) (2022-02-13)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [0.0.102](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.101...@injectivelabs/contracts@0.0.102) (2022-02-13)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [0.0.101](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.100...@injectivelabs/contracts@0.0.101) (2022-02-10)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [0.0.100](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.98...@injectivelabs/contracts@0.0.100) (2022-02-09)
-
 
 ### Features
 
 * spot and derivative services and cleanup ([e638c67](https://github.com/InjectiveLabs/injective-ts/commit/e638c67db9ec2d8200aa0a9d47d458abb9e1ef46))
 
-
-
-
-
 ## [0.0.99](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.98...@injectivelabs/contracts@0.0.99) (2022-02-09)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [0.0.98](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.97...@injectivelabs/contracts@0.0.98) (2022-02-09)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [0.0.97](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.96...@injectivelabs/contracts@0.0.97) (2022-02-09)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [0.0.96](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.95...@injectivelabs/contracts@0.0.96) (2022-02-08)
-
 
 ### Features
 
 * ui common services ([6c95a68](https://github.com/InjectiveLabs/injective-ts/commit/6c95a68054efb165ea451b15b2466fa4478f9971))
 
-
-
-
-
 ## [0.0.95](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.92...@injectivelabs/contracts@0.0.95) (2022-02-04)
-
 
 ### Features
 
 * chainConsumer add support for MsgInstantSpotMarketLaunch ([4bc6a49](https://github.com/InjectiveLabs/injective-ts/commit/4bc6a49a125e58f2dd5dce2d1e6da8557b64a976))
 
-
-
-
-
 ## [0.0.94](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.91...@injectivelabs/contracts@0.0.94) (2022-02-03)
-
 
 ### Features
 
 * chainConsumer add support for MsgInstantSpotMarketLaunch ([4dbe2eb](https://github.com/InjectiveLabs/injective-ts/commit/4dbe2eba654096e987cf04d88689423d2fb1d8d5))
 
-
-
-
-
 ## [0.0.93](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.91...@injectivelabs/contracts@0.0.93) (2022-02-03)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [0.0.92](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.90...@injectivelabs/contracts@0.0.92) (2022-01-26)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## 0.0.91 (2022-01-26)
-
 
 ### Bug Fixes
 
@@ -1945,7 +1124,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 * types ([ca5bcf3](https://github.com/InjectiveLabs/injective-ts/commit/ca5bcf3858a07188bbea9a03d3882bb80fd1925c))
 * window type checking for node env ([b52faa5](https://github.com/InjectiveLabs/injective-ts/commit/b52faa56ed555475c4695c219a81a185ad79cf67))
 * zeroed out addresses for unused chains ([17792b8](https://github.com/InjectiveLabs/injective-ts/commit/17792b8b28cbc7ebb278f15ed29ea8fd2db6d6e8))
-
 
 ### Features
 
@@ -1985,28 +1163,15 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 * upated contracts packages with new deposit manager abi ([fdbee9d](https://github.com/InjectiveLabs/injective-ts/commit/fdbee9db3881e22d743e7def7f97ae79a4f32967))
 * updated deposit manager contract with addiotional methods ([866a5c1](https://github.com/InjectiveLabs/injective-ts/commit/866a5c1ebc335ba1f33cc6fdbd7dc0f631fa310f))
 
-
-
-
-
 ## [0.0.90](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.89...@injectivelabs/contracts@0.0.90) (2022-01-24)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [0.0.89](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.86...@injectivelabs/contracts@0.0.89) (2022-01-21)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## 0.0.88 (2022-01-21)
-
 
 ### Bug Fixes
 
@@ -2055,7 +1220,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 * window type checking for node env ([b52faa5](https://github.com/InjectiveLabs/injective-ts/commit/b52faa56ed555475c4695c219a81a185ad79cf67))
 * zeroed out addresses for unused chains ([17792b8](https://github.com/InjectiveLabs/injective-ts/commit/17792b8b28cbc7ebb278f15ed29ea8fd2db6d6e8))
 
-
 ### Features
 
 * added a new tx-utils package for reducing the size of the utils package ([d8e4786](https://github.com/InjectiveLabs/injective-ts/commit/d8e4786dd2082cbac2cf1f2ba36b66a038dfa9b0))
@@ -2092,14 +1256,9 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 * token price utils ([1d79620](https://github.com/InjectiveLabs/injective-ts/commit/1d796200d4f1fe0c09a71cd0318305983fdf44ad))
 * upated contracts packages with new deposit manager abi ([fdbee9d](https://github.com/InjectiveLabs/injective-ts/commit/fdbee9db3881e22d743e7def7f97ae79a4f32967))
 * updated deposit manager contract with addiotional methods ([866a5c1](https://github.com/InjectiveLabs/injective-ts/commit/866a5c1ebc335ba1f33cc6fdbd7dc0f631fa310f))
-
-
-
-
 
 ## 0.0.87 (2022-01-21)
 
-
 ### Bug Fixes
 
 * added formatters to the entry file ([0a26c1c](https://github.com/InjectiveLabs/injective-ts/commit/0a26c1c8f60fb750629ff66e7c03b8c554c1ac12))
@@ -2147,7 +1306,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 * window type checking for node env ([b52faa5](https://github.com/InjectiveLabs/injective-ts/commit/b52faa56ed555475c4695c219a81a185ad79cf67))
 * zeroed out addresses for unused chains ([17792b8](https://github.com/InjectiveLabs/injective-ts/commit/17792b8b28cbc7ebb278f15ed29ea8fd2db6d6e8))
 
-
 ### Features
 
 * added a new tx-utils package for reducing the size of the utils package ([d8e4786](https://github.com/InjectiveLabs/injective-ts/commit/d8e4786dd2082cbac2cf1f2ba36b66a038dfa9b0))
@@ -2185,63 +1343,33 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 * upated contracts packages with new deposit manager abi ([fdbee9d](https://github.com/InjectiveLabs/injective-ts/commit/fdbee9db3881e22d743e7def7f97ae79a4f32967))
 * updated deposit manager contract with addiotional methods ([866a5c1](https://github.com/InjectiveLabs/injective-ts/commit/866a5c1ebc335ba1f33cc6fdbd7dc0f631fa310f))
 
-
-
-
-
 ## [0.0.86](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.85...@injectivelabs/contracts@0.0.86) (2022-01-18)
-
 
 ### Bug Fixes
 
 * testnet denoms ([95bd7fb](https://github.com/InjectiveLabs/injective-ts/commit/95bd7fb588da1768d6154cafbc9d7c57ec90becc))
 
-
-
-
-
 ## [0.0.85](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.84...@injectivelabs/contracts@0.0.85) (2022-01-06)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [0.0.84](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.83...@injectivelabs/contracts@0.0.84) (2022-01-06)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [0.0.83](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.82...@injectivelabs/contracts@0.0.83) (2022-01-06)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [0.0.82](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.81...@injectivelabs/contracts@0.0.82) (2021-12-21)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [0.0.81](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.78...@injectivelabs/contracts@0.0.81) (2021-12-03)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## 0.0.80 (2021-12-02)
-
 
 ### Bug Fixes
 
@@ -2287,7 +1415,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 * window type checking for node env ([b52faa5](https://github.com/InjectiveLabs/injective-ts/commit/b52faa56ed555475c4695c219a81a185ad79cf67))
 * zeroed out addresses for unused chains ([17792b8](https://github.com/InjectiveLabs/injective-ts/commit/17792b8b28cbc7ebb278f15ed29ea8fd2db6d6e8))
 
-
 ### Features
 
 * added a new tx-utils package for reducing the size of the utils package ([d8e4786](https://github.com/InjectiveLabs/injective-ts/commit/d8e4786dd2082cbac2cf1f2ba36b66a038dfa9b0))
@@ -2321,14 +1448,9 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 * subaccount decoupled from spot to own package ([e017056](https://github.com/InjectiveLabs/injective-ts/commit/e0170563e643cbb1b8d483cc046f6ec2924a14a8))
 * upated contracts packages with new deposit manager abi ([fdbee9d](https://github.com/InjectiveLabs/injective-ts/commit/fdbee9db3881e22d743e7def7f97ae79a4f32967))
 * updated deposit manager contract with addiotional methods ([866a5c1](https://github.com/InjectiveLabs/injective-ts/commit/866a5c1ebc335ba1f33cc6fdbd7dc0f631fa310f))
-
-
-
-
 
 ## 0.0.79 (2021-12-02)
 
-
 ### Bug Fixes
 
 * added formatters to the entry file ([0a26c1c](https://github.com/InjectiveLabs/injective-ts/commit/0a26c1c8f60fb750629ff66e7c03b8c554c1ac12))
@@ -2373,7 +1495,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 * window type checking for node env ([b52faa5](https://github.com/InjectiveLabs/injective-ts/commit/b52faa56ed555475c4695c219a81a185ad79cf67))
 * zeroed out addresses for unused chains ([17792b8](https://github.com/InjectiveLabs/injective-ts/commit/17792b8b28cbc7ebb278f15ed29ea8fd2db6d6e8))
 
-
 ### Features
 
 * added a new tx-utils package for reducing the size of the utils package ([d8e4786](https://github.com/InjectiveLabs/injective-ts/commit/d8e4786dd2082cbac2cf1f2ba36b66a038dfa9b0))
@@ -2407,214 +1528,110 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 * subaccount decoupled from spot to own package ([e017056](https://github.com/InjectiveLabs/injective-ts/commit/e0170563e643cbb1b8d483cc046f6ec2924a14a8))
 * upated contracts packages with new deposit manager abi ([fdbee9d](https://github.com/InjectiveLabs/injective-ts/commit/fdbee9db3881e22d743e7def7f97ae79a4f32967))
 * updated deposit manager contract with addiotional methods ([866a5c1](https://github.com/InjectiveLabs/injective-ts/commit/866a5c1ebc335ba1f33cc6fdbd7dc0f631fa310f))
-
-
-
-
 
 ## [0.0.78](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.77...@injectivelabs/contracts@0.0.78) (2021-11-24)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [0.0.77](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.76...@injectivelabs/contracts@0.0.77) (2021-11-03)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [0.0.76](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.75...@injectivelabs/contracts@0.0.76) (2021-10-15)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [0.0.75](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.74...@injectivelabs/contracts@0.0.75) (2021-10-06)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [0.0.74](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.73...@injectivelabs/contracts@0.0.74) (2021-10-06)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [0.0.73](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.72...@injectivelabs/contracts@0.0.73) (2021-09-19)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [0.0.72](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.71...@injectivelabs/contracts@0.0.72) (2021-09-19)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [0.0.71](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.70...@injectivelabs/contracts@0.0.71) (2021-09-18)
-
 
 ### Features
 
 * ledger refactor ([9fe5f8e](https://github.com/InjectiveLabs/injective-ts/commit/9fe5f8e31f37c7ed56b6141e563bf9f3722fe02b))
 
-
-
-
-
 ## [0.0.70](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.69...@injectivelabs/contracts@0.0.70) (2021-09-01)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [0.0.69](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.68...@injectivelabs/contracts@0.0.69) (2021-09-01)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [0.0.68](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.67...@injectivelabs/contracts@0.0.68) (2021-08-29)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [0.0.67](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.66...@injectivelabs/contracts@0.0.67) (2021-08-20)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [0.0.66](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.65...@injectivelabs/contracts@0.0.66) (2021-08-15)
-
 
 ### Bug Fixes
 
 * contracts param return type ([0c7af9e](https://github.com/InjectiveLabs/injective-ts/commit/0c7af9e5baf6c0ffdba68e78e059493b4079c814))
 
-
-
-
-
 ## [0.0.65](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.64...@injectivelabs/contracts@0.0.65) (2021-08-15)
-
 
 ### Bug Fixes
 
 * contracts param type ([fb22ea2](https://github.com/InjectiveLabs/injective-ts/commit/fb22ea21948eb409f1ebe11ce5d809bd16992ded))
 
-
-
-
-
 ## [0.0.64](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.63...@injectivelabs/contracts@0.0.64) (2021-08-06)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [0.0.63](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.62...@injectivelabs/contracts@0.0.63) (2021-08-05)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [0.0.62](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.61...@injectivelabs/contracts@0.0.62) (2021-08-05)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [0.0.61](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.60...@injectivelabs/contracts@0.0.61) (2021-08-05)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [0.0.60](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.59...@injectivelabs/contracts@0.0.60) (2021-08-05)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [0.0.59](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.58...@injectivelabs/contracts@0.0.59) (2021-07-14)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [0.0.58](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.57...@injectivelabs/contracts@0.0.58) (2021-07-12)
 
 **Note:** Version bump only for package @injectivelabs/contracts
-
-
-
-
 
 ## [0.0.57](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.56...@injectivelabs/contracts@0.0.57) (2021-06-28)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [0.0.56](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.55...@injectivelabs/contracts@0.0.56) (2021-06-28)
 
 **Note:** Version bump only for package @injectivelabs/contracts
 
-
-
-
-
 ## [0.0.55](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.53...@injectivelabs/contracts@0.0.55) (2021-06-25)
-
 
 ### Features
 
 * added timeout height ([c46c2f8](https://github.com/InjectiveLabs/injective-ts/commit/c46c2f8854ad8c23d61fb27c791db11bd438c316))
-
-
-
-
 
 ## [0.0.54](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/contracts@0.0.52...@injectivelabs/contracts@0.0.54) (2021-06-21)
 

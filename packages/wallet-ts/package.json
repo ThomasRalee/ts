@@ -1,7 +1,7 @@
 {
   "name": "@thomasralee/wallet-ts",
   "description": "A convenient way to use and interact with different types of wallets on Injective.",
-  "version": "1.10.68",
+  "version": "1.10.69",
   "sideEffects": "false",
   "author": {
     "name": "Bojan Angjelkoski",

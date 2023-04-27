@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.10.17](https://github.com/ThomasRalee/ts/compare/@thomasralee/contracts@1.10.16...@thomasralee/contracts@1.10.17) (2023-04-27)
+
+**Note:** Version bump only for package @thomasralee/contracts
+
 ## [1.10.16](https://github.com/ThomasRalee/ts/compare/@thomasralee/contracts@1.10.15...@thomasralee/contracts@1.10.16) (2023-04-27)
 
 **Note:** Version bump only for package @thomasralee/contracts

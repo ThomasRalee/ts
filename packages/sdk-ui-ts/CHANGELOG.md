@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.10.78](https://github.com/ThomasRalee/ts/compare/@thomasralee/sdk-ui-ts@1.10.77...@thomasralee/sdk-ui-ts@1.10.78) (2023-04-27)
+
+**Note:** Version bump only for package @thomasralee/sdk-ui-ts
+
 ## [1.10.77](https://github.com/ThomasRalee/ts/compare/@thomasralee/sdk-ui-ts@1.10.76...@thomasralee/sdk-ui-ts@1.10.77) (2023-04-27)
 
 **Note:** Version bump only for package @thomasralee/sdk-ui-ts

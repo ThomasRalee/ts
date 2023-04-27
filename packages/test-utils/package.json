@@ -1,7 +1,7 @@
 {
   "name": "@thomasralee/test-utils",
   "description": "List of test-utils and helper functions that can be reused throughout Injective's projects.",
-  "version": "1.10.6",
+  "version": "1.10.7",
   "sideEffects": "false",
   "author": {
     "name": "Bojan Angjelkoski",
@@ -39,5 +39,5 @@
     "snakecase-keys": "^5.1.2",
     "store2": "^2.12.0"
   },
-  "gitHead": "5b070c1c0a0c62bf1b604f023dfebc2cdce7c20a"
+  "gitHead": "8c986e9539b3e762bcd291bd71cbf4e4ca470168"
 }

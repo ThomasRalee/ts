@@ -5,12 +5,12 @@ import {
 } from '../../../types'
 import { StreamStatusResponse } from '../types'
 import { PaginationOption } from '../../../types/pagination'
-import { OrderSide, OrderState } from '@injectivelabs/ts-types'
+import { OrderSide, OrderState } from '@thomasralee/ts-types'
 import { IndexerDerivativeStreamTransformer } from '../transformers'
 import { getGrpcIndexerWebImpl } from '../../BaseIndexerGrpcWebConsumer'
 import { Subscription } from 'rxjs'
 import { InjectiveDerivativeExchangeRpc } from '@injectivelabs/indexer-proto-ts'
-import { GeneralException } from '@injectivelabs/exceptions'
+import { GeneralException } from '@thomasralee/exceptions'
 
 export type DerivativeOrderbookV2StreamCallback = (
   response: ReturnType<

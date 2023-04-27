@@ -7,7 +7,7 @@ import AccountManager from './AccountManager'
 const trezorConnect = TrezorConnect.default || TrezorConnect
 
 const TREZOR_CONNECT_MANIFEST = {
-  email: 'contact@injectivelabs.org',
+  email: 'contact@thomasralee.org',
   appUrl: 'https://injectivelabs.org',
 }
 

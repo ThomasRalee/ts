@@ -6,7 +6,7 @@ import BaseRestConsumer from '../../BaseRestConsumer'
 import {
   HttpRequestException,
   UnspecifiedErrorCode,
-} from '@injectivelabs/exceptions'
+} from '@thomasralee/exceptions'
 
 /**
  * @category Indexer Chronos API

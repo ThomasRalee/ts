@@ -1,9 +1,9 @@
-import { BigNumber } from '@injectivelabs/utils'
+import { BigNumber } from '@thomasralee/utils'
 import { Change, MarketType } from '../types/common'
 import {
   getSpotMarketTensMultiplier,
   getSpotMarketDecimals,
-} from '@injectivelabs/sdk-ts'
+} from '@thomasralee/sdk-ts'
 import {
   UiBaseSpotMarketWithToken,
   UiSpotMarketWithToken,

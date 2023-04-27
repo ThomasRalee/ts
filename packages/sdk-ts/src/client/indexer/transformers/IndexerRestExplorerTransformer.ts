@@ -1,6 +1,6 @@
-import { BigNumberInBase, BigNumberInWei } from '@injectivelabs/utils'
+import { BigNumberInBase, BigNumberInWei } from '@thomasralee/utils'
 import { Block, ExplorerValidator } from '../types/explorer'
-import { TokenType } from '@injectivelabs/token-metadata'
+import { TokenType } from '@thomasralee/token-metadata'
 import {
   BaseTransaction,
   BlockFromExplorerApiResponse,

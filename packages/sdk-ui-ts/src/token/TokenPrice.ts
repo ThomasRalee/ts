@@ -1,12 +1,12 @@
-import { CoinGeckoApi } from '@injectivelabs/token-utils'
+import { CoinGeckoApi } from '@thomasralee/token-utils'
 import {
   awaitAll,
   splitArrayToChunks,
   BigNumberInBase,
   HttpRestClient,
   sleep,
-} from '@injectivelabs/utils'
-import { HttpRequestException } from '@injectivelabs/exceptions'
+} from '@thomasralee/utils'
+import { HttpRequestException } from '@thomasralee/exceptions'
 import { ASSET_PRICE_SERVICE_URL } from '../constants'
 import { CoinPriceFromInjectiveService } from '../types/token'
 

@@ -3,8 +3,8 @@ import {
   CosmosChainId,
   TestnetCosmosChainId,
   DevnetCosmosChainId,
-} from '@injectivelabs/ts-types'
-import { GeneralException } from '@injectivelabs/exceptions'
+} from '@thomasralee/ts-types'
+import { GeneralException } from '@thomasralee/exceptions'
 
 export const getEndpointsFromChainId = (
   chainId: TestnetCosmosChainId | CosmosChainId | ChainId | DevnetCosmosChainId,

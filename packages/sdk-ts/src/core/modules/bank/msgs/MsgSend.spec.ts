@@ -1,6 +1,6 @@
-import { BigNumberInBase } from '@injectivelabs/utils'
+import { BigNumberInBase } from '@thomasralee/utils'
 import MsgSend from './MsgSend'
-import { mockFactory } from '@injectivelabs/test-utils'
+import { mockFactory } from '@thomasralee/test-utils'
 
 const params: MsgSend['params'] = {
   dstInjectiveAddress: mockFactory.injectiveAddress,

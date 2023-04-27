@@ -2,7 +2,7 @@ import {
   BigNumberInBase,
   DEFAULT_EXCHANGE_LIMIT,
   DEFAULT_GAS_LIMIT,
-} from '@injectivelabs/utils'
+} from '@thomasralee/utils'
 import { Msgs } from '../core/modules/msgs'
 
 export const getGasPriceBasedOnMessage = (msgs: Msgs[]): number => {

@@ -3,7 +3,7 @@ import { ChainModule } from '../types'
 import {
   GrpcUnaryRequestException,
   UnspecifiedErrorCode,
-} from '@injectivelabs/exceptions'
+} from '@thomasralee/exceptions'
 import { IbcApplicationsTransferV1Query } from '@injectivelabs/core-proto-ts'
 
 /**

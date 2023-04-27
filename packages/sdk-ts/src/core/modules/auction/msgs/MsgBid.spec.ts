@@ -1,5 +1,5 @@
-import { BigNumberInBase } from '@injectivelabs/utils'
-import { mockFactory } from '@injectivelabs/test-utils'
+import { BigNumberInBase } from '@thomasralee/utils'
+import { mockFactory } from '@thomasralee/test-utils'
 import MsgBid from './MsgBid'
 import snakecaseKeys from 'snakecase-keys'
 

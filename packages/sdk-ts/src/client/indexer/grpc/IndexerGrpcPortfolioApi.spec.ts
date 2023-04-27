@@ -1,5 +1,5 @@
-import { getNetworkEndpoints, Network } from '@injectivelabs/networks'
-import { mockFactory } from '@injectivelabs/test-utils'
+import { getNetworkEndpoints, Network } from '@thomasralee/networks'
+import { mockFactory } from '@thomasralee/test-utils'
 import { IndexerGrpcAccountPortfolioTransformer } from '../transformers'
 import { IndexerGrpcAccountPortfolioApi } from './IndexerGrpcPortfolioApi'
 
@@ -17,7 +17,7 @@ describe('IndexerGrpcAccountPortfolioApi', () => {
       )
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof IndexerGrpcAccountPortfolioTransformer.accountPortfolioResponseToAccountPortfolio

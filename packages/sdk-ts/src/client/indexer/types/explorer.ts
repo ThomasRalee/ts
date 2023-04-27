@@ -1,5 +1,5 @@
-import { Token } from '@injectivelabs/token-metadata'
-import { BigNumberInBase } from '@injectivelabs/utils'
+import { Token } from '@thomasralee/token-metadata'
+import { BigNumberInBase } from '@thomasralee/utils'
 import type { CosmWasmChecksum, CosmWasmPermission } from './explorer-rest'
 import { InjectiveExplorerRpc } from '@injectivelabs/indexer-proto-ts'
 

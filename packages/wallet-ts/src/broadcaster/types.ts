@@ -1,6 +1,6 @@
-import { Msgs } from '@injectivelabs/sdk-ts'
-import { ChainId, EthereumChainId } from '@injectivelabs/ts-types'
-import { Network, NetworkEndpoints } from '@injectivelabs/networks'
+import { Msgs } from '@thomasralee/sdk-ts'
+import { ChainId, EthereumChainId } from '@thomasralee/ts-types'
+import { Network, NetworkEndpoints } from '@thomasralee/networks'
 import type { WalletStrategy } from '../strategies'
 
 export interface MsgBroadcasterTxOptions {

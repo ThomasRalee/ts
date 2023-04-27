@@ -1,6 +1,6 @@
-import { BigNumberInBase } from '@injectivelabs/utils'
+import { BigNumberInBase } from '@thomasralee/utils'
 import MsgWithdraw from './MsgWithdraw'
-import { mockFactory } from '@injectivelabs/test-utils'
+import { mockFactory } from '@thomasralee/test-utils'
 import snakecaseKeys from 'snakecase-keys'
 
 const params: MsgWithdraw['params'] = {

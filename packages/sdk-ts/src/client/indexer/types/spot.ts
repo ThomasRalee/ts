@@ -4,10 +4,10 @@ import {
   TradeDirection,
   TradeExecutionType,
   TradeExecutionSide,
-} from '@injectivelabs/ts-types'
+} from '@thomasralee/ts-types'
 import { GrpcOrderType } from '../../chain/types/exchange'
 import { PriceLevel } from './exchange'
-import { TokenMeta } from '@injectivelabs/token-metadata'
+import { TokenMeta } from '@thomasralee/token-metadata'
 import { InjectiveSpotExchangeRpc } from '@injectivelabs/indexer-proto-ts'
 
 export interface SpotMarket {

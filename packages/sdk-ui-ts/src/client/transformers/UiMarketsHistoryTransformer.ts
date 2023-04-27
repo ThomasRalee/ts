@@ -1,4 +1,4 @@
-import { AllChronosMarketHistory } from '@injectivelabs/sdk-ts'
+import { AllChronosMarketHistory } from '@thomasralee/sdk-ts'
 import { UiMarketHistory } from '../types/markets-history-rest'
 
 export class UiMarketsHistoryTransformer {

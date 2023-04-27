@@ -4,21 +4,21 @@ import {
   CosmosChainId,
   AccountAddress,
   EthereumChainId,
-} from '@injectivelabs/ts-types'
+} from '@thomasralee/ts-types'
 import {
   TxRaw,
   TxResponse,
   createTxRawFromSigResponse,
   createCosmosSignDocFromSignDoc,
   createSignDocFromTransaction,
-} from '@injectivelabs/sdk-ts'
+} from '@thomasralee/sdk-ts'
 import type { DirectSignResponse } from '@cosmjs/proto-signing'
 import {
   ErrorType,
   TransactionException,
   UnspecifiedErrorCode,
   CosmosWalletException,
-} from '@injectivelabs/exceptions'
+} from '@thomasralee/exceptions'
 import { KeplrWallet } from '../../../utils/wallets/keplr'
 import { ConcreteWalletStrategy } from '../../types'
 import BaseConcreteStrategy from './Base'

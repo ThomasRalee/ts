@@ -1,58 +1,59 @@
-import { getNetworkEndpoints, Network } from '@injectivelabs/networks'
+import { getNetworkEndpoints, Network } from '@thomasralee/networks'
+import { mockFactory } from '@thomasralee/test-utils'
 import { getDefaultSubaccountId } from '../../../utils/address'
-import { mockFactory } from '@injectivelabs/test-utils'
 import { IndexerGrpcSpotTransformer } from '../transformers'
 import { SpotMarket } from '../types'
 import { IndexerGrpcSpotApi } from './IndexerGrpcSpotApi'
 
-const injectiveAddress = mockFactory.injectiveAddress
+const { injectiveAddress } = mockFactory
 const endpoints = getNetworkEndpoints(Network.MainnetK8s)
 const indexerGrpcSpotApi = new IndexerGrpcSpotApi(endpoints.indexer)
 
-describe('IndexerGrpcSpotApi', () => {
+describe('indexerGrpcSpotApi', () => {
   let market: SpotMarket
   let markets: SpotMarket[]
 
-  beforeAll(async () => {
-    return new Promise<void>(async (resolve) => {
-      markets = await indexerGrpcSpotApi.fetchMarkets()
-      market = markets[0]
+  beforeAll(
+    async () =>
+      new Promise<void>(async (resolve) => {
+        markets = await indexerGrpcSpotApi.fetchMarkets()
+        market = markets[0]
 
-      return resolve()
-    })
-  })
+        return resolve()
+      }),
+  )
 
-  test('fetchMarkets', async () => {
+  it('fetchMarkets', async () => {
     try {
       const response = await indexerGrpcSpotApi.fetchMarkets()
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<typeof IndexerGrpcSpotTransformer.marketsResponseToMarkets>
         >(response),
       )
     } catch (e) {
-      console.error('IndexerGrpcSpotApi.fetchMarkets => ' + (e as any).message)
+      console.error(`IndexerGrpcSpotApi.fetchMarkets => ${(e as any).message}`)
     }
   })
 
-  test('fetchMarket', async () => {
+  it('fetchMarket', async () => {
     try {
       const response = await indexerGrpcSpotApi.fetchMarket(market.marketId)
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<typeof IndexerGrpcSpotTransformer.marketResponseToMarket>
         >(response),
       )
     } catch (e) {
-      console.error('IndexerGrpcSpotApi.fetchMarket => ' + (e as any).message)
+      console.error(`IndexerGrpcSpotApi.fetchMarket => ${(e as any).message}`)
     }
   })
 
-  test('fetchOrders', async () => {
+  it('fetchOrders', async () => {
     try {
       const response = await indexerGrpcSpotApi.fetchOrders({
         marketId: market.marketId,
@@ -63,17 +64,17 @@ describe('IndexerGrpcSpotApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<typeof IndexerGrpcSpotTransformer.ordersResponseToOrders>
         >(response),
       )
     } catch (e) {
-      console.error('IndexerGrpcSpotApi.fetchOrders => ' + (e as any).message)
+      console.error(`IndexerGrpcSpotApi.fetchOrders => ${(e as any).message}`)
     }
   })
 
-  test('fetchOrderHistory', async () => {
+  it('fetchOrderHistory', async () => {
     try {
       const response = await indexerGrpcSpotApi.fetchOrderHistory({
         marketId: market.marketId,
@@ -87,7 +88,7 @@ describe('IndexerGrpcSpotApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof IndexerGrpcSpotTransformer.orderHistoryResponseToOrderHistory
@@ -96,12 +97,12 @@ describe('IndexerGrpcSpotApi', () => {
       )
     } catch (e) {
       console.error(
-        'IndexerGrpcSpotApi.fetchOrderHistory => ' + (e as any).message,
+        `IndexerGrpcSpotApi.fetchOrderHistory => ${(e as any).message}`,
       )
     }
   })
 
-  test('fetchTrades', async () => {
+  it('fetchTrades', async () => {
     try {
       const response = await indexerGrpcSpotApi.fetchTrades({
         marketId: market.marketId,
@@ -115,17 +116,17 @@ describe('IndexerGrpcSpotApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<typeof IndexerGrpcSpotTransformer.tradesResponseToTrades>
         >(response),
       )
     } catch (e) {
-      console.error('IndexerGrpcSpotApi.fetchTrades => ' + (e as any).message)
+      console.error(`IndexerGrpcSpotApi.fetchTrades => ${(e as any).message}`)
     }
   })
 
-  test('fetchSubaccountOrdersList', async () => {
+  it('fetchSubaccountOrdersList', async () => {
     try {
       const response = await indexerGrpcSpotApi.fetchSubaccountOrdersList({
         subaccountId: getDefaultSubaccountId(injectiveAddress),
@@ -140,19 +141,19 @@ describe('IndexerGrpcSpotApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<typeof IndexerGrpcSpotTransformer.ordersResponseToOrders>
         >(response),
       )
     } catch (e) {
       console.error(
-        'IndexerGrpcSpotApi.fetchSubaccountOrdersList => ' + (e as any).message,
+        `IndexerGrpcSpotApi.fetchSubaccountOrdersList => ${(e as any).message}`,
       )
     }
   })
 
-  test('fetchSubaccountTradesList', async () => {
+  it('fetchSubaccountTradesList', async () => {
     try {
       const response = await indexerGrpcSpotApi.fetchSubaccountTradesList({
         marketId: market.marketId,
@@ -167,7 +168,7 @@ describe('IndexerGrpcSpotApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof IndexerGrpcSpotTransformer.subaccountTradesListResponseToTradesList
@@ -176,12 +177,12 @@ describe('IndexerGrpcSpotApi', () => {
       )
     } catch (e) {
       console.error(
-        'IndexerGrpcSpotApi.fetchSubaccountTradesList => ' + (e as any).message,
+        `IndexerGrpcSpotApi.fetchSubaccountTradesList => ${(e as any).message}`,
       )
     }
   })
 
-  test('fetchOrderbooksV2', async () => {
+  it('fetchOrderbooksV2', async () => {
     try {
       const response = await indexerGrpcSpotApi.fetchOrderbooksV2([
         market.marketId,
@@ -192,7 +193,7 @@ describe('IndexerGrpcSpotApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof IndexerGrpcSpotTransformer.orderbooksV2ResponseToOrderbooksV2
@@ -201,12 +202,12 @@ describe('IndexerGrpcSpotApi', () => {
       )
     } catch (e) {
       console.error(
-        'IndexerGrpcSpotApi.fetchOrderbooksV2 => ' + (e as any).message,
+        `IndexerGrpcSpotApi.fetchOrderbooksV2 => ${(e as any).message}`,
       )
     }
   })
 
-  test('fetchOrderbookV2', async () => {
+  it('fetchOrderbookV2', async () => {
     try {
       const response = await indexerGrpcSpotApi.fetchOrderbookV2(
         market.marketId,
@@ -221,7 +222,7 @@ describe('IndexerGrpcSpotApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof IndexerGrpcSpotTransformer.orderbookV2ResponseToOrderbookV2
@@ -230,7 +231,7 @@ describe('IndexerGrpcSpotApi', () => {
       )
     } catch (e) {
       console.error(
-        'IndexerGrpcSpotApi.fetchOrderbookV2 => ' + (e as any).message,
+        `IndexerGrpcSpotApi.fetchOrderbookV2 => ${(e as any).message}`,
       )
     }
   })

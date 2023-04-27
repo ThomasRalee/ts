@@ -1,5 +1,5 @@
 import { InjectivePeggyV1Beta1Genesis } from '@injectivelabs/core-proto-ts'
-import { Coin } from '@injectivelabs/ts-types'
+import { Coin } from '@thomasralee/ts-types'
 
 export type GrpcPeggyParams = InjectivePeggyV1Beta1Genesis.Params
 

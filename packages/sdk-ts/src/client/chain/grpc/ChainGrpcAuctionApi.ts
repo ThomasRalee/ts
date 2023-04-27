@@ -2,7 +2,7 @@ import { InjectiveAuctionV1Beta1Query } from '@injectivelabs/core-proto-ts'
 import {
   GrpcUnaryRequestException,
   UnspecifiedErrorCode,
-} from '@injectivelabs/exceptions'
+} from '@thomasralee/exceptions'
 import { getGrpcWebImpl } from '../../BaseGrpcWebConsumer'
 import { ChainGrpcAuctionTransformer } from '../transformers'
 import { ChainModule } from '../types'

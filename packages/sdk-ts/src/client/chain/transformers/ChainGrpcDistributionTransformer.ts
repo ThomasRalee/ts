@@ -1,5 +1,5 @@
 import { cosmosSdkDecToBigNumber } from '../../../utils'
-import { Coin } from '@injectivelabs/ts-types'
+import { Coin } from '@thomasralee/ts-types'
 import { DistributionModuleParams } from '../types/distribution'
 import { ValidatorRewards } from '../types/distribution'
 import { CosmosDistributionV1Beta1Query } from '@injectivelabs/core-proto-ts'

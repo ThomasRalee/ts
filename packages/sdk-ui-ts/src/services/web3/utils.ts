@@ -1,4 +1,4 @@
-import { TransactionOptions } from '@injectivelabs/ts-types'
+import { TransactionOptions } from '@thomasralee/ts-types'
 import { DEFAULT_GAS_PRICE, TX_DEFAULTS_GAS } from '../../constants'
 
 export const getTransactionOptions = (

@@ -2,7 +2,7 @@ import {
   HttpClient,
   DEFAULT_BLOCK_TIME_IN_SECONDS,
   DEFAULT_TX_BLOCK_INCLUSION_TIMEOUT_IN_MS,
-} from '@injectivelabs/utils'
+} from '@thomasralee/utils'
 import {
   BroadcastMode,
   TxInfoResponse,
@@ -16,7 +16,7 @@ import {
   HttpRequestException,
   TransactionException,
   UnspecifiedErrorCode,
-} from '@injectivelabs/exceptions'
+} from '@thomasralee/exceptions'
 import axios, { AxiosError } from 'axios'
 import { StatusCodes } from 'http-status-codes'
 import { TxResponse } from '../types/tx'

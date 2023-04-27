@@ -1,4 +1,4 @@
-import { ChainId, EthereumChainId } from '@injectivelabs/ts-types'
+import { ChainId, EthereumChainId } from '@thomasralee/ts-types'
 import { WalletStrategyArguments } from '../../types'
 
 export default abstract class BaseConcreteStrategy {

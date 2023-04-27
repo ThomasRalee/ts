@@ -2,7 +2,7 @@ import { ChainModule, OracleModuleParams } from '../types'
 import {
   GrpcUnaryRequestException,
   UnspecifiedErrorCode,
-} from '@injectivelabs/exceptions'
+} from '@thomasralee/exceptions'
 import { getGrpcWebImpl } from '../../BaseGrpcWebConsumer'
 import { InjectiveOracleV1Beta1Query } from '@injectivelabs/core-proto-ts'
 

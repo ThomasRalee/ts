@@ -1,9 +1,5 @@
-import {
-  BigNumber,
-  BigNumberInBase,
-  BigNumberInWei,
-} from '@injectivelabs/utils'
-import { isTestnet, Network } from '@injectivelabs/networks'
+import { BigNumber, BigNumberInBase, BigNumberInWei } from '@thomasralee/utils'
+import { isTestnet, Network } from '@thomasralee/networks'
 
 export const INJ_DENOM = 'inj'
 export const INJECTIVE_DENOM = 'inj'

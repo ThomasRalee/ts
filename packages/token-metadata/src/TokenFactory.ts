@@ -1,6 +1,6 @@
-import { Network } from '@injectivelabs/networks'
-import { GeneralException } from '@injectivelabs/exceptions'
-import { INJ_DENOM } from '@injectivelabs/utils'
+import { Network } from '@thomasralee/networks'
+import { GeneralException } from '@thomasralee/exceptions'
+import { INJ_DENOM } from '@thomasralee/utils'
 import { TokenInfo } from './TokenInfo'
 import { TokenMetaUtils } from './TokenMetaUtils'
 import {

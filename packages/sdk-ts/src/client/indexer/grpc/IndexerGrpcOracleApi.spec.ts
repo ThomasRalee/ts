@@ -1,4 +1,4 @@
-import { getNetworkEndpoints, Network } from '@injectivelabs/networks'
+import { getNetworkEndpoints, Network } from '@thomasralee/networks'
 import { IndexerGrpcOracleApi } from './IndexerGrpcOracleApi'
 
 const endpoints = getNetworkEndpoints(Network.MainnetK8s)
@@ -14,7 +14,7 @@ describe('IndexerGrpcOracleApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<typeof response>(response),
       )
     } catch (e) {
@@ -33,7 +33,7 @@ describe('IndexerGrpcOracleApi', () => {
       })
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<typeof response>(response),
       )
     } catch (e) {
@@ -52,7 +52,7 @@ describe('IndexerGrpcOracleApi', () => {
       })
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<typeof response>(response),
       )
     } catch (e) {

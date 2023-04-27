@@ -1,4 +1,4 @@
-import { Network } from '@injectivelabs/networks'
+import { Network } from '@thomasralee/networks'
 import { PrivateKey } from '../../../accounts/PrivateKey'
 import { MsgSend } from '../../bank'
 import { MsgBroadcasterWithPk } from './MsgBroadcasterWithPk'

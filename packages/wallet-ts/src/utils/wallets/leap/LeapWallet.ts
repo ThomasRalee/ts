@@ -6,17 +6,17 @@ import {
   ChainId,
   CosmosChainId,
   TestnetCosmosChainId,
-} from '@injectivelabs/ts-types'
-import { TxRestApi, TxResponse } from '@injectivelabs/sdk-ts'
+} from '@thomasralee/ts-types'
+import { TxRestApi, TxResponse } from '@thomasralee/sdk-ts'
 import {
   ErrorType,
   CosmosWalletException,
   TransactionException,
   UnspecifiedErrorCode,
   WalletErrorActionModule,
-} from '@injectivelabs/exceptions'
+} from '@thomasralee/exceptions'
 import { getEndpointsFromChainId } from '../cosmos/endpoints'
-import { CosmosTxV1Beta1Tx } from '@injectivelabs/sdk-ts'
+import { CosmosTxV1Beta1Tx } from '@thomasralee/sdk-ts'
 
 const $window = (typeof window !== 'undefined' ? window : {}) as Window & {
   leap?: Leap

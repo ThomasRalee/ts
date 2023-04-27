@@ -5,7 +5,7 @@
   "private": "true",
   "license": "Apache-2.0",
   "author": "@InjectiveLabs",
-  "repository": "https://github.com/InjectiveLabs/injective-ts",
+  "repository": "https://github.com/thomasralee/injective-ts",
   "workspaces": {
     "packages": [
       "packages/*"

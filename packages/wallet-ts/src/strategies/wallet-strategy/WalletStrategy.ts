@@ -1,11 +1,7 @@
-import {
-  AccountAddress,
-  ChainId,
-  EthereumChainId,
-} from '@injectivelabs/ts-types'
+import { AccountAddress, ChainId, EthereumChainId } from '@thomasralee/ts-types'
 import { DirectSignResponse } from '@cosmjs/proto-signing'
-import { GeneralException, WalletException } from '@injectivelabs/exceptions'
-import { TxRaw, TxResponse } from '@injectivelabs/sdk-ts'
+import { GeneralException, WalletException } from '@thomasralee/exceptions'
+import { TxRaw, TxResponse } from '@thomasralee/sdk-ts'
 import Metamask from './strategies/Metamask'
 import {
   ConcreteWalletStrategy,

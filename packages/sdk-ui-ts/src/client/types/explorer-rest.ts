@@ -1,5 +1,5 @@
-import { ChainId } from '@injectivelabs/ts-types'
-import { Network } from '@injectivelabs/networks'
+import { ChainId } from '@thomasralee/ts-types'
+import { Network } from '@thomasralee/networks'
 
 export interface UiTransactionMessage {
   type: string

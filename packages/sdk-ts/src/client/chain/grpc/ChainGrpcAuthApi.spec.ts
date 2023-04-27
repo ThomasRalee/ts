@@ -1,19 +1,19 @@
-import { getNetworkEndpoints, Network } from '@injectivelabs/networks'
+import { getNetworkEndpoints, Network } from '@thomasralee/networks'
+import { mockFactory } from '@thomasralee/test-utils'
 import { ChainGrpcAuthApi } from './ChainGrpcAuthApi'
-import { mockFactory } from '@injectivelabs/test-utils'
 import { ChainGrpcAuthTransformer } from '../transformers/ChainGrpcAuthTransformer'
 
-const injectiveAddress = mockFactory.injectiveAddress
+const { injectiveAddress } = mockFactory
 const endpoints = getNetworkEndpoints(Network.MainnetK8s)
 const chainGrpcAuthApi = new ChainGrpcAuthApi(endpoints.grpc)
 
-describe('ChainGrpcAuthApi', () => {
-  test('fetchModuleParams', async () => {
+describe('chainGrpcAuthApi', () => {
+  it('fetchModuleParams', async () => {
     try {
       const response = await chainGrpcAuthApi.fetchModuleParams()
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof ChainGrpcAuthTransformer.moduleParamsResponseToModuleParams
@@ -22,41 +22,41 @@ describe('ChainGrpcAuthApi', () => {
       )
     } catch (e) {
       console.error(
-        'ChainGrpcAuthApi.fetchModuleParams => ' + (e as any).message,
+        `ChainGrpcAuthApi.fetchModuleParams => ${(e as any).message}`,
       )
     }
   })
 
-  test('fetchAccount', async () => {
+  it('fetchAccount', async () => {
     try {
       const response = await chainGrpcAuthApi.fetchAccount(injectiveAddress)
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<typeof ChainGrpcAuthTransformer.grpcAccountToAccount>
         >(response),
       )
     } catch (e) {
       console.error(
-        'ChainGrpcAuthApi.fetchModuleState => ' + (e as any).message,
+        `ChainGrpcAuthApi.fetchModuleState => ${(e as any).message}`,
       )
     }
   })
 
-  test('fetchAccounts', async () => {
+  it('fetchAccounts', async () => {
     try {
       const response = await chainGrpcAuthApi.fetchAccounts({ limit: 1 })
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<typeof ChainGrpcAuthTransformer.accountsResponseToAccounts>
         >(response),
       )
     } catch (e) {
       console.error(
-        'ChainGrpcAuthApi.fetchCurrentBasket => ' + (e as any).message,
+        `ChainGrpcAuthApi.fetchCurrentBasket => ${(e as any).message}`,
       )
     }
   })

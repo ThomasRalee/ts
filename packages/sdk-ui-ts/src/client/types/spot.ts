@@ -4,12 +4,12 @@ import {
   SpotMarket as BaseUiSpotMarket,
   SpotLimitOrder as UiSpotLimitOrder,
   SpotOrderHistory as UiSpotOrderHistory,
-} from '@injectivelabs/sdk-ts'
+} from '@thomasralee/sdk-ts'
 import {
   ChronosSpotMarketSummary,
   AllChronosSpotMarketSummary,
-} from '@injectivelabs/sdk-ts'
-import { Token } from '@injectivelabs/token-metadata'
+} from '@thomasralee/sdk-ts'
+import { Token } from '@thomasralee/token-metadata'
 import { Change, MarketType } from './common'
 
 export interface UiBaseSpotMarket

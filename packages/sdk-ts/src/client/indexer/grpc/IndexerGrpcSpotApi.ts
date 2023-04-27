@@ -4,14 +4,14 @@ import {
   TradeExecutionType,
 } from '../../../types/exchange'
 import { PaginationOption } from '../../../types/pagination'
-import { OrderSide, OrderState } from '@injectivelabs/ts-types'
+import { OrderSide, OrderState } from '@thomasralee/ts-types'
 import { IndexerGrpcSpotTransformer } from '../transformers'
 import { IndexerModule } from '../types'
 import {
   GeneralException,
   UnspecifiedErrorCode,
   GrpcUnaryRequestException,
-} from '@injectivelabs/exceptions'
+} from '@thomasralee/exceptions'
 import { getGrpcIndexerWebImpl } from '../../BaseIndexerGrpcWebConsumer'
 import { InjectiveSpotExchangeRpc } from '@injectivelabs/indexer-proto-ts'
 

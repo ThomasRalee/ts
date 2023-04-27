@@ -1,7 +1,7 @@
 import {
   HttpRequestException,
   UnspecifiedErrorCode,
-} from '@injectivelabs/exceptions'
+} from '@thomasralee/exceptions'
 import BaseRestConsumer from '../../BaseRestConsumer'
 import { ChainModule, RestApiResponse } from '../types'
 import {

@@ -1,4 +1,4 @@
-import { getNetworkEndpoints, Network } from '@injectivelabs/networks'
+import { getNetworkEndpoints, Network } from '@thomasralee/networks'
 import { IndexerGrpcAuctionTransformer } from '../transformers'
 import { IndexerGrpcAuctionApi } from './IndexerGrpcAuctionApi'
 
@@ -11,7 +11,7 @@ describe('IndexerGrpcAuctionApi', () => {
       const response = await indexerGrpcAuctionApi.fetchAuction(-1)
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof IndexerGrpcAuctionTransformer.auctionResponseToAuction
@@ -34,7 +34,7 @@ describe('IndexerGrpcAuctionApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof IndexerGrpcAuctionTransformer.auctionsResponseToAuctions

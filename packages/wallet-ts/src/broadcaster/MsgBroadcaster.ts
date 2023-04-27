@@ -19,24 +19,24 @@ import {
   recoverTypedSignaturePubKey,
   CosmosTxV1Beta1Tx,
   CreateTransactionWithSignersArgs,
-} from '@injectivelabs/sdk-ts'
+} from '@thomasralee/sdk-ts'
 import type { DirectSignResponse } from '@cosmjs/proto-signing'
 import {
   BigNumberInBase,
   getStdFee,
   DEFAULT_BLOCK_TIMEOUT_HEIGHT,
-} from '@injectivelabs/utils'
+} from '@thomasralee/utils'
 import {
   GeneralException,
   TransactionException,
   UnspecifiedErrorCode,
-} from '@injectivelabs/exceptions'
+} from '@thomasralee/exceptions'
 import {
   getNetworkEndpoints,
   getNetworkInfo,
   NetworkEndpoints,
-} from '@injectivelabs/networks'
-import { ChainId, EthereumChainId } from '@injectivelabs/ts-types'
+} from '@thomasralee/networks'
+import { ChainId, EthereumChainId } from '@thomasralee/ts-types'
 import {
   getEthereumSignerAddress,
   getInjectiveSignerAddress,
@@ -655,11 +655,10 @@ export class MsgBroadcaster {
   private async simulateTxRaw(txRaw: CosmosTxV1Beta1Tx.TxRaw) {
     const { endpoints } = this
 
-    txRaw.signatures = [new Uint8Array(0)]
-
-    const simulationResponse = await new TxGrpcApi(endpoints.grpc).simulate(
-      txRaw,
-    )
+    const simulationResponse = await new TxGrpcApi(endpoints.grpc).simulate({
+      ...txRaw,
+      signatures: [new Uint8Array(0)],
+    })
 
     return simulationResponse
   }

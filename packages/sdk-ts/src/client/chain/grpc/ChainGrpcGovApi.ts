@@ -5,7 +5,7 @@ import { ChainModule } from '../types'
 import {
   GrpcUnaryRequestException,
   UnspecifiedErrorCode,
-} from '@injectivelabs/exceptions'
+} from '@thomasralee/exceptions'
 import { getGrpcWebImpl } from '../../BaseGrpcWebConsumer'
 import {
   CosmosGovV1Beta1Query,

@@ -1,6 +1,6 @@
 import { bech32 } from 'bech32'
 import { Address as EthereumUtilsAddress } from 'ethereumjs-util'
-import { ErrorType, GeneralException } from '@injectivelabs/exceptions'
+import { ErrorType, GeneralException } from '@thomasralee/exceptions'
 import {
   BECH32_ADDR_ACC_PREFIX,
   BECH32_ADDR_CONS_PREFIX,

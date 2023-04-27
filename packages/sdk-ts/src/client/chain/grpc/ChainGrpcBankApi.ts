@@ -5,7 +5,7 @@ import { ChainGrpcBankTransformer } from '../transformers'
 import {
   GrpcUnaryRequestException,
   UnspecifiedErrorCode,
-} from '@injectivelabs/exceptions'
+} from '@thomasralee/exceptions'
 import { ChainModule } from '../types'
 import { CosmosBankV1Beta1Query } from '@injectivelabs/core-proto-ts'
 

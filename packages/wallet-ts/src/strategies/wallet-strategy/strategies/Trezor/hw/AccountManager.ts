@@ -1,5 +1,5 @@
 /* eslint-disable class-methods-use-this */
-import { AccountAddress } from '@injectivelabs/ts-types'
+import { AccountAddress } from '@thomasralee/ts-types'
 import HDNode from 'hdkey'
 import { addHexPrefix, publicToAddress } from 'ethereumjs-util'
 import { TrezorWalletInfo } from '../../../types'

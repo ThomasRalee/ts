@@ -1,5 +1,5 @@
 import MsgCreateSpotMarketOrder from './MsgCreateSpotMarketOrder'
-import { mockFactory } from '@injectivelabs/test-utils'
+import { mockFactory } from '@thomasralee/test-utils'
 import snakecaseKeys from 'snakecase-keys'
 
 const params: MsgCreateSpotMarketOrder['params'] = {

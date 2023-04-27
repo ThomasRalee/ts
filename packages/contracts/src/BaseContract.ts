@@ -1,4 +1,4 @@
-import { EthereumChainId } from '@injectivelabs/ts-types'
+import { EthereumChainId } from '@thomasralee/ts-types'
 import { ethers } from 'ethers'
 
 export default class BaseContract<T extends any> {

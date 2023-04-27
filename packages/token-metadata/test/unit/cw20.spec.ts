@@ -1,4 +1,4 @@
-import { Network } from '@injectivelabs/networks'
+import { Network } from '@thomasralee/networks'
 import { Token, TokenFactory } from '../../src'
 
 describe('TokenMetadata', () => {
@@ -10,7 +10,7 @@ describe('TokenMetadata', () => {
 
     const tokenMeta = tokenFactory.toToken(LUNADenom) as Token
 
-    expect(tokenMeta.ibc).toEqual({
+    expect(tokenMeta.ibc).toStrictEqual({
       decimals: 6,
       isNative: true,
       baseDenom: 'uluna',
@@ -49,7 +49,7 @@ describe('TokenMetadata', () => {
     test('fetches correct value for peggyUsdc', () => {
       const tokenMeta = tokenFactory.toToken(USDCetFactoryDenom) as Token
 
-      expect(tokenMeta).toEqual(
+      expect(tokenMeta).toStrictEqual(
         expect.objectContaining({
           cw20: {
             decimals: 6,
@@ -65,7 +65,7 @@ describe('TokenMetadata', () => {
     test('fetches correct value for Usdcet', () => {
       const tokenMeta = tokenFactory.toToken(USDCetFactoryDenom) as Token
 
-      expect(tokenMeta).toEqual(
+      expect(tokenMeta).toStrictEqual(
         expect.objectContaining({
           cw20: {
             decimals: 6,
@@ -81,7 +81,7 @@ describe('TokenMetadata', () => {
     test('fetches correct value for Usdcso', () => {
       const tokenMeta = tokenFactory.toToken(USDCsoFactoryDenom) as Token
 
-      expect(tokenMeta).toEqual(
+      expect(tokenMeta).toStrictEqual(
         expect.objectContaining({
           cw20: {
             decimals: 6,
@@ -97,7 +97,7 @@ describe('TokenMetadata', () => {
     test('fetches correct decimal value for peggy format', () => {
       const tokenMeta = tokenFactory.toToken(USDCPeggyDenom) as Token
 
-      expect(tokenMeta).toEqual(
+      expect(tokenMeta).toStrictEqual(
         expect.objectContaining({
           erc20: {
             address: '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',

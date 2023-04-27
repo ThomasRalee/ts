@@ -3,7 +3,7 @@ import { PaginationOption } from '../../../types/pagination'
 import { paginationRequestFromPagination } from '../../../utils/pagination'
 import { ChainGrpcAuthTransformer } from '../transformers/ChainGrpcAuthTransformer'
 import { ChainModule } from '../types'
-import { GrpcUnaryRequestException } from '@injectivelabs/exceptions'
+import { GrpcUnaryRequestException } from '@thomasralee/exceptions'
 import { getGrpcWebImpl } from '../../BaseGrpcWebConsumer'
 
 /**

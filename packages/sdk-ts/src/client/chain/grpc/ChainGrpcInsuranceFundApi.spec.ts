@@ -1,21 +1,21 @@
-import { getNetworkEndpoints, Network } from '@injectivelabs/networks'
+import { getNetworkEndpoints, Network } from '@thomasralee/networks'
+import { mockFactory } from '@thomasralee/test-utils'
 import { ChainGrpcInsuranceFundApi } from './ChainGrpcInsuranceFundApi'
 import { ChainGrpcInsuranceFundTransformer } from '../transformers'
-import { mockFactory } from '@injectivelabs/test-utils'
 import { IndexerGrpcDerivativesApi } from '../../indexer'
 
 const endpoints = getNetworkEndpoints(Network.MainnetK8s)
 const chainGrpcIbcApi = new ChainGrpcInsuranceFundApi(endpoints.grpc)
-const injectiveAddress = mockFactory.injectiveAddress
-const derivativeMarketId = mockFactory.derivativeMarketId
+const { injectiveAddress } = mockFactory
+const { derivativeMarketId } = mockFactory
 
-describe('ChainGrpcIbcApi', () => {
-  test('fetchModuleParams', async () => {
+describe('chainGrpcIbcApi', () => {
+  it('fetchModuleParams', async () => {
     try {
       const response = await chainGrpcIbcApi.fetchModuleParams()
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof ChainGrpcInsuranceFundTransformer.moduleParamsResponseToModuleParams
@@ -24,12 +24,12 @@ describe('ChainGrpcIbcApi', () => {
       )
     } catch (e) {
       console.error(
-        'chainGrpcIbcApi.fetchModuleParams => ' + (e as any).message,
+        `chainGrpcIbcApi.fetchModuleParams => ${(e as any).message}`,
       )
     }
   })
 
-  test('fetchInsuranceFunds', async () => {
+  it('fetchInsuranceFunds', async () => {
     try {
       const response = await chainGrpcIbcApi.fetchInsuranceFunds()
 
@@ -38,7 +38,7 @@ describe('ChainGrpcIbcApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof ChainGrpcInsuranceFundTransformer.insuranceFundsResponseToInsuranceFunds
@@ -47,11 +47,11 @@ describe('ChainGrpcIbcApi', () => {
       )
     } catch (e) {
       console.error(
-        'chainGrpcIbcApi.fetchInsuranceFunds => ' + (e as any).message,
+        `chainGrpcIbcApi.fetchInsuranceFunds => ${(e as any).message}`,
       )
     }
   })
-  test('fetchInsuranceFund', async () => {
+  it('fetchInsuranceFund', async () => {
     const indexerGrpcDerivativesApi = new IndexerGrpcDerivativesApi(
       endpoints.indexer,
     )
@@ -63,7 +63,7 @@ describe('ChainGrpcIbcApi', () => {
       )
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof ChainGrpcInsuranceFundTransformer.insuranceFundResponseToInsuranceFund
@@ -72,11 +72,11 @@ describe('ChainGrpcIbcApi', () => {
       )
     } catch (e) {
       console.error(
-        'chainGrpcIbcApi.fetchInsuranceFund => ' + (e as any).message,
+        `chainGrpcIbcApi.fetchInsuranceFund => ${(e as any).message}`,
       )
     }
   })
-  test('fetchEstimatedRedemptions', async () => {
+  it('fetchEstimatedRedemptions', async () => {
     try {
       const response = await chainGrpcIbcApi.fetchEstimatedRedemptions({
         address: injectiveAddress,
@@ -84,7 +84,7 @@ describe('ChainGrpcIbcApi', () => {
       })
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof ChainGrpcInsuranceFundTransformer.estimatedRedemptionsResponseToEstimatedRedemptions
@@ -93,11 +93,11 @@ describe('ChainGrpcIbcApi', () => {
       )
     } catch (e) {
       console.error(
-        'chainGrpcIbcApi.fetchEstimatedRedemptions => ' + (e as any).message,
+        `chainGrpcIbcApi.fetchEstimatedRedemptions => ${(e as any).message}`,
       )
     }
   })
-  test('fetchPendingRedemptions', async () => {
+  it('fetchPendingRedemptions', async () => {
     try {
       const response = await chainGrpcIbcApi.fetchPendingRedemptions({
         address: injectiveAddress,
@@ -105,7 +105,7 @@ describe('ChainGrpcIbcApi', () => {
       })
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof ChainGrpcInsuranceFundTransformer.redemptionsResponseToRedemptions
@@ -114,7 +114,7 @@ describe('ChainGrpcIbcApi', () => {
       )
     } catch (e) {
       console.error(
-        'chainGrpcIbcApi.fetchPendingRedemptions => ' + (e as any).message,
+        `chainGrpcIbcApi.fetchPendingRedemptions => ${(e as any).message}`,
       )
     }
   })

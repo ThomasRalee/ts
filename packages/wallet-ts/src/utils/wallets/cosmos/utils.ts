@@ -1,4 +1,4 @@
-import { DEFAULT_TIMESTAMP_TIMEOUT_MS } from '@injectivelabs/utils'
+import { DEFAULT_TIMESTAMP_TIMEOUT_MS } from '@thomasralee/utils'
 import { Cosmos } from '@cosmostation/extension-client'
 import type { Keplr } from '@keplr-wallet/types'
 import { Wallet } from '../../../types/enums'

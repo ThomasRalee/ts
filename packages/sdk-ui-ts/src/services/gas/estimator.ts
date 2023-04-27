@@ -1,6 +1,6 @@
 import { Alchemy, Network } from 'alchemy-sdk'
-import { Network as InjNetwork } from '@injectivelabs/networks'
-import { HttpClient } from '@injectivelabs/utils'
+import { Network as InjNetwork } from '@thomasralee/networks'
+import { HttpClient } from '@thomasralee/utils'
 
 const HISTORICAL_BLOCKS = 20
 

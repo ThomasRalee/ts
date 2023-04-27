@@ -1,6 +1,6 @@
-import { getNetworkEndpoints, Network } from '@injectivelabs/networks'
-import { getGrpcTransport, ChainGrpcWasmApi } from '@injectivelabs/sdk-ts'
-import { GeneralException } from '@injectivelabs/exceptions'
+import { getNetworkEndpoints, Network } from '@thomasralee/networks'
+import { getGrpcTransport, ChainGrpcWasmApi } from '@thomasralee/sdk-ts'
+import { GeneralException } from '@thomasralee/exceptions'
 import {
   cosmos,
   redeemOnSolana,
@@ -33,7 +33,7 @@ import {
 import { BaseMessageSignerWalletAdapter } from '@solana/wallet-adapter-base'
 import { TransactionSignatureAndResponse } from '@injectivelabs/wormhole-sdk/lib/cjs/solana'
 import { zeroPad } from 'ethers/lib/utils'
-import { sleep } from '@injectivelabs/utils'
+import { sleep } from '@thomasralee/utils'
 import { WORMHOLE_CHAINS } from '../constants'
 import {
   WormholeSource,

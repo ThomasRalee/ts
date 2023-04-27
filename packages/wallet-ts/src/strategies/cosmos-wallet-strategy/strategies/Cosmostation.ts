@@ -1,23 +1,23 @@
 /* eslint-disable class-methods-use-this */
-import { CosmosChainId } from '@injectivelabs/ts-types'
+import { CosmosChainId } from '@thomasralee/ts-types'
 import {
   ErrorType,
   TransactionException,
   UnspecifiedErrorCode,
   CosmosWalletException,
-} from '@injectivelabs/exceptions'
+} from '@thomasralee/exceptions'
 import {
   TxResponse,
   createTxRawFromSigResponse,
   createSignDocFromTransaction,
-} from '@injectivelabs/sdk-ts'
+} from '@thomasralee/sdk-ts'
 import { DirectSignResponse, makeSignDoc } from '@cosmjs/proto-signing'
 import { cosmos, InstallError, Cosmos } from '@cosmostation/extension-client'
 import { SEND_TRANSACTION_MODE } from '@cosmostation/extension-client/cosmos'
 import { AminoSignResponse, StdSignDoc } from '@keplr-wallet/types'
 import { ConcreteCosmosWalletStrategy } from '../../types/strategy'
 import { WalletAction, WalletDeviceType } from '../../../types/enums'
-import { CosmosTxV1Beta1Tx } from '@injectivelabs/sdk-ts'
+import { CosmosTxV1Beta1Tx } from '@thomasralee/sdk-ts'
 
 const getChainNameFromChainId = (chainId: CosmosChainId) => {
   const [chainName] = chainId.split('-')

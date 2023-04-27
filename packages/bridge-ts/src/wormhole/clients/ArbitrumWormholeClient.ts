@@ -1,6 +1,6 @@
-import { Network } from '@injectivelabs/networks'
-import { getGrpcTransport } from '@injectivelabs/sdk-ts'
-import { GeneralException } from '@injectivelabs/exceptions'
+import { Network } from '@thomasralee/networks'
+import { getGrpcTransport } from '@thomasralee/sdk-ts'
+import { GeneralException } from '@thomasralee/exceptions'
 import {
   cosmos,
   approveEth,
@@ -14,7 +14,7 @@ import {
   getIsTransferCompletedEth,
   ethers_contracts as EthersContracts,
 } from '@injectivelabs/wormhole-sdk'
-import { BigNumber, sleep } from '@injectivelabs/utils'
+import { BigNumber, sleep } from '@thomasralee/utils'
 import { ethers } from 'ethers'
 import { zeroPad } from 'ethers/lib/utils'
 import { WORMHOLE_CHAINS } from '../constants'

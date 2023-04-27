@@ -1,5 +1,5 @@
 import { CosmosDistributionV1Beta1Distribution } from '@injectivelabs/core-proto-ts'
-import { Coin } from '@injectivelabs/ts-types'
+import { Coin } from '@thomasralee/ts-types'
 
 export interface DistributionModuleParams {
   communityTax: string

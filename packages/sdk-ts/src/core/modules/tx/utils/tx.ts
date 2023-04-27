@@ -1,5 +1,5 @@
 import { createAny, createAnyMessage } from './helpers'
-import { EthereumChainId } from '@injectivelabs/ts-types'
+import { EthereumChainId } from '@thomasralee/ts-types'
 import { Msgs } from '../../msgs'
 import {
   GoogleProtobufAny,

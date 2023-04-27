@@ -3,8 +3,8 @@ import {
   BridgeTransactionState,
   BridgingNetwork,
 } from './../types/bridge'
-import { convertTimestampToMilliseconds } from '@injectivelabs/utils'
-import { isTestnet, Network } from '@injectivelabs/networks'
+import { convertTimestampToMilliseconds } from '@thomasralee/utils'
+import { isTestnet, Network } from '@thomasralee/networks'
 import { UiBridgeTransaction, MintScanExplorerUrl } from './../types/bridge'
 import {
   PEGGY_GRAPH_URL,
@@ -13,8 +13,8 @@ import {
   PEGGY_DEVNET2_GRAPH_URL,
   PEGGY_TESTNET_GRAPH_URL,
 } from '../constants'
-import { CosmosChainId, TestnetCosmosChainId } from '@injectivelabs/ts-types'
-import { Token, tokenMetaUtils, TokenType } from '@injectivelabs/token-metadata'
+import { CosmosChainId, TestnetCosmosChainId } from '@thomasralee/ts-types'
+import { Token, tokenMetaUtils, TokenType } from '@thomasralee/token-metadata'
 import { TokenMetadataResponse } from 'alchemy-sdk'
 
 export const InProgressStates = [

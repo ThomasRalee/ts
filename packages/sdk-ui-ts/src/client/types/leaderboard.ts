@@ -1,3 +1,3 @@
-import { ChronosLeaderboardEntry as UiLeaderboardEntry } from '@injectivelabs/sdk-ts'
+import { ChronosLeaderboardEntry as UiLeaderboardEntry } from '@thomasralee/sdk-ts'
 
 export { UiLeaderboardEntry }

@@ -4,7 +4,7 @@ import {
   NormalizedCacheObject,
   ApolloQueryResult,
 } from '@apollo/client/core'
-import { HttpRequestException } from '@injectivelabs/exceptions'
+import { HttpRequestException } from '@thomasralee/exceptions'
 import { USER_DEPOSITS, USER_BRIDGE_DEPOSITS } from './queries'
 import { UserDepositResponse } from './types'
 

@@ -1,4 +1,4 @@
-import { ChainId, EthereumChainId } from '@injectivelabs/ts-types'
+import { ChainId, EthereumChainId } from '@thomasralee/ts-types'
 import { ChainInfo } from './types'
 
 export const mainnetChainInfo: ChainInfo = {

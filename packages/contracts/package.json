@@ -35,10 +35,10 @@
     "start": "node dist/index.js"
   },
   "dependencies": {
-    "@injectivelabs/exceptions": "^1.10.6",
-    "@injectivelabs/networks": "^1.10.8",
-    "@injectivelabs/ts-types": "^1.10.5",
-    "@injectivelabs/utils": "^1.10.6",
+    "@thomasralee/exceptions": "^1.10.6",
+    "@thomasralee/networks": "^1.10.8",
+    "@thomasralee/ts-types": "^1.10.5",
+    "@thomasralee/utils": "^1.10.6",
     "ethers": "^5.7.2",
     "link-module-alias": "^1.2.0",
     "shx": "^0.3.3"

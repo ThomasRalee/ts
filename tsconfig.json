@@ -3,37 +3,37 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@injectivelabs/ts-types": [
+      "@thomasralee/ts-types": [
         "packages/ts-types"
       ],
-      "@injectivelabs/exceptions": [
+      "@thomasralee/exceptions": [
         "packages/exceptions"
       ],
-      "@injectivelabs/utils": [
+      "@thomasralee/utils": [
         "packages/utils"
       ],
-      "@injectivelabs/networks": [
+      "@thomasralee/networks": [
         "packages/networks"
       ],
-      "@injectivelabs/test-utils": [
+      "@thomasralee/test-utils": [
         "packages/test-utils"
       ],
-      "@injectivelabs/wallet-ts": [
+      "@thomasralee/wallet-ts": [
         "packages/wallet-ts"
       ],
-      "@injectivelabs/contracts": [
+      "@thomasralee/contracts": [
         "packages/contracts"
       ],
-      "@injectivelabs/tokens-metadata": [
+      "@thomasralee/tokens-metadata": [
         "packages/tokens-metadata"
       ],
-      "@injectivelabs/sdk-ts": [
+      "@thomasralee/sdk-ts": [
         "packages/sdk-ts"
       ],
-      "@injectivelabs/sdk-ui-ts": [
+      "@thomasralee/sdk-ui-ts": [
         "packages/sdk-ui-ts"
       ],
-      "@injectivelabs/bridge-ts": [
+      "@thomasralee/bridge-ts": [
         "packages/bridge-ts"
       ]
     }

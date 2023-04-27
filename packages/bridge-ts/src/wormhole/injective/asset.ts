@@ -1,4 +1,4 @@
-import { ChainGrpcWasmApi } from '@injectivelabs/sdk-ts'
+import { ChainGrpcWasmApi } from '@thomasralee/sdk-ts'
 import { parseSmartContractStateResponse } from './utils'
 import {
   ChainId,

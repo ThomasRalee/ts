@@ -1,4 +1,4 @@
-import { BigNumber } from '@injectivelabs/utils'
+import { BigNumber } from '@thomasralee/utils'
 
 export const getDecimalsFromNumber = (number: number | string): number => {
   const UI_DEFAULT_MAX_DISPLAY_DECIMALS = 4

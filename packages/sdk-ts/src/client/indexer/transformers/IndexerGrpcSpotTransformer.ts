@@ -4,8 +4,8 @@ import {
   TradeDirection,
   TradeExecutionSide,
   TradeExecutionType,
-} from '@injectivelabs/ts-types'
-import { BigNumber } from '@injectivelabs/utils'
+} from '@thomasralee/ts-types'
+import { BigNumber } from '@thomasralee/utils'
 import {
   SpotTrade,
   SpotMarket,

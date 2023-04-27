@@ -1,4 +1,4 @@
-import { HttpRestClient } from '@injectivelabs/utils'
+import { HttpRestClient } from '@thomasralee/utils'
 
 /**
  * @hidden

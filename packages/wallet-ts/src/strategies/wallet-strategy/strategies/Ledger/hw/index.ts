@@ -2,7 +2,7 @@ import TransportWebHID from '@ledgerhq/hw-transport-webhid'
 import TransportWebUSB from '@ledgerhq/hw-transport-webusb'
 import type EthereumApp from '@ledgerhq/hw-app-eth'
 import type Transport from '@ledgerhq/hw-transport'
-import { LedgerException } from '@injectivelabs/exceptions'
+import { LedgerException } from '@thomasralee/exceptions'
 import AccountManager from './AccountManager'
 
 export default class LedgerTransport {

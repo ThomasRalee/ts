@@ -1,4 +1,4 @@
-import { GeneralException } from '@injectivelabs/exceptions'
+import { GeneralException } from '@thomasralee/exceptions'
 import { isIbcTokenCanonical } from './ibc'
 import { IbcToken, Token, TokenMeta, TokenType } from './types'
 import { getTokenTypeFromDenom } from './utils'

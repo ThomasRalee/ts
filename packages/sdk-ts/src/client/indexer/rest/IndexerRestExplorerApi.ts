@@ -23,11 +23,11 @@ import {
 import {
   HttpRequestException,
   UnspecifiedErrorCode,
-} from '@injectivelabs/exceptions'
+} from '@thomasralee/exceptions'
 import { IndexerRestExplorerTransformer } from '../transformers'
 import { Block, ExplorerValidator } from '../types/explorer'
 import { IndexerModule } from '../types'
-import { MsgStatus, MsgType } from '@injectivelabs/ts-types'
+import { MsgStatus, MsgType } from '@thomasralee/ts-types'
 
 const explorerEndpointSuffix = 'api/explorer/v1'
 

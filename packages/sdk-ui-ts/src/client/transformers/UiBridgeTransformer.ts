@@ -1,8 +1,8 @@
 import {
   BigNumberInBase,
   convertTimestampToMilliseconds,
-} from '@injectivelabs/utils'
-import { Network } from '@injectivelabs/networks'
+} from '@thomasralee/utils'
+import { Network } from '@thomasralee/networks'
 import {
   CosmosTxResponse,
   KeplrWalletEvents,
@@ -21,7 +21,7 @@ import {
   UiBridgeTransaction,
   BridgeTransactionState,
 } from './../../types/bridge'
-import { UserDeposit } from '@injectivelabs/sdk-ts'
+import { UserDeposit } from '@thomasralee/sdk-ts'
 import {
   FailedStates,
   getExplorerUrl,
@@ -41,7 +41,7 @@ import {
   findEthereumTransactionByTxHashes,
   findIBCTransactionByTimeoutTimestamp,
 } from './../../utils/bridge'
-import { getInjectiveAddress } from '@injectivelabs/sdk-ts'
+import { getInjectiveAddress } from '@thomasralee/sdk-ts'
 import { UiBridgeTransactionWithToken } from '../../types'
 
 export const convertCosmosWalletToUiBridgeTransaction = async ({

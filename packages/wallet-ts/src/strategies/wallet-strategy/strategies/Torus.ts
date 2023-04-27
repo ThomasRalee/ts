@@ -1,20 +1,16 @@
 /* eslint-disable class-methods-use-this */
-import { sleep } from '@injectivelabs/utils'
-import {
-  AccountAddress,
-  ChainId,
-  EthereumChainId,
-} from '@injectivelabs/ts-types'
+import { sleep } from '@thomasralee/utils'
+import { AccountAddress, ChainId, EthereumChainId } from '@thomasralee/ts-types'
 import {
   ErrorType,
   MetamaskException,
   TransactionException,
   UnspecifiedErrorCode,
   WalletException,
-} from '@injectivelabs/exceptions'
+} from '@thomasralee/exceptions'
 import TorusWallet from '@toruslabs/torus-embed'
 import { DirectSignResponse } from '@cosmjs/proto-signing'
-import { TxGrpcApi, TxRaw, TxResponse } from '@injectivelabs/sdk-ts'
+import { TxGrpcApi, TxRaw, TxResponse } from '@thomasralee/sdk-ts'
 import { ConcreteWalletStrategy, EthereumWalletStrategyArgs } from '../../types'
 import BaseConcreteStrategy from './Base'
 import { WalletAction, WalletDeviceType } from '../../../types/enums'

@@ -1,4 +1,4 @@
-import { AccountAddress } from '@injectivelabs/ts-types'
+import { AccountAddress } from '@thomasralee/ts-types'
 import { publicToAddress, addHexPrefix } from 'ethereumjs-util'
 import HDNode from 'hdkey'
 import type EthereumApp from '@ledgerhq/hw-app-eth'

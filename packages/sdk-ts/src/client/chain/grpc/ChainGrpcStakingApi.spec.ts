@@ -1,43 +1,44 @@
-import { getNetworkEndpoints, Network } from '@injectivelabs/networks'
+import { getNetworkEndpoints, Network } from '@thomasralee/networks'
+import { mockFactory } from '@thomasralee/test-utils'
 import { ChainGrpcStakingApi } from './ChainGrpcStakingApi'
-import { mockFactory } from '@injectivelabs/test-utils'
 import { ChainGrpcStakingTransformer } from '../transformers'
 import { Delegation, Validator } from '../types'
 
-const injectiveAddress = mockFactory.injectiveAddress
+const { injectiveAddress } = mockFactory
 const endpoints = getNetworkEndpoints(Network.MainnetK8s)
 const chainGrpcStakingApi = new ChainGrpcStakingApi(endpoints.grpc)
 
-describe('ChainGrpcStakingApi', () => {
+describe('chainGrpcStakingApi', () => {
   let validator: Validator
   let delegation: Delegation
 
-  beforeAll(async () => {
-    return new Promise<void>(async (resolve) => {
-      const chainGrpcStakingApi = new ChainGrpcStakingApi(endpoints.grpc)
+  beforeAll(
+    async () =>
+      new Promise<void>(async (resolve) => {
+        const chainGrpcStakingApi = new ChainGrpcStakingApi(endpoints.grpc)
 
-      const { validators } = await chainGrpcStakingApi.fetchValidators()
+        const { validators } = await chainGrpcStakingApi.fetchValidators()
 
-      validator = validators[0]
+        validator = validators[0]
 
-      const { delegations } =
-        await chainGrpcStakingApi.fetchValidatorDelegations({
-          validatorAddress: validator.operatorAddress,
-          pagination: { limit: 1 },
-        })
+        const { delegations } =
+          await chainGrpcStakingApi.fetchValidatorDelegations({
+            validatorAddress: validator.operatorAddress,
+            pagination: { limit: 1 },
+          })
 
-      delegation = delegations[0]
+        delegation = delegations[0]
 
-      return resolve()
-    })
-  })
+        return resolve()
+      }),
+  )
 
-  test('fetchModuleParams', async () => {
+  it('fetchModuleParams', async () => {
     try {
       const response = await chainGrpcStakingApi.fetchModuleParams()
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof ChainGrpcStakingTransformer.moduleParamsResponseToModuleParams
@@ -46,27 +47,27 @@ describe('ChainGrpcStakingApi', () => {
       )
     } catch (e) {
       console.error(
-        'ChainGrpcStakingApi.fetchModuleParams => ' + (e as any).message,
+        `ChainGrpcStakingApi.fetchModuleParams => ${(e as any).message}`,
       )
     }
   })
 
-  test('fetchPool', async () => {
+  it('fetchPool', async () => {
     try {
       const response = await chainGrpcStakingApi.fetchPool()
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<typeof ChainGrpcStakingTransformer.poolResponseToPool>
         >(response),
       )
     } catch (e) {
-      console.error('ChainGrpcStakingApi.fetchPool => ' + (e as any).message)
+      console.error(`ChainGrpcStakingApi.fetchPool => ${(e as any).message}`)
     }
   })
 
-  test('fetchValidators', async () => {
+  it('fetchValidators', async () => {
     try {
       const response = await chainGrpcStakingApi.fetchValidators()
 
@@ -75,7 +76,7 @@ describe('ChainGrpcStakingApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof ChainGrpcStakingTransformer.validatorsResponseToValidators
@@ -84,19 +85,19 @@ describe('ChainGrpcStakingApi', () => {
       )
     } catch (e) {
       console.error(
-        'ChainGrpcStakingApi.fetchValidators => ' + (e as any).message,
+        `ChainGrpcStakingApi.fetchValidators => ${(e as any).message}`,
       )
     }
   })
 
-  test('fetchValidator', async () => {
+  it('fetchValidator', async () => {
     try {
       const response = await chainGrpcStakingApi.fetchValidator(
         validator.operatorAddress,
       )
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof ChainGrpcStakingTransformer.validatorResponseToValidator
@@ -105,12 +106,12 @@ describe('ChainGrpcStakingApi', () => {
       )
     } catch (e) {
       console.error(
-        'ChainGrpcStakingApi.fetchValidator => ' + (e as any).message,
+        `ChainGrpcStakingApi.fetchValidator => ${(e as any).message}`,
       )
     }
   })
 
-  test('fetchValidatorDelegations', async () => {
+  it('fetchValidatorDelegations', async () => {
     try {
       const response = await chainGrpcStakingApi.fetchValidatorDelegations({
         validatorAddress: validator.operatorAddress,
@@ -124,7 +125,7 @@ describe('ChainGrpcStakingApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof ChainGrpcStakingTransformer.delegationsResponseToDelegations
@@ -133,13 +134,14 @@ describe('ChainGrpcStakingApi', () => {
       )
     } catch (e) {
       console.error(
-        'ChainGrpcStakingApi.fetchValidatorDelegations => ' +
-          (e as any).message,
+        `ChainGrpcStakingApi.fetchValidatorDelegations => ${
+          (e as any).message
+        }`,
       )
     }
   })
 
-  test('fetchValidatorDelegationsNoThrow', async () => {
+  it('fetchValidatorDelegationsNoThrow', async () => {
     try {
       const response =
         await chainGrpcStakingApi.fetchValidatorDelegationsNoThrow({
@@ -154,7 +156,7 @@ describe('ChainGrpcStakingApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof ChainGrpcStakingTransformer.delegationsResponseToDelegations
@@ -163,13 +165,14 @@ describe('ChainGrpcStakingApi', () => {
       )
     } catch (e) {
       console.error(
-        'ChainGrpcStakingApi.fetchValidatorDelegationsNoThrow => ' +
-          (e as any).message,
+        `ChainGrpcStakingApi.fetchValidatorDelegationsNoThrow => ${
+          (e as any).message
+        }`,
       )
     }
   })
 
-  test('fetchValidatorUnbondingDelegations', async () => {
+  it('fetchValidatorUnbondingDelegations', async () => {
     try {
       const response =
         await chainGrpcStakingApi.fetchValidatorUnbondingDelegations({
@@ -184,7 +187,7 @@ describe('ChainGrpcStakingApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof ChainGrpcStakingTransformer.unBondingDelegationsResponseToUnBondingDelegations
@@ -193,13 +196,14 @@ describe('ChainGrpcStakingApi', () => {
       )
     } catch (e) {
       console.error(
-        'ChainGrpcStakingApi.fetchValidatorUnbondingDelegations => ' +
-          (e as any).message,
+        `ChainGrpcStakingApi.fetchValidatorUnbondingDelegations => ${
+          (e as any).message
+        }`,
       )
     }
   })
 
-  test('fetchValidatorUnbondingDelegationsNoThrow', async () => {
+  it('fetchValidatorUnbondingDelegationsNoThrow', async () => {
     try {
       const response =
         await chainGrpcStakingApi.fetchValidatorUnbondingDelegationsNoThrow({
@@ -214,7 +218,7 @@ describe('ChainGrpcStakingApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof ChainGrpcStakingTransformer.unBondingDelegationsResponseToUnBondingDelegations
@@ -223,13 +227,14 @@ describe('ChainGrpcStakingApi', () => {
       )
     } catch (e) {
       console.error(
-        'ChainGrpcStakingApi.fetchValidatorUnbondingDelegationsNoThrow => ' +
-          (e as any).message,
+        `ChainGrpcStakingApi.fetchValidatorUnbondingDelegationsNoThrow => ${
+          (e as any).message
+        }`,
       )
     }
   })
 
-  test.skip('fetchDelegation', async () => {
+  it.skip('fetchDelegation', async () => {
     try {
       const response = await chainGrpcStakingApi.fetchDelegation({
         injectiveAddress: delegation.delegation.delegatorAddress,
@@ -237,7 +242,7 @@ describe('ChainGrpcStakingApi', () => {
       })
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof ChainGrpcStakingTransformer.delegationResponseToDelegation
@@ -246,12 +251,12 @@ describe('ChainGrpcStakingApi', () => {
       )
     } catch (e) {
       console.error(
-        'ChainGrpcStakingApi.fetchDelegation => ' + (e as any).message,
+        `ChainGrpcStakingApi.fetchDelegation => ${(e as any).message}`,
       )
     }
   })
 
-  test('fetchDelegations', async () => {
+  it('fetchDelegations', async () => {
     try {
       const response = await chainGrpcStakingApi.fetchDelegations({
         injectiveAddress: delegation.delegation.delegatorAddress,
@@ -265,7 +270,7 @@ describe('ChainGrpcStakingApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof ChainGrpcStakingTransformer.delegationsResponseToDelegations
@@ -274,12 +279,12 @@ describe('ChainGrpcStakingApi', () => {
       )
     } catch (e) {
       console.error(
-        'ChainGrpcStakingApi.fetchDelegations => ' + (e as any).message,
+        `ChainGrpcStakingApi.fetchDelegations => ${(e as any).message}`,
       )
     }
   })
 
-  test('fetchDelegationsNoThrow', async () => {
+  it('fetchDelegationsNoThrow', async () => {
     try {
       const response = await chainGrpcStakingApi.fetchDelegationsNoThrow({
         injectiveAddress: delegation.delegation.delegatorAddress,
@@ -293,7 +298,7 @@ describe('ChainGrpcStakingApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof ChainGrpcStakingTransformer.delegationsResponseToDelegations
@@ -302,12 +307,12 @@ describe('ChainGrpcStakingApi', () => {
       )
     } catch (e) {
       console.error(
-        'ChainGrpcStakingApi.fetchDelegationsNoThrow => ' + (e as any).message,
+        `ChainGrpcStakingApi.fetchDelegationsNoThrow => ${(e as any).message}`,
       )
     }
   })
 
-  test('fetchDelegators', async () => {
+  it('fetchDelegators', async () => {
     try {
       const response = await chainGrpcStakingApi.fetchDelegators({
         validatorAddress: validator.operatorAddress,
@@ -321,7 +326,7 @@ describe('ChainGrpcStakingApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof ChainGrpcStakingTransformer.delegationsResponseToDelegations
@@ -330,12 +335,12 @@ describe('ChainGrpcStakingApi', () => {
       )
     } catch (e) {
       console.error(
-        'ChainGrpcStakingApi.fetchDelegators => ' + (e as any).message,
+        `ChainGrpcStakingApi.fetchDelegators => ${(e as any).message}`,
       )
     }
   })
 
-  test('fetchDelegatorsNoThrow', async () => {
+  it('fetchDelegatorsNoThrow', async () => {
     try {
       const response = await chainGrpcStakingApi.fetchDelegatorsNoThrow({
         validatorAddress: validator.operatorAddress,
@@ -349,7 +354,7 @@ describe('ChainGrpcStakingApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof ChainGrpcStakingTransformer.delegationsResponseToDelegations
@@ -358,12 +363,12 @@ describe('ChainGrpcStakingApi', () => {
       )
     } catch (e) {
       console.error(
-        'ChainGrpcStakingApi.fetchDelegatorsNoThrow => ' + (e as any).message,
+        `ChainGrpcStakingApi.fetchDelegatorsNoThrow => ${(e as any).message}`,
       )
     }
   })
 
-  test('fetchUnbondingDelegations', async () => {
+  it('fetchUnbondingDelegations', async () => {
     try {
       const response = await chainGrpcStakingApi.fetchUnbondingDelegations({
         injectiveAddress,
@@ -377,7 +382,7 @@ describe('ChainGrpcStakingApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof ChainGrpcStakingTransformer.unBondingDelegationsResponseToUnBondingDelegations
@@ -386,13 +391,14 @@ describe('ChainGrpcStakingApi', () => {
       )
     } catch (e) {
       console.error(
-        'ChainGrpcStakingApi.fetchUnbondingDelegations => ' +
-          (e as any).message,
+        `ChainGrpcStakingApi.fetchUnbondingDelegations => ${
+          (e as any).message
+        }`,
       )
     }
   })
 
-  test('fetchUnbondingDelegationsNoThrow', async () => {
+  it('fetchUnbondingDelegationsNoThrow', async () => {
     try {
       const response =
         await chainGrpcStakingApi.fetchUnbondingDelegationsNoThrow({
@@ -407,7 +413,7 @@ describe('ChainGrpcStakingApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof ChainGrpcStakingTransformer.unBondingDelegationsResponseToUnBondingDelegations
@@ -416,13 +422,14 @@ describe('ChainGrpcStakingApi', () => {
       )
     } catch (e) {
       console.error(
-        'ChainGrpcStakingApi.fetchUnbondingDelegationsNoThrow => ' +
-          (e as any).message,
+        `ChainGrpcStakingApi.fetchUnbondingDelegationsNoThrow => ${
+          (e as any).message
+        }`,
       )
     }
   })
 
-  test('fetchReDelegations', async () => {
+  it('fetchReDelegations', async () => {
     try {
       const response = await chainGrpcStakingApi.fetchReDelegations({
         injectiveAddress,
@@ -436,7 +443,7 @@ describe('ChainGrpcStakingApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof ChainGrpcStakingTransformer.reDelegationsResponseToReDelegations
@@ -445,12 +452,12 @@ describe('ChainGrpcStakingApi', () => {
       )
     } catch (e) {
       console.error(
-        'ChainGrpcStakingApi.fetchReDelegations => ' + (e as any).message,
+        `ChainGrpcStakingApi.fetchReDelegations => ${(e as any).message}`,
       )
     }
   })
 
-  test('fetchReDelegationsNoThrow', async () => {
+  it('fetchReDelegationsNoThrow', async () => {
     try {
       const response = await chainGrpcStakingApi.fetchReDelegationsNoThrow({
         injectiveAddress,
@@ -464,7 +471,7 @@ describe('ChainGrpcStakingApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof ChainGrpcStakingTransformer.reDelegationsResponseToReDelegations
@@ -473,8 +480,9 @@ describe('ChainGrpcStakingApi', () => {
       )
     } catch (e) {
       console.error(
-        'ChainGrpcStakingApi.fetchReDelegationsNoThrow => ' +
-          (e as any).message,
+        `ChainGrpcStakingApi.fetchReDelegationsNoThrow => ${
+          (e as any).message
+        }`,
       )
     }
   })

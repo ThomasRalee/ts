@@ -1,24 +1,15 @@
 /* eslint-disable class-methods-use-this */
-import { sleep } from '@injectivelabs/utils'
-import {
-  AccountAddress,
-  ChainId,
-  EthereumChainId,
-} from '@injectivelabs/ts-types'
+import { sleep } from '@thomasralee/utils'
+import { AccountAddress, ChainId, EthereumChainId } from '@thomasralee/ts-types'
 import {
   WalletException,
   ErrorType,
   MetamaskException,
   UnspecifiedErrorCode,
   TransactionException,
-} from '@injectivelabs/exceptions'
+} from '@thomasralee/exceptions'
 import { DirectSignResponse } from '@cosmjs/proto-signing'
-import {
-  TxGrpcApi,
-  TxRaw,
-  TxResponse,
-  isServerSide,
-} from '@injectivelabs/sdk-ts'
+import { TxGrpcApi, TxRaw, TxResponse, isServerSide } from '@thomasralee/sdk-ts'
 import { ConcreteWalletStrategy, EthereumWalletStrategyArgs } from '../../types'
 import {
   Eip1993ProviderWithMetamask,

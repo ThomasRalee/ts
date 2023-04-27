@@ -1,11 +1,11 @@
-import { EthereumChainId } from '@injectivelabs/ts-types'
-import { Network } from '@injectivelabs/networks'
-import { BigNumberInWei } from '@injectivelabs/utils'
+import { EthereumChainId } from '@thomasralee/ts-types'
+import { Network } from '@thomasralee/networks'
+import { BigNumberInWei } from '@thomasralee/utils'
 import {
   Erc20Contract,
   PeggyContract,
   getContractAddressesForNetworkOrThrow,
-} from '@injectivelabs/contracts'
+} from '@thomasralee/contracts'
 import { GAS_LIMIT_MULTIPLIER, INJ_DENOM, TIP_IN_GWEI } from '../../constants'
 import { getTransactionOptions, peggyDenomToContractAddress } from './utils'
 import { getKeyFromRpcUrl } from '../../utils/alchemy'

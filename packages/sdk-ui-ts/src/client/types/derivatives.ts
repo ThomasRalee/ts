@@ -8,12 +8,12 @@ import {
   BinaryOptionsMarket as BaseUiBinaryOptionsMarket,
   Orderbook as UiDerivativeOrderbook,
   DerivativeOrderHistory as UiDerivativeOrderHistory,
-} from '@injectivelabs/sdk-ts'
+} from '@thomasralee/sdk-ts'
 import {
   ChronosDerivativeMarketSummary,
   AllChronosDerivativeMarketSummary,
-} from '@injectivelabs/sdk-ts'
-import { Token } from '@injectivelabs/token-metadata'
+} from '@thomasralee/sdk-ts'
+import { Token } from '@thomasralee/token-metadata'
 import { Change, MarketType } from './common'
 
 export interface BaseDerivativeMarket

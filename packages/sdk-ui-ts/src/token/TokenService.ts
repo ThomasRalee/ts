@@ -1,10 +1,10 @@
-import { Network, NetworkEndpoints } from '@injectivelabs/networks'
-import { ChainId, Coin } from '@injectivelabs/ts-types'
+import { Network, NetworkEndpoints } from '@thomasralee/networks'
+import { ChainId, Coin } from '@thomasralee/ts-types'
 import {
   DenomClient,
   ContractAccountBalance,
   ExplorerCW20BalanceWithToken,
-} from '@injectivelabs/sdk-ts'
+} from '@thomasralee/sdk-ts'
 import {
   BankBalances,
   UiBaseSpotMarket,
@@ -23,12 +23,8 @@ import {
   SubaccountBalanceWithToken,
   UiBridgeTransactionWithToken,
 } from '../types'
-import {
-  Token,
-  TokenType,
-  getUnknownToken,
-} from '@injectivelabs/token-metadata'
-import { awaitForAll } from '@injectivelabs/utils'
+import { Token, TokenType, getUnknownToken } from '@thomasralee/token-metadata'
+import { awaitForAll } from '@thomasralee/utils'
 
 /**
  * With the TokenService class we can convert objects

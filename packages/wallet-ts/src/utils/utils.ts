@@ -1,4 +1,4 @@
-import { getEthereumAddress, getInjectiveAddress } from '@injectivelabs/sdk-ts'
+import { getEthereumAddress, getInjectiveAddress } from '@thomasralee/sdk-ts'
 
 export const getInjectiveSignerAddress = (address: string | undefined) => {
   if (!address) {

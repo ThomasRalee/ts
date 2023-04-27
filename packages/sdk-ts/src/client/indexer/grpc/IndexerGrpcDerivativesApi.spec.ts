@@ -1,6 +1,6 @@
-import { getNetworkEndpoints, Network } from '@injectivelabs/networks'
+import { getNetworkEndpoints, Network } from '@thomasralee/networks'
 import { getDefaultSubaccountId } from '../../../utils/address'
-import { mockFactory } from '@injectivelabs/test-utils'
+import { mockFactory } from '@thomasralee/test-utils'
 import { IndexerGrpcDerivativeTransformer } from '../transformers'
 import { DerivativeMarket } from '../types'
 import { IndexerGrpcDerivativesApi } from './IndexerGrpcDerivativesApi'
@@ -29,7 +29,7 @@ describe('IndexerGrpcDerivativeApi', () => {
       const response = await indexerGrpcDerivativesApi.fetchMarkets()
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof IndexerGrpcDerivativeTransformer.marketsResponseToMarkets
@@ -50,7 +50,7 @@ describe('IndexerGrpcDerivativeApi', () => {
       )
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof IndexerGrpcDerivativeTransformer.marketResponseToMarket
@@ -75,7 +75,7 @@ describe('IndexerGrpcDerivativeApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof IndexerGrpcDerivativeTransformer.ordersResponseToOrders
@@ -103,7 +103,7 @@ describe('IndexerGrpcDerivativeApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof IndexerGrpcDerivativeTransformer.orderHistoryResponseToOrderHistory
@@ -131,7 +131,7 @@ describe('IndexerGrpcDerivativeApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof IndexerGrpcDerivativeTransformer.tradesResponseToTrades
@@ -161,7 +161,7 @@ describe('IndexerGrpcDerivativeApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof IndexerGrpcDerivativeTransformer.ordersResponseToOrders
@@ -192,7 +192,7 @@ describe('IndexerGrpcDerivativeApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof IndexerGrpcDerivativeTransformer.subaccountTradesListResponseToSubaccountTradesList
@@ -218,7 +218,7 @@ describe('IndexerGrpcDerivativeApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof IndexerGrpcDerivativeTransformer.orderbooksV2ResponseToOrderbooksV2
@@ -247,7 +247,7 @@ describe('IndexerGrpcDerivativeApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof IndexerGrpcDerivativeTransformer.orderbookV2ResponseToOrderbookV2
@@ -273,7 +273,7 @@ describe('IndexerGrpcDerivativeApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof IndexerGrpcDerivativeTransformer.fundingRatesResponseToFundingRates
@@ -299,7 +299,7 @@ describe('IndexerGrpcDerivativeApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof IndexerGrpcDerivativeTransformer.fundingPaymentsResponseToFundingPayments
@@ -326,7 +326,7 @@ describe('IndexerGrpcDerivativeApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof IndexerGrpcDerivativeTransformer.positionsResponseToPositions

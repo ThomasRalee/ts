@@ -1,5 +1,5 @@
-import { Network } from '@injectivelabs/networks'
-import { DEFAULT_STD_FEE, DEFAULT_STD_FEE_BY_DENOM } from '@injectivelabs/utils'
+import { Network } from '@thomasralee/networks'
+import { DEFAULT_STD_FEE, DEFAULT_STD_FEE_BY_DENOM } from '@thomasralee/utils'
 
 export const BECH32_PUBKEY_ACC_PREFIX = 'injpub'
 export const BECH32_PUBKEY_VAL_PREFIX = 'injvaloperpub'

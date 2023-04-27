@@ -1,4 +1,4 @@
-import { BigNumberInWei } from '@injectivelabs/utils'
+import { BigNumberInWei } from '@thomasralee/utils'
 import {
   GrpcValidator,
   GrpcValidatorCommission,

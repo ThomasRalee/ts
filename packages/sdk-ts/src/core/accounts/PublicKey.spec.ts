@@ -7,7 +7,7 @@ describe('PublicKey', () => {
   it('returns the correct PublicKey is derived from a private key', () => {
     const publicKey = PublicKey.fromHex(privateKey)
 
-    expect(publicKey.toBase64()).toEqual(
+    expect(publicKey.toBase64()).toStrictEqual(
       'A13cTVZCuTg+Lwh7LuiLcgf2KG68nzEOnfFAbszCwxgT',
     )
   })
@@ -15,7 +15,7 @@ describe('PublicKey', () => {
   it('returns the correct PublicKey is derived from a private key starting with 0x', () => {
     const publicKey = PublicKey.fromHex('0x' + privateKey)
 
-    expect(publicKey.toBase64()).toEqual(
+    expect(publicKey.toBase64()).toStrictEqual(
       'A13cTVZCuTg+Lwh7LuiLcgf2KG68nzEOnfFAbszCwxgT',
     )
   })
@@ -23,7 +23,7 @@ describe('PublicKey', () => {
   it('returns the correct Ethereum address is derived from a PublicKey', () => {
     const publicKey = PublicKey.fromHex(privateKey)
 
-    expect(publicKey.toAddress().toHex()).toEqual(
+    expect(publicKey.toAddress().toHex()).toStrictEqual(
       '0xbdaedec95d563fb05240d6e01821008454c24c36',
     )
   })
@@ -31,7 +31,7 @@ describe('PublicKey', () => {
   it('return the correct Injective address is derived from a PublicKey', () => {
     const publicKey = PublicKey.fromHex(privateKey)
 
-    expect(publicKey.toAddress().toBech32()).toEqual(
+    expect(publicKey.toAddress().toBech32()).toStrictEqual(
       'inj1hkhdaj2a2clmq5jq6mspsggqs32vynpk228q3r',
     )
   })
@@ -41,7 +41,7 @@ describe('PublicKey', () => {
       'A13cTVZCuTg+Lwh7LuiLcgf2KG68nzEOnfFAbszCwxgT',
     )
 
-    expect(publicKey.toBase64()).toEqual(
+    expect(publicKey.toBase64()).toStrictEqual(
       'A13cTVZCuTg+Lwh7LuiLcgf2KG68nzEOnfFAbszCwxgT',
     )
   })

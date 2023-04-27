@@ -1,5 +1,5 @@
 import { grpc } from '@injectivelabs/grpc-web'
-import { GrpcUnaryRequestException } from '@injectivelabs/exceptions'
+import { GrpcUnaryRequestException } from '@thomasralee/exceptions'
 import { isBrowser } from '../utils/helpers'
 import { getGrpcTransport } from '../utils/grpc'
 

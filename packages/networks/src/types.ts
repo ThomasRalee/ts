@@ -1,4 +1,4 @@
-import { ChainId, EthereumChainId } from '@injectivelabs/ts-types'
+import { ChainId, EthereumChainId } from '@thomasralee/ts-types'
 
 export enum Network {
   MainnetK8s = 'mainnetK8s',

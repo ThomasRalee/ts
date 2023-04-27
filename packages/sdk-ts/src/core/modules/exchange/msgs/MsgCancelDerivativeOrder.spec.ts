@@ -1,5 +1,5 @@
 import MsgCancelDerivativeOrder from './MsgCancelDerivativeOrder'
-import { mockFactory } from '@injectivelabs/test-utils'
+import { mockFactory } from '@thomasralee/test-utils'
 import snakecaseKeys from 'snakecase-keys'
 
 const params: MsgCancelDerivativeOrder['params'] = {

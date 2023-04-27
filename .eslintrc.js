@@ -30,6 +30,7 @@ const common = {
     'no-shadow': 'off',
     'no-unused-vars': 'off',
     'no-useless-constructor': 'off',
+    'jest/unbound-method': 'off',
     'jest/require-hook': 'off',
     '@typescript-eslint/no-useless-constructor': 'error',
     '@typescript-eslint/no-redeclare': ['error'],

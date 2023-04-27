@@ -3,7 +3,7 @@ import { IndexerModule } from '../types'
 import {
   GrpcUnaryRequestException,
   UnspecifiedErrorCode,
-} from '@injectivelabs/exceptions'
+} from '@thomasralee/exceptions'
 import { getGrpcIndexerWebImpl } from '../../BaseIndexerGrpcWebConsumer'
 import { InjectiveInsuranceRpc } from '@injectivelabs/indexer-proto-ts'
 

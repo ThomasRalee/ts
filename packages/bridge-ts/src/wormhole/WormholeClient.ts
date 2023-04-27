@@ -1,4 +1,4 @@
-import { Network } from '@injectivelabs/networks'
+import { Network } from '@thomasralee/networks'
 
 export class WormholeClient {
   public network: Network

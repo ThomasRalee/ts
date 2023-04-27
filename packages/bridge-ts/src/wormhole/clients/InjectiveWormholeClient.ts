@@ -1,11 +1,11 @@
-import { getNetworkEndpoints, Network } from '@injectivelabs/networks'
+import { getNetworkEndpoints, Network } from '@thomasralee/networks'
 import {
   TxResponse,
   getGrpcTransport,
   ChainGrpcWasmApi,
   MsgExecuteContractCompat,
-} from '@injectivelabs/sdk-ts'
-import { GeneralException } from '@injectivelabs/exceptions'
+} from '@thomasralee/sdk-ts'
+import { GeneralException } from '@thomasralee/exceptions'
 import {
   getSignedVAAWithRetry,
   tryNativeToUint8Array,
@@ -16,7 +16,7 @@ import {
   parseSequenceFromLogInjective,
   getIsTransferCompletedInjective,
 } from '../injective'
-import { sleep } from '@injectivelabs/utils'
+import { sleep } from '@thomasralee/utils'
 import { WORMHOLE_CHAINS } from '../constants'
 import { InjectiveTransferMsgArgs, WormholeSource } from '../types'
 import {

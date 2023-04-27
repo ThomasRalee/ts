@@ -1,10 +1,6 @@
 /* eslint-disable camelcase */
 /* eslint-disable class-methods-use-this */
-import {
-  AccountAddress,
-  ChainId,
-  EthereumChainId,
-} from '@injectivelabs/ts-types'
+import { AccountAddress, ChainId, EthereumChainId } from '@thomasralee/ts-types'
 import { Alchemy, Network as AlchemyNetwork } from 'alchemy-sdk'
 import { addHexPrefix } from 'ethereumjs-util'
 import { FeeMarketEIP1559Transaction } from '@ethereumjs/tx'
@@ -17,9 +13,9 @@ import {
   TrezorException,
   UnspecifiedErrorCode,
   WalletException,
-} from '@injectivelabs/exceptions'
+} from '@thomasralee/exceptions'
 import { DirectSignResponse } from '@cosmjs/proto-signing'
-import { TxGrpcApi, TxRaw, TxResponse } from '@injectivelabs/sdk-ts'
+import { TxGrpcApi, TxRaw, TxResponse } from '@thomasralee/sdk-ts'
 import { TIP_IN_GWEI } from '../../../../utils/constants'
 import {
   ConcreteWalletStrategy,

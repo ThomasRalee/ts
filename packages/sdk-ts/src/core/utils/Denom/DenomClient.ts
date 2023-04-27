@@ -6,15 +6,15 @@ import {
   TokenMetaUtils,
   TokenMetaUtilsFactory,
   getIbcTokenMetaFromDenomTrace,
-} from '@injectivelabs/token-metadata'
-import { GeneralException, ErrorType } from '@injectivelabs/exceptions'
+} from '@thomasralee/token-metadata'
+import { GeneralException, ErrorType } from '@thomasralee/exceptions'
 import { fromUtf8 } from '../../../utils/utf8'
 import { sha256 } from '../../../utils/crypto'
 import {
   Network,
   UrlEndpoints,
   getNetworkEndpoints,
-} from '@injectivelabs/networks'
+} from '@thomasralee/networks'
 import { ChainGrpcIbcApi } from '../../../client/chain/grpc/ChainGrpcIbcApi'
 import { IbcApplicationsTransferV1Transfer } from '@injectivelabs/core-proto-ts'
 

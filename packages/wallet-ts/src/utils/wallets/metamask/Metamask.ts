@@ -1,6 +1,6 @@
 import { ethers } from 'ethers'
 import detectEthereumProvider from '@metamask/detect-provider'
-import { WalletException } from '@injectivelabs/exceptions'
+import { WalletException } from '@thomasralee/exceptions'
 
 export const getEthersProviderFromMetamask = async () => {
   try {

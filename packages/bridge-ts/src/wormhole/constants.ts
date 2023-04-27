@@ -1,4 +1,4 @@
-import { Network } from '@injectivelabs/networks'
+import { Network } from '@thomasralee/networks'
 import { CHAINS, CONTRACTS } from '@injectivelabs/wormhole-sdk'
 
 export const WORMHOLE_CONTRACT_BY_NETWORK = {

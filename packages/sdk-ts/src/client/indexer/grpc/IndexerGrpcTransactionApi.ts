@@ -1,17 +1,17 @@
-import { AccountAddress, EthereumChainId } from '@injectivelabs/ts-types'
+import { AccountAddress, EthereumChainId } from '@thomasralee/ts-types'
 import {
   DEFAULT_GAS_LIMIT,
   DEFAULT_EXCHANGE_LIMIT,
   DEFAULT_BRIDGE_FEE_DENOM,
   DEFAULT_BRIDGE_FEE_PRICE,
-} from '@injectivelabs/utils'
+} from '@thomasralee/utils'
 import { recoverTypedSignaturePubKey } from '../../../utils/transaction'
 import { IndexerModule } from '../types'
 import {
   GrpcUnaryRequestException,
   TransactionException,
   UnspecifiedErrorCode,
-} from '@injectivelabs/exceptions'
+} from '@thomasralee/exceptions'
 import { getGrpcIndexerWebImpl } from '../../BaseIndexerGrpcWebConsumer'
 import { InjectiveExchangeRpc } from '@injectivelabs/indexer-proto-ts'
 import {

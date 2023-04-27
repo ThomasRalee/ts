@@ -2,7 +2,7 @@ import { SupportedChains } from '../types/explorer'
 import { getCosmosExplorerUrl, getSolanaExplorerUrl } from './bridge'
 import { BridgingNetwork } from '../types/bridge'
 import { getEthereumExplorerUrl, getNetworkFromAddress } from './bridge'
-import { Network } from '@injectivelabs/networks'
+import { Network } from '@thomasralee/networks'
 
 export const getSupportedNetworkFromAddress = (
   address: string,

@@ -1,4 +1,4 @@
-import { Coin } from '@injectivelabs/ts-types'
+import { Coin } from '@thomasralee/ts-types'
 import {
   InjectiveAuctionV1Beta1Auction,
   InjectiveAuctionV1Beta1Query,

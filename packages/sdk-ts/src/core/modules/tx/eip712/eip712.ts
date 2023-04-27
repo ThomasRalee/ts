@@ -1,4 +1,4 @@
-import { EthereumChainId } from '@injectivelabs/ts-types'
+import { EthereumChainId } from '@thomasralee/ts-types'
 import { Msgs } from '../../msgs'
 import { Eip712ConvertFeeArgs, Eip712ConvertTxArgs } from './types'
 import {

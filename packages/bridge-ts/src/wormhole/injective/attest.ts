@@ -1,4 +1,4 @@
-import { MsgExecuteContractCompat } from '@injectivelabs/sdk-ts'
+import { MsgExecuteContractCompat } from '@thomasralee/sdk-ts'
 import { isNativeDenomInjective } from '@injectivelabs/wormhole-sdk'
 
 /**

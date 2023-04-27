@@ -1,7 +1,7 @@
-import { getNetworkEndpoints, Network } from '@injectivelabs/networks'
-import { mockFactory } from '@injectivelabs/test-utils'
+import { getNetworkEndpoints, Network } from '@thomasralee/networks'
+import { mockFactory } from '@thomasralee/test-utils'
 import { getDefaultSubaccountId } from '../../../utils/address'
-import { INJ_DENOM } from '@injectivelabs/utils'
+import { INJ_DENOM } from '@thomasralee/utils'
 import { IndexerGrpcAccountTransformer } from '../transformers'
 import { IndexerGrpcAccountApi } from './IndexerGrpcAccountApi'
 
@@ -23,7 +23,7 @@ describe('IndexerGrpcAccountApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof IndexerGrpcAccountTransformer.tradingRewardsResponseToTradingRewards
@@ -44,7 +44,9 @@ describe('IndexerGrpcAccountApi', () => {
       )
 
       expect(response).toBeDefined()
-      expect(response).toEqual(expect.objectContaining<string[]>(response))
+      expect(response).toStrictEqual(
+        expect.objectContaining<string[]>(response),
+      )
     } catch (e) {
       console.error(
         'IndexerGrpcAccountApi.fetchSubaccountsList => ' + (e as any).message,
@@ -64,7 +66,7 @@ describe('IndexerGrpcAccountApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof IndexerGrpcAccountTransformer.balanceResponseToBalance
@@ -85,7 +87,7 @@ describe('IndexerGrpcAccountApi', () => {
       )
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof IndexerGrpcAccountTransformer.balancesResponseToBalances
@@ -111,7 +113,7 @@ describe('IndexerGrpcAccountApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof IndexerGrpcAccountTransformer.transferHistoryResponseToTransferHistory
@@ -140,7 +142,7 @@ describe('IndexerGrpcAccountApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<typeof response>(response),
       )
     } catch (e) {
@@ -159,7 +161,7 @@ describe('IndexerGrpcAccountApi', () => {
       )
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof IndexerGrpcAccountTransformer.accountPortfolioResponseToAccountPortfolio

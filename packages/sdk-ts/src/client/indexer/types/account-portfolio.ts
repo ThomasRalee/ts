@@ -1,5 +1,5 @@
 import { InjectivePortfolioRpc } from '@injectivelabs/indexer-proto-ts'
-import { Coin } from '@injectivelabs/ts-types'
+import { Coin } from '@thomasralee/ts-types'
 
 export interface SubaccountDepositV2 {
   totalBalance: string

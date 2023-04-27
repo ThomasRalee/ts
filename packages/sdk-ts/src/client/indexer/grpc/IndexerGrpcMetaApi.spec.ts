@@ -1,4 +1,4 @@
-import { getNetworkEndpoints, Network } from '@injectivelabs/networks'
+import { getNetworkEndpoints, Network } from '@thomasralee/networks'
 import { IndexerGrpcMetaApi } from './IndexerGrpcMetaApi'
 
 const endpoints = getNetworkEndpoints(Network.MainnetK8s)
@@ -10,7 +10,7 @@ describe('IndexerGrpcMetaApi', () => {
       const response = await indexerGrpcMetaApi.fetchPing()
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<typeof response>(response),
       )
     } catch (e) {
@@ -23,7 +23,7 @@ describe('IndexerGrpcMetaApi', () => {
       const response = await indexerGrpcMetaApi.fetchVersion()
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<typeof response>(response),
       )
     } catch (e) {
@@ -36,7 +36,7 @@ describe('IndexerGrpcMetaApi', () => {
       const response = await indexerGrpcMetaApi.fetchInfo()
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<typeof response>(response),
       )
     } catch (e) {

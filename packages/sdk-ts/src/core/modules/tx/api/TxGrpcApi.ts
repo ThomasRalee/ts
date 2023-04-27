@@ -6,11 +6,11 @@ import {
 import {
   TransactionException,
   GrpcUnaryRequestException,
-} from '@injectivelabs/exceptions'
+} from '@thomasralee/exceptions'
 import {
   DEFAULT_TX_BLOCK_INCLUSION_TIMEOUT_IN_MS,
   DEFAULT_BLOCK_TIME_IN_SECONDS,
-} from '@injectivelabs/utils'
+} from '@thomasralee/utils'
 import { TxResponse } from '../types/tx'
 import { getGrpcWebImpl } from '../../../../client/BaseGrpcWebConsumer'
 import {

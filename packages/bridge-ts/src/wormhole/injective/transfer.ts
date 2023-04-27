@@ -1,8 +1,4 @@
-import {
-  ChainGrpcWasmApi,
-  MsgExecuteContractCompat,
-} from '@injectivelabs/sdk-ts'
-import { parseSmartContractStateResponse } from './utils'
+import { ChainGrpcWasmApi, MsgExecuteContractCompat } from '@thomasralee/sdk-ts'
 import {
   ChainId,
   ChainName,
@@ -10,6 +6,7 @@ import {
   isNativeDenomInjective,
 } from '@injectivelabs/wormhole-sdk'
 import { fromUint8Array } from 'js-base64'
+import { parseSmartContractStateResponse } from './utils'
 
 /**
  * Return if the VAA has been redeemed or not
@@ -91,11 +88,11 @@ export async function transferFromInjective(
   const recipientChainId = coalesceChainId(recipientChain)
   const nonce = Math.round(Math.random() * 100000)
   const isNativeAsset = isNativeDenomInjective(tokenAddress)
-  const mk_action: string = payload
+  const mkAction: string = payload
     ? 'initiate_transfer_with_payload'
     : 'initiate_transfer'
 
-  const mk_initiate_transfer = (info: object) =>
+  const mkInitiateTransfer = (info: object) =>
     payload
       ? {
           asset: {
@@ -134,10 +131,10 @@ export async function transferFromInjective(
           contractAddress: tokenBridgeAddress,
           sender: walletAddress,
           exec: {
-            msg: mk_initiate_transfer({
+            msg: mkInitiateTransfer({
               native_token: { denom: tokenAddress },
             }),
-            action: mk_action,
+            action: mkAction,
           },
         }),
       ]
@@ -160,10 +157,10 @@ export async function transferFromInjective(
           contractAddress: tokenBridgeAddress,
           sender: walletAddress,
           exec: {
-            msg: mk_initiate_transfer({
+            msg: mkInitiateTransfer({
               token: { contract_addr: tokenAddress },
             }),
-            action: mk_action,
+            action: mkAction,
           },
         }),
       ]

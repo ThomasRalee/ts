@@ -1,5 +1,5 @@
 import keccak256 from 'keccak256'
-import { DEFAULT_STD_FEE } from '@injectivelabs/utils'
+import { DEFAULT_STD_FEE } from '@thomasralee/utils'
 import {
   createAuthInfo,
   createBody,
@@ -14,10 +14,10 @@ import {
   CreateTransactionWithSignersArgs,
 } from './types'
 import { DirectSignResponse } from '@cosmjs/proto-signing'
-import { BigNumberInBase } from '@injectivelabs/utils'
+import { BigNumberInBase } from '@thomasralee/utils'
 import { Msgs } from '../msgs'
-import { GeneralException } from '@injectivelabs/exceptions'
-import { DEFAULT_BLOCK_TIMEOUT_HEIGHT } from '@injectivelabs/utils'
+import { GeneralException } from '@thomasralee/exceptions'
+import { DEFAULT_BLOCK_TIMEOUT_HEIGHT } from '@thomasralee/utils'
 import { ChainRestAuthApi, ChainRestTendermintApi } from '../../../client'
 import { CosmosTxV1Beta1Tx } from '@injectivelabs/core-proto-ts'
 import { BaseAccount } from '../../accounts'

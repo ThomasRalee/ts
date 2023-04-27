@@ -1,4 +1,4 @@
-import { Network } from '@injectivelabs/networks'
+import { Network } from '@thomasralee/networks'
 import { TokenMetaUtils } from './TokenMetaUtils'
 import {
   getTokensBySymbolForDevnet,

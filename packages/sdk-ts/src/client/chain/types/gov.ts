@@ -1,5 +1,5 @@
 import { CosmosGovV1Beta1Gov } from '@injectivelabs/core-proto-ts'
-import { Coin } from '@injectivelabs/ts-types'
+import { Coin } from '@thomasralee/ts-types'
 
 export interface GovModuleStateParams {
   votingParams: {

@@ -7,7 +7,7 @@ describe('PrivateKey', () => {
   it('returns the correct PublicKey is derived from a private key', () => {
     const publicKey = PrivateKey.fromPrivateKey(privateKey)
 
-    expect(publicKey.toPublicKey().toBase64()).toEqual(
+    expect(publicKey.toPublicKey().toBase64()).toStrictEqual(
       'A13cTVZCuTg+Lwh7LuiLcgf2KG68nzEOnfFAbszCwxgT',
     )
   })
@@ -15,7 +15,7 @@ describe('PrivateKey', () => {
   it('returns the correct PublicKey is derived from a private key starting with 0x', () => {
     const publicKey = PrivateKey.fromPrivateKey('0x' + privateKey)
 
-    expect(publicKey.toPublicKey().toBase64()).toEqual(
+    expect(publicKey.toPublicKey().toBase64()).toStrictEqual(
       'A13cTVZCuTg+Lwh7LuiLcgf2KG68nzEOnfFAbszCwxgT',
     )
   })

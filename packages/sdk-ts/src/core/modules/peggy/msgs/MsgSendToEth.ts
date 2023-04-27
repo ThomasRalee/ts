@@ -2,7 +2,7 @@ import { MsgBase } from '../../MsgBase'
 import {
   DEFAULT_BRIDGE_FEE_AMOUNT,
   DEFAULT_BRIDGE_FEE_DENOM,
-} from '@injectivelabs/utils'
+} from '@thomasralee/utils'
 import snakecaseKeys from 'snakecase-keys'
 import {
   CosmosBaseV1Beta1Coin,

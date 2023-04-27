@@ -1,5 +1,5 @@
 import { CONTRACTS } from '@injectivelabs/wormhole-sdk'
-import { ChainId } from '@injectivelabs/ts-types'
+import { ChainId } from '@thomasralee/ts-types'
 import { PublicKey } from '@solana/web3.js'
 import { BaseMessageSignerWalletAdapter } from '@solana/wallet-adapter-base'
 

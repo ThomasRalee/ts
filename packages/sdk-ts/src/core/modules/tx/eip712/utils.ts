@@ -1,9 +1,9 @@
-import { EthereumChainId } from '@injectivelabs/ts-types'
+import { EthereumChainId } from '@thomasralee/ts-types'
 import {
   BigNumberInBase,
   DEFAULT_GAS_LIMIT,
   DEFAULT_STD_FEE,
-} from '@injectivelabs/utils'
+} from '@thomasralee/utils'
 import { Eip712ConvertFeeArgs, Eip712ConvertTxArgs } from './types'
 
 export const getEip712Domain = (ethereumChainId: EthereumChainId) => {

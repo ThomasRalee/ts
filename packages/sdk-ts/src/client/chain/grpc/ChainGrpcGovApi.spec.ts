@@ -1,20 +1,20 @@
-import { getNetworkEndpoints, Network } from '@injectivelabs/networks'
-import { ChainGrpcGovApi } from './ChainGrpcGovApi'
-// import { mockFactory } from '@injectivelabs/test-utils'
-import { ChainGrpcGovTransformer } from '../transformers'
+import { getNetworkEndpoints, Network } from '@thomasralee/networks'
 import { CosmosGovV1Beta1Gov } from '@injectivelabs/core-proto-ts'
+import { ChainGrpcGovApi } from './ChainGrpcGovApi'
+// import { mockFactory } from '@thomasralee/test-utils'
+import { ChainGrpcGovTransformer } from '../transformers'
 
 const endpoints = getNetworkEndpoints(Network.MainnetK8s)
 const chainGrpcGovApi = new ChainGrpcGovApi(endpoints.grpc)
 const proposalId = 1
 
-describe('ChainGrpcGovApi', () => {
-  test('fetchModuleParams', async () => {
+describe('chainGrpcGovApi', () => {
+  it('fetchModuleParams', async () => {
     try {
       const response = await chainGrpcGovApi.fetchModuleParams()
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof ChainGrpcGovTransformer.moduleParamsResponseToModuleParamsByType
@@ -23,12 +23,12 @@ describe('ChainGrpcGovApi', () => {
       )
     } catch (e) {
       console.error(
-        'chainGrpcGovApi.fetchModuleParams => ' + (e as any).message,
+        `chainGrpcGovApi.fetchModuleParams => ${(e as any).message}`,
       )
     }
   })
 
-  test('fetchProposals', async () => {
+  it('fetchProposals', async () => {
     try {
       const response = await chainGrpcGovApi.fetchProposals({
         status: CosmosGovV1Beta1Gov.ProposalStatus.PROPOSAL_STATUS_PASSED,
@@ -39,7 +39,7 @@ describe('ChainGrpcGovApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof ChainGrpcGovTransformer.proposalsResponseToProposals
@@ -47,26 +47,26 @@ describe('ChainGrpcGovApi', () => {
         >(response),
       )
     } catch (e) {
-      console.error('chainGrpcGovApi.fetchProposals => ' + (e as any).message)
+      console.error(`chainGrpcGovApi.fetchProposals => ${(e as any).message}`)
     }
   })
 
-  test('fetchProposal', async () => {
+  it('fetchProposal', async () => {
     try {
       const response = await chainGrpcGovApi.fetchProposal(proposalId)
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<typeof ChainGrpcGovTransformer.proposalResponseToProposal>
         >(response),
       )
     } catch (e) {
-      console.error('chainGrpcGovApi.fetchProposal => ' + (e as any).message)
+      console.error(`chainGrpcGovApi.fetchProposal => ${(e as any).message}`)
     }
   })
 
-  test('fetchProposalDeposits', async () => {
+  it('fetchProposalDeposits', async () => {
     try {
       const response = await chainGrpcGovApi.fetchProposalDeposits({
         proposalId,
@@ -77,19 +77,19 @@ describe('ChainGrpcGovApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<typeof ChainGrpcGovTransformer.depositsResponseToDeposits>
         >(response),
       )
     } catch (e) {
       console.error(
-        'chainGrpcGovApi.fetchProposalDeposits => ' + (e as any).message,
+        `chainGrpcGovApi.fetchProposalDeposits => ${(e as any).message}`,
       )
     }
   })
 
-  test('fetchProposalVotes', async () => {
+  it('fetchProposalVotes', async () => {
     try {
       const response = await chainGrpcGovApi.fetchProposalVotes({
         proposalId,
@@ -100,24 +100,24 @@ describe('ChainGrpcGovApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<typeof ChainGrpcGovTransformer.votesResponseToVotes>
         >(response),
       )
     } catch (e) {
       console.error(
-        'chainGrpcGovApi.fetchProposalVotes => ' + (e as any).message,
+        `chainGrpcGovApi.fetchProposalVotes => ${(e as any).message}`,
       )
     }
   })
 
-  test('fetchProposalTally', async () => {
+  it('fetchProposalTally', async () => {
     try {
       const response = await chainGrpcGovApi.fetchProposalTally(proposalId)
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof ChainGrpcGovTransformer.tallyResultResponseToTallyResult
@@ -126,7 +126,7 @@ describe('ChainGrpcGovApi', () => {
       )
     } catch (e) {
       console.error(
-        'chainGrpcGovApi.fetchProposalTally => ' + (e as any).message,
+        `chainGrpcGovApi.fetchProposalTally => ${(e as any).message}`,
       )
     }
   })

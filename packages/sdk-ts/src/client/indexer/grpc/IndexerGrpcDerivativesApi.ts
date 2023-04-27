@@ -6,12 +6,12 @@ import {
 import { PaginationOption } from '../../../types/pagination'
 import { IndexerGrpcDerivativeTransformer } from '../transformers'
 import { IndexerModule } from '../types'
-import { OrderSide, OrderState } from '@injectivelabs/ts-types'
+import { OrderSide, OrderState } from '@thomasralee/ts-types'
 import {
   GeneralException,
   UnspecifiedErrorCode,
   GrpcUnaryRequestException,
-} from '@injectivelabs/exceptions'
+} from '@thomasralee/exceptions'
 import { getGrpcIndexerWebImpl } from '../../BaseIndexerGrpcWebConsumer'
 import { InjectiveDerivativeExchangeRpc } from '@injectivelabs/indexer-proto-ts'
 

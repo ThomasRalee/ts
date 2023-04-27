@@ -1,4 +1,4 @@
-import { Validator } from '@injectivelabs/sdk-ts'
+import { Validator } from '@thomasralee/sdk-ts'
 import { UiValidator } from '../types/staking'
 
 export class UiStakingTransformer {

@@ -5,8 +5,8 @@ import {
   TokenFactory,
   TokenMetaUtils,
   TokenMetaUtilsFactory,
-} from '@injectivelabs/token-metadata'
-import { Network } from '@injectivelabs/networks'
+} from '@thomasralee/token-metadata'
+import { Network } from '@thomasralee/networks'
 
 /**
  * This client can be used to fetch token

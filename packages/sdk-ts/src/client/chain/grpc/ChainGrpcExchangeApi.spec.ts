@@ -1,21 +1,21 @@
-import { getNetworkEndpoints, Network } from '@injectivelabs/networks'
-import { ChainGrpcExchangeApi } from './ChainGrpcExchangeApi'
-import { mockFactory } from '@injectivelabs/test-utils'
-import { ChainGrpcExchangeTransformer } from '../transformers'
+import { getNetworkEndpoints, Network } from '@thomasralee/networks'
+import { mockFactory } from '@thomasralee/test-utils'
 import { InjectiveExchangeV1Beta1Query } from '@injectivelabs/core-proto-ts'
+import { ChainGrpcExchangeApi } from './ChainGrpcExchangeApi'
+import { ChainGrpcExchangeTransformer } from '../transformers'
 
-const injectiveAddress = mockFactory.injectiveAddress
-const subaccountId = mockFactory.subaccountId
+const { injectiveAddress } = mockFactory
+const { subaccountId } = mockFactory
 const endpoints = getNetworkEndpoints(Network.MainnetK8s)
 const chainGrpcExchangeApi = new ChainGrpcExchangeApi(endpoints.grpc)
 
-describe('ChainGrpcExchangeApi', () => {
-  test('fetchModuleParams', async () => {
+describe('chainGrpcExchangeApi', () => {
+  it('fetchModuleParams', async () => {
     try {
       const response = await chainGrpcExchangeApi.fetchModuleParams()
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof ChainGrpcExchangeTransformer.moduleParamsResponseToParams
@@ -24,35 +24,35 @@ describe('ChainGrpcExchangeApi', () => {
       )
     } catch (e) {
       console.error(
-        'chainGrpcExchangeApi.fetchModuleParams => ' + (e as any).message,
+        `chainGrpcExchangeApi.fetchModuleParams => ${(e as any).message}`,
       )
     }
   })
 
   // skipped as the module state can be quite huge and it times out
-  test.skip('fetchModuleState', async () => {
+  it.skip('fetchModuleState', async () => {
     try {
       const response = await chainGrpcExchangeApi.fetchModuleState()
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           InjectiveExchangeV1Beta1Query.QueryModuleStateResponse['state']
         >(response),
       )
     } catch (e) {
       console.error(
-        'chainGrpcExchangeApi.fetchModuleState => ' + (e as any).message,
+        `chainGrpcExchangeApi.fetchModuleState => ${(e as any).message}`,
       )
     }
   })
 
-  test('fetchFeeDiscountSchedule', async () => {
+  it('fetchFeeDiscountSchedule', async () => {
     try {
       const response = await chainGrpcExchangeApi.fetchFeeDiscountSchedule()
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof ChainGrpcExchangeTransformer.feeDiscountScheduleResponseToFeeDiscountSchedule
@@ -61,20 +61,21 @@ describe('ChainGrpcExchangeApi', () => {
       )
     } catch (e) {
       console.error(
-        'chainGrpcExchangeApi.fetchFeeDiscountSchedule => ' +
-          (e as any).message,
+        `chainGrpcExchangeApi.fetchFeeDiscountSchedule => ${
+          (e as any).message
+        }`,
       )
     }
   })
 
-  test('fetchFeeDiscountAccountInfo', async () => {
+  it('fetchFeeDiscountAccountInfo', async () => {
     try {
       const response = await chainGrpcExchangeApi.fetchFeeDiscountAccountInfo(
         injectiveAddress,
       )
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof ChainGrpcExchangeTransformer.feeDiscountAccountInfoResponseToFeeDiscountAccountInfo
@@ -83,18 +84,19 @@ describe('ChainGrpcExchangeApi', () => {
       )
     } catch (e) {
       console.error(
-        'chainGrpcExchangeApi.fetchFeeDiscountAccountInfo => ' +
-          (e as any).message,
+        `chainGrpcExchangeApi.fetchFeeDiscountAccountInfo => ${
+          (e as any).message
+        }`,
       )
     }
   })
 
-  test('fetchTradingRewardsCampaign', async () => {
+  it('fetchTradingRewardsCampaign', async () => {
     try {
       const response = await chainGrpcExchangeApi.fetchTradingRewardsCampaign()
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof ChainGrpcExchangeTransformer.tradingRewardsCampaignResponseToTradingRewardsCampaign
@@ -103,13 +105,14 @@ describe('ChainGrpcExchangeApi', () => {
       )
     } catch (e) {
       console.error(
-        'chainGrpcExchangeApi.fetchTradingRewardsCampaign => ' +
-          (e as any).message,
+        `chainGrpcExchangeApi.fetchTradingRewardsCampaign => ${
+          (e as any).message
+        }`,
       )
     }
   })
 
-  test('fetchTradeRewardPoints', async () => {
+  it('fetchTradeRewardPoints', async () => {
     try {
       const response = await chainGrpcExchangeApi.fetchTradeRewardPoints([
         injectiveAddress,
@@ -120,15 +123,17 @@ describe('ChainGrpcExchangeApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(expect.objectContaining<string[]>(response))
+      expect(response).toStrictEqual(
+        expect.objectContaining<string[]>(response),
+      )
     } catch (e) {
       console.error(
-        'chainGrpcExchangeApi.fetchTradeRewardPoints => ' + (e as any).message,
+        `chainGrpcExchangeApi.fetchTradeRewardPoints => ${(e as any).message}`,
       )
     }
   })
 
-  test('fetchPendingTradeRewardPoints', async () => {
+  it('fetchPendingTradeRewardPoints', async () => {
     try {
       const response = await chainGrpcExchangeApi.fetchPendingTradeRewardPoints(
         [injectiveAddress],
@@ -139,16 +144,19 @@ describe('ChainGrpcExchangeApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(expect.objectContaining<string[]>(response))
+      expect(response).toStrictEqual(
+        expect.objectContaining<string[]>(response),
+      )
     } catch (e) {
       console.error(
-        'chainGrpcExchangeApi.fetchPendingTradeRewardPoints => ' +
-          (e as any).message,
+        `chainGrpcExchangeApi.fetchPendingTradeRewardPoints => ${
+          (e as any).message
+        }`,
       )
     }
   })
 
-  test('fetchPositions', async () => {
+  it('fetchPositions', async () => {
     try {
       const response = await chainGrpcExchangeApi.fetchPositions()
 
@@ -157,7 +165,7 @@ describe('ChainGrpcExchangeApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof ChainGrpcExchangeTransformer.positionsResponseToPositions
@@ -166,27 +174,28 @@ describe('ChainGrpcExchangeApi', () => {
       )
     } catch (e) {
       console.error(
-        'chainGrpcExchangeApi.fetchPositions => ' + (e as any).message,
+        `chainGrpcExchangeApi.fetchPositions => ${(e as any).message}`,
       )
     }
   })
 
-  test('fetchSubaccountTradeNonce', async () => {
+  it('fetchSubaccountTradeNonce', async () => {
     try {
       const response = await chainGrpcExchangeApi.fetchSubaccountTradeNonce(
         subaccountId,
       )
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<InjectiveExchangeV1Beta1Query.QuerySubaccountTradeNonceResponse>(
           response,
         ),
       )
     } catch (e) {
       console.error(
-        'chainGrpcExchangeApi.fetchSubaccountTradeNonce => ' +
-          (e as any).message,
+        `chainGrpcExchangeApi.fetchSubaccountTradeNonce => ${
+          (e as any).message
+        }`,
       )
     }
   })

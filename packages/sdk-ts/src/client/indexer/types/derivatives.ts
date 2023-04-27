@@ -4,9 +4,9 @@ import {
   TradeDirection,
   TradeExecutionType,
   TradeExecutionSide,
-} from '@injectivelabs/ts-types'
+} from '@thomasralee/ts-types'
 import { GrpcOrderType } from '../../chain/types/exchange'
-import { TokenMeta } from '@injectivelabs/token-metadata'
+import { TokenMeta } from '@thomasralee/token-metadata'
 import { InjectiveDerivativeExchangeRpc } from '@injectivelabs/indexer-proto-ts'
 
 export interface PositionDelta {

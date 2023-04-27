@@ -1,18 +1,18 @@
 /* eslint-disable class-methods-use-this */
-import { CosmosChainId } from '@injectivelabs/ts-types'
+import { CosmosChainId } from '@thomasralee/ts-types'
 import {
   ErrorType,
   UnspecifiedErrorCode,
   CosmosWalletException,
   TransactionException,
-} from '@injectivelabs/exceptions'
+} from '@thomasralee/exceptions'
 import {
   TxRaw,
   TxResponse,
   createTxRawFromSigResponse,
   createCosmosSignDocFromSignDoc,
   createSignDocFromTransaction,
-} from '@injectivelabs/sdk-ts'
+} from '@thomasralee/sdk-ts'
 import type { DirectSignResponse } from '@cosmjs/proto-signing'
 import { StdSignDoc } from '@keplr-wallet/types'
 import { AminoSignResponse } from '@cosmjs/launchpad'

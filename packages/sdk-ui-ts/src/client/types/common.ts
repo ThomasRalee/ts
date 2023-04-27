@@ -1,4 +1,4 @@
-import { BigNumberInWei, BigNumberInBase } from '@injectivelabs/utils'
+import { BigNumberInWei, BigNumberInBase } from '@thomasralee/utils'
 
 export enum Change {
   New = 'new',

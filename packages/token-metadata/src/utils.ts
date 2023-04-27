@@ -1,4 +1,4 @@
-import { INJ_DENOM } from '@injectivelabs/utils'
+import { INJ_DENOM } from '@thomasralee/utils'
 import {
   Token,
   TokenMeta,

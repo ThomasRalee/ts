@@ -3,7 +3,7 @@ import {
   InjectiveExchangeV1Beta1Query,
   InjectiveExchangeV1Beta1Genesis,
 } from '@injectivelabs/core-proto-ts'
-import { Coin } from '@injectivelabs/ts-types'
+import { Coin } from '@thomasralee/ts-types'
 
 export interface DepositProposalParams {
   amount: string

@@ -1,6 +1,6 @@
-import { Network } from '@injectivelabs/networks'
+import { Network } from '@thomasralee/networks'
 import { Connection, PublicKey as SolanaPublicKey } from '@solana/web3.js'
-import { GeneralException } from '@injectivelabs/exceptions'
+import { GeneralException } from '@thomasralee/exceptions'
 import {
   WormholeAribtrumContractAddresses,
   WormholeContractAddresses,

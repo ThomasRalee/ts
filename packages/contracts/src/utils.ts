@@ -1,4 +1,4 @@
-import { TransactionOptions } from '@injectivelabs/ts-types'
+import { TransactionOptions } from '@thomasralee/ts-types'
 
 export const getTransactionOptionsAsNonPayableTx = (
   transactionOptions: TransactionOptions,

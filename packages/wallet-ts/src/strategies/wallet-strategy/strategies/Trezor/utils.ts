@@ -1,4 +1,4 @@
-import { TrezorException } from '@injectivelabs/exceptions'
+import { TrezorException } from '@thomasralee/exceptions'
 import sigUtil from '@metamask/eth-sig-util'
 
 // Sanitization is used for T1 as eth-sig-util does not support BigInt

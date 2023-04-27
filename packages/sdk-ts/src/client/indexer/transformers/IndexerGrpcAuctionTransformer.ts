@@ -6,7 +6,7 @@ import {
   IndexerBid,
   Auction,
 } from '../types/auction'
-import { Coin } from '@injectivelabs/ts-types'
+import { Coin } from '@thomasralee/ts-types'
 
 /**
  * @category Indexer Grpc Transformer

@@ -1,9 +1,9 @@
-import { BigNumber } from '@injectivelabs/utils'
+import { BigNumber } from '@thomasralee/utils'
 import { MarketType, Change } from '../types/common'
 import {
   getDerivativeMarketTensMultiplier,
   getDerivativeMarketDecimals,
-} from '@injectivelabs/sdk-ts'
+} from '@thomasralee/sdk-ts'
 import {
   ExpiryFuturesMarketWithTokenAndSlug,
   PerpetualMarketWithTokenAndSlug,

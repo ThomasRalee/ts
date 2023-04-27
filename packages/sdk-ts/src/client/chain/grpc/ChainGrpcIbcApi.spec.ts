@@ -1,14 +1,14 @@
-import { getNetworkEndpoints, Network } from '@injectivelabs/networks'
+import { getNetworkEndpoints, Network } from '@thomasralee/networks'
+import { IbcApplicationsTransferV1Transfer } from '@injectivelabs/core-proto-ts'
 import { ChainGrpcIbcApi } from './ChainGrpcIbcApi'
 import { sha256 } from '../../../utils/crypto'
 import { fromUtf8 } from '../../../utils/utf8'
-import { IbcApplicationsTransferV1Transfer } from '@injectivelabs/core-proto-ts'
 
 const endpoints = getNetworkEndpoints(Network.MainnetK8s)
 const chainGrpcIbcApi = new ChainGrpcIbcApi(endpoints.grpc)
 
-describe('ChainGrpcIbcApi', () => {
-  test('fetchDenomsTrace', async () => {
+describe('chainGrpcIbcApi', () => {
+  it('fetchDenomsTrace', async () => {
     try {
       const response = await chainGrpcIbcApi.fetchDenomsTrace()
       if (response.length === 0) {
@@ -16,17 +16,17 @@ describe('ChainGrpcIbcApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<IbcApplicationsTransferV1Transfer.DenomTrace[]>(
           response,
         ),
       )
     } catch (e) {
-      console.error('chainGrpcIbcApi.fetchDenomsTrace => ' + (e as any).message)
+      console.error(`chainGrpcIbcApi.fetchDenomsTrace => ${(e as any).message}`)
     }
   })
 
-  test('fetchDenomTrace', async () => {
+  it('fetchDenomTrace', async () => {
     try {
       const [trace] = await chainGrpcIbcApi.fetchDenomsTrace()
       const ibcHash = Buffer.from(
@@ -35,13 +35,13 @@ describe('ChainGrpcIbcApi', () => {
       const response = await chainGrpcIbcApi.fetchDenomTrace(ibcHash)
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<IbcApplicationsTransferV1Transfer.DenomTrace>(
           response,
         ),
       )
     } catch (e) {
-      console.error('chainGrpcIbcApi.fetchDenomTrace => ' + (e as any).message)
+      console.error(`chainGrpcIbcApi.fetchDenomTrace => ${(e as any).message}`)
     }
   })
 })

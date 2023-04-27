@@ -1,5 +1,5 @@
 /* eslint-disable camelcase */
-import { Token } from '@injectivelabs/token-metadata'
+import { Token } from '@thomasralee/token-metadata'
 import { UiBridgeTransaction } from './bridge'
 
 export interface CoinPriceFromInjectiveService {

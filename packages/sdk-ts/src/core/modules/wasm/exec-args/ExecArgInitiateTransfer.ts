@@ -3,7 +3,7 @@ import {
   ExecArgBase,
   ExecDataRepresentation,
 } from '../ExecArgBase'
-import { ChainId } from '@injectivelabs/ts-types'
+import { ChainId } from '@thomasralee/ts-types'
 import { binaryToBase64 } from './../../../../utils/utf8'
 
 export declare namespace ExecArgInitiateTransfer {

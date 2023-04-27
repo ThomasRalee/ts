@@ -4,20 +4,20 @@ import {
   CosmosChainId,
   AccountAddress,
   EthereumChainId,
-} from '@injectivelabs/ts-types'
+} from '@thomasralee/ts-types'
 import {
   ErrorType,
   UnspecifiedErrorCode,
   CosmosWalletException,
   TransactionException,
-} from '@injectivelabs/exceptions'
+} from '@thomasralee/exceptions'
 import {
   TxRaw,
   TxResponse,
   createTxRawFromSigResponse,
   createCosmosSignDocFromSignDoc,
   createSignDocFromTransaction,
-} from '@injectivelabs/sdk-ts'
+} from '@thomasralee/sdk-ts'
 import type { DirectSignResponse } from '@cosmjs/proto-signing'
 import { LeapWallet } from '../../../utils/wallets/leap'
 import { ConcreteWalletStrategy } from '../../types'

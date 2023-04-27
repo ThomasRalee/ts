@@ -1,17 +1,17 @@
-import { getNetworkEndpoints, Network } from '@injectivelabs/networks'
+import { getNetworkEndpoints, Network } from '@thomasralee/networks'
 import { ChainGrpcAuctionTransformer } from '../transformers'
 import { ChainGrpcAuctionApi } from './ChainGrpcAuctionApi'
 
 const endpoints = getNetworkEndpoints(Network.MainnetK8s)
 const chainGrpcAuctionApi = new ChainGrpcAuctionApi(endpoints.grpc)
 
-describe('ChainGrpcAuctionApi', () => {
-  test('fetchModuleParams', async () => {
+describe('chainGrpcAuctionApi', () => {
+  it('fetchModuleParams', async () => {
     try {
       const response = await chainGrpcAuctionApi.fetchModuleParams()
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof ChainGrpcAuctionTransformer.moduleParamsResponseToModuleParams
@@ -20,17 +20,17 @@ describe('ChainGrpcAuctionApi', () => {
       )
     } catch (e) {
       console.error(
-        'ChainGrpcAuctionApi.fetchModuleParams => ' + (e as any).message,
+        `ChainGrpcAuctionApi.fetchModuleParams => ${(e as any).message}`,
       )
     }
   })
 
-  test('fetchModuleState', async () => {
+  it('fetchModuleState', async () => {
     try {
       const response = await chainGrpcAuctionApi.fetchModuleState()
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof ChainGrpcAuctionTransformer.auctionModuleStateResponseToAuctionModuleState
@@ -39,17 +39,17 @@ describe('ChainGrpcAuctionApi', () => {
       )
     } catch (e) {
       console.error(
-        'ChainGrpcAuctionApi.fetchModuleState => ' + (e as any).message,
+        `ChainGrpcAuctionApi.fetchModuleState => ${(e as any).message}`,
       )
     }
   })
 
-  test('fetchCurrentBasket', async () => {
+  it('fetchCurrentBasket', async () => {
     try {
       const response = await chainGrpcAuctionApi.fetchCurrentBasket()
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof ChainGrpcAuctionTransformer.currentBasketResponseToCurrentBasket
@@ -58,7 +58,7 @@ describe('ChainGrpcAuctionApi', () => {
       )
     } catch (e) {
       console.error(
-        'ChainGrpcAuctionApi.fetchCurrentBasket => ' + (e as any).message,
+        `ChainGrpcAuctionApi.fetchCurrentBasket => ${(e as any).message}`,
       )
     }
   })

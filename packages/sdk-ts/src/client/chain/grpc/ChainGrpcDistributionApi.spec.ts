@@ -1,4 +1,4 @@
-import { getNetworkEndpoints, Network } from '@injectivelabs/networks'
+import { getNetworkEndpoints, Network } from '@thomasralee/networks'
 import { ChainGrpcDistributionApi } from './ChainGrpcDistributionApi'
 import { ChainGrpcStakingApi } from './ChainGrpcStakingApi'
 import { ChainGrpcDistributionTransformer } from '../transformers'
@@ -7,36 +7,37 @@ import { Delegation, Validator } from '../types'
 const endpoints = getNetworkEndpoints(Network.MainnetK8s)
 const chainGrpcDistributionApi = new ChainGrpcDistributionApi(endpoints.grpc)
 
-describe('ChainGrpcDistributionApi', () => {
+describe('chainGrpcDistributionApi', () => {
   let validator: Validator
   let delegation: Delegation
 
-  beforeAll(async () => {
-    return new Promise<void>(async (resolve) => {
-      const chainGrpcStakingApi = new ChainGrpcStakingApi(endpoints.grpc)
+  beforeAll(
+    async () =>
+      new Promise<void>(async (resolve) => {
+        const chainGrpcStakingApi = new ChainGrpcStakingApi(endpoints.grpc)
 
-      const { validators } = await chainGrpcStakingApi.fetchValidators()
+        const { validators } = await chainGrpcStakingApi.fetchValidators()
 
-      validator = validators[0]
+        validator = validators[0]
 
-      const { delegations } =
-        await chainGrpcStakingApi.fetchValidatorDelegations({
-          validatorAddress: validator.operatorAddress,
-          pagination: { limit: 1 },
-        })
+        const { delegations } =
+          await chainGrpcStakingApi.fetchValidatorDelegations({
+            validatorAddress: validator.operatorAddress,
+            pagination: { limit: 1 },
+          })
 
-      delegation = delegations[0]
+        delegation = delegations[0]
 
-      return resolve()
-    })
-  })
+        return resolve()
+      }),
+  )
 
-  test('fetchModuleParams', async () => {
+  it('fetchModuleParams', async () => {
     try {
       const response = await chainGrpcDistributionApi.fetchModuleParams()
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof ChainGrpcDistributionTransformer.moduleParamsResponseToModuleParams
@@ -45,12 +46,12 @@ describe('ChainGrpcDistributionApi', () => {
       )
     } catch (e) {
       console.error(
-        'chainGrpcDistributionApi.fetchModuleParams => ' + (e as any).message,
+        `chainGrpcDistributionApi.fetchModuleParams => ${(e as any).message}`,
       )
     }
   })
 
-  test('fetchDelegatorRewardsForValidator', async () => {
+  it('fetchDelegatorRewardsForValidator', async () => {
     try {
       const response =
         await chainGrpcDistributionApi.fetchDelegatorRewardsForValidator({
@@ -63,7 +64,7 @@ describe('ChainGrpcDistributionApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof ChainGrpcDistributionTransformer.delegationRewardResponseToReward
@@ -72,13 +73,14 @@ describe('ChainGrpcDistributionApi', () => {
       )
     } catch (e) {
       console.error(
-        'chainGrpcDistributionApi.fetchDelegatorRewardsForValidator => ' +
-          (e as any).message,
+        `chainGrpcDistributionApi.fetchDelegatorRewardsForValidator => ${
+          (e as any).message
+        }`,
       )
     }
   })
 
-  test('fetchDelegatorRewardsForValidatorNoThrow', async () => {
+  it('fetchDelegatorRewardsForValidatorNoThrow', async () => {
     try {
       const response =
         await chainGrpcDistributionApi.fetchDelegatorRewardsForValidatorNoThrow(
@@ -93,7 +95,7 @@ describe('ChainGrpcDistributionApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof ChainGrpcDistributionTransformer.delegationRewardResponseToReward
@@ -102,13 +104,14 @@ describe('ChainGrpcDistributionApi', () => {
       )
     } catch (e) {
       console.error(
-        'chainGrpcDistributionApi.fetchDelegatorRewardsForValidatorNoThrow => ' +
-          (e as any).message,
+        `chainGrpcDistributionApi.fetchDelegatorRewardsForValidatorNoThrow => ${
+          (e as any).message
+        }`,
       )
     }
   })
 
-  test('fetchDelegatorRewards', async () => {
+  it('fetchDelegatorRewards', async () => {
     try {
       const response = await chainGrpcDistributionApi.fetchDelegatorRewards(
         delegation.delegation.delegatorAddress,
@@ -119,7 +122,7 @@ describe('ChainGrpcDistributionApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof ChainGrpcDistributionTransformer.totalDelegationRewardResponseToTotalReward
@@ -128,13 +131,14 @@ describe('ChainGrpcDistributionApi', () => {
       )
     } catch (e) {
       console.error(
-        'chainGrpcDistributionApi.fetchDelegatorRewards => ' +
-          (e as any).message,
+        `chainGrpcDistributionApi.fetchDelegatorRewards => ${
+          (e as any).message
+        }`,
       )
     }
   })
 
-  test('fetchDelegatorRewardsNoThrow', async () => {
+  it('fetchDelegatorRewardsNoThrow', async () => {
     try {
       const response =
         await chainGrpcDistributionApi.fetchDelegatorRewardsNoThrow(
@@ -146,7 +150,7 @@ describe('ChainGrpcDistributionApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof ChainGrpcDistributionTransformer.totalDelegationRewardResponseToTotalReward
@@ -155,8 +159,9 @@ describe('ChainGrpcDistributionApi', () => {
       )
     } catch (e) {
       console.error(
-        'chainGrpcDistributionApi.fetchDelegatorRewardsNoThrow => ' +
-          (e as any).message,
+        `chainGrpcDistributionApi.fetchDelegatorRewardsNoThrow => ${
+          (e as any).message
+        }`,
       )
     }
   })

@@ -1,6 +1,6 @@
 import { ExecArgs } from '../exec-args'
 import { MsgBase } from '../../MsgBase'
-import { GeneralException } from '@injectivelabs/exceptions'
+import { GeneralException } from '@thomasralee/exceptions'
 import snakecaseKeys from 'snakecase-keys'
 import { fromUtf8 } from '../../../../utils/utf8'
 import {

@@ -1,7 +1,7 @@
-import { ZERO_ADDRESS } from '@injectivelabs/utils'
-import { ChainId } from '@injectivelabs/ts-types'
-import { Network } from '@injectivelabs/networks'
-import { GeneralException } from '@injectivelabs/exceptions'
+import { ZERO_ADDRESS } from '@thomasralee/utils'
+import { ChainId } from '@thomasralee/ts-types'
+import { Network } from '@thomasralee/networks'
+import { GeneralException } from '@thomasralee/exceptions'
 import {
   ContractAddressesForChainId,
   ContractAddressesForNetwork,

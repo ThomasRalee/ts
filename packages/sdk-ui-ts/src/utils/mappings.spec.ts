@@ -7,7 +7,7 @@ describe('validator logos helper function', () => {
 
       const validatorLogo = getValidatorLogoWithVendorPathPrefix(address)
       expect(validatorLogo).toMatch(
-        '/vendor/@injectivelabs/sdk-ui-ts/injvaloper10zxm0rklrnurd999xgr4ss8v2q9qsjlfhhk9mk.webp',
+        '/vendor/@thomasralee/sdk-ui-ts/injvaloper10zxm0rklrnurd999xgr4ss8v2q9qsjlfhhk9mk.webp',
       )
     })
 
@@ -16,7 +16,7 @@ describe('validator logos helper function', () => {
 
       const validatorLogo = getValidatorLogoWithVendorPathPrefix(address)
       expect(validatorLogo).toMatch(
-        '/vendor/@injectivelabs/sdk-ui-ts/injvaloper10zxm0rklrnurd999xgr4ss8v2q9qsjlfhhk9mk.webp',
+        '/vendor/@thomasralee/sdk-ui-ts/injvaloper10zxm0rklrnurd999xgr4ss8v2q9qsjlfhhk9mk.webp',
       )
     })
 
@@ -25,7 +25,7 @@ describe('validator logos helper function', () => {
 
       const validatorLogo = getValidatorLogoWithVendorPathPrefix(address)
       expect(validatorLogo).toMatch(
-        '/vendor/@injectivelabs/sdk-ui-ts/injective.webp',
+        '/vendor/@thomasralee/sdk-ui-ts/injective.webp',
       )
     })
   })

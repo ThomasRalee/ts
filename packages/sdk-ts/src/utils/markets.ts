@@ -1,4 +1,4 @@
-import { BigNumber } from '@injectivelabs/utils'
+import { BigNumber } from '@thomasralee/utils'
 import { getExactDecimalsFromNumber, getTensMultiplier } from './numbers'
 
 export const getDerivativeMarketTensMultiplier = ({

@@ -1,6 +1,6 @@
-import { BigNumberInBase } from '@injectivelabs/utils'
+import { BigNumberInBase } from '@thomasralee/utils'
 import MsgExternalTransfer from './MsgExternalTransfer'
-import { mockFactory } from '@injectivelabs/test-utils'
+import { mockFactory } from '@thomasralee/test-utils'
 import snakecaseKeys from 'snakecase-keys'
 
 const params: MsgExternalTransfer['params'] = {

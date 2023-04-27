@@ -1,4 +1,4 @@
-import { Network } from '@injectivelabs/networks'
+import { Network } from '@thomasralee/networks'
 import { Address } from '../../../../accounts/Address'
 import { OrderHashManager } from './OrderHashManager'
 import { InjectiveExchangeV1Beta1Exchange } from '@injectivelabs/core-proto-ts'
@@ -8,8 +8,8 @@ import {
   spotPriceToChainPrice,
   spotQuantityToChainQuantity,
   derivativeQuantityToChainQuantity,
-} from '@injectivelabs/sdk-ts'
-import { BigNumberInBase } from '@injectivelabs/utils'
+} from '@thomasralee/sdk-ts'
+import { BigNumberInBase } from '@thomasralee/utils'
 import MsgCreateDerivativeLimitOrder from '../../../exchange/msgs/MsgCreateDerivativeLimitOrder'
 import MsgCreateSpotLimitOrder from '../../../exchange/msgs/MsgCreateSpotLimitOrder'
 

@@ -11,19 +11,19 @@ import {
   DEFAULT_STD_FEE,
   BigNumberInBase,
   DEFAULT_BLOCK_TIMEOUT_HEIGHT,
-} from '@injectivelabs/utils'
-import { GeneralException } from '@injectivelabs/exceptions'
+} from '@thomasralee/utils'
+import { GeneralException } from '@thomasralee/exceptions'
 import {
   getEthereumSignerAddress,
   getInjectiveSignerAddress,
 } from '../utils/helpers'
-import { ChainId, EthereumChainId } from '@injectivelabs/ts-types'
+import { ChainId, EthereumChainId } from '@thomasralee/ts-types'
 import {
   Network,
   getNetworkInfo,
   getNetworkEndpoints,
   NetworkEndpoints,
-} from '@injectivelabs/networks'
+} from '@thomasralee/networks'
 import { getGasPriceBasedOnMessage } from '../../../../utils/msgs'
 import { CreateTransactionArgs } from '../types'
 

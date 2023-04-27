@@ -1,10 +1,10 @@
-import { Coin } from '@injectivelabs/ts-types'
+import { Coin } from '@thomasralee/ts-types'
 import { ChainGrpcDistributionTransformer } from '../transformers'
 import { ValidatorRewards, ChainModule } from '../types'
 import {
   GrpcUnaryRequestException,
   UnspecifiedErrorCode,
-} from '@injectivelabs/exceptions'
+} from '@thomasralee/exceptions'
 import { getGrpcWebImpl } from '../../BaseGrpcWebConsumer'
 import { CosmosDistributionV1Beta1Query } from '@injectivelabs/core-proto-ts'
 

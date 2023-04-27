@@ -1,4 +1,4 @@
-import { AuctionModuleState } from '@injectivelabs/sdk-ts'
+import { AuctionModuleState } from '@thomasralee/sdk-ts'
 
 export class UiAuctionTransformer {
   static grpcAuctionModuleStateToModuleState(

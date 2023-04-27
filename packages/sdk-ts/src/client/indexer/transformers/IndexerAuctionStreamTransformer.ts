@@ -1,4 +1,4 @@
-import { StreamOperation } from '@injectivelabs/ts-types'
+import { StreamOperation } from '@thomasralee/ts-types'
 import { IndexerBid } from '../types'
 import { InjectiveAuctionRpc } from '@injectivelabs/indexer-proto-ts'
 

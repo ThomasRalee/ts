@@ -1,6 +1,6 @@
-import { EthereumChainId } from '@injectivelabs/ts-types'
-import { Network } from '@injectivelabs/networks'
-import { ContractErrorModule } from '@injectivelabs/exceptions'
+import { EthereumChainId } from '@thomasralee/ts-types'
+import { Network } from '@thomasralee/networks'
+import { ContractErrorModule } from '@thomasralee/exceptions'
 
 export interface ContractAddresses {
   peggy: string

@@ -3,7 +3,7 @@ import {
   HttpRequestException,
   UnspecifiedErrorCode,
   HttpRequestMethod,
-} from '@injectivelabs/exceptions'
+} from '@thomasralee/exceptions'
 import { StatusCodes } from 'http-status-codes'
 import HttpClient from './HttpClient'
 

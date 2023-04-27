@@ -1,7 +1,7 @@
 import snakecaseKeys from 'snakecase-keys'
 import { ExecArgs } from '../exec-args'
 import { MsgBase } from '../../MsgBase'
-import { GeneralException } from '@injectivelabs/exceptions'
+import { GeneralException } from '@thomasralee/exceptions'
 import { InjectiveWasmxV1Beta1Tx } from '@injectivelabs/core-proto-ts'
 
 export declare namespace MsgExecuteContractCompat {

@@ -3,14 +3,14 @@ import {
   BigNumber,
   BigNumberInWei,
   BigNumberInBase,
-} from '@injectivelabs/utils'
-import { Network, isTestnetOrDevnet } from '@injectivelabs/networks'
+} from '@thomasralee/utils'
+import { Network, isTestnetOrDevnet } from '@thomasralee/networks'
 import {
   GWEI_IN_WEI,
   DEFAULT_GAS_PRICE,
   DEFAULT_MAINNET_GAS_PRICE,
 } from '../../constants'
-import { HttpRequestException } from '@injectivelabs/exceptions'
+import { HttpRequestException } from '@thomasralee/exceptions'
 import { Network as AlchemyNetwork, Alchemy } from 'alchemy-sdk'
 import { fetchEstimatorGasPrice } from './estimator'
 

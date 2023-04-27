@@ -1,4 +1,4 @@
-import { ChainErrorModule } from '@injectivelabs/exceptions'
+import { ChainErrorModule } from '@thomasralee/exceptions'
 
 export * from './auction'
 export * from './auth-rest'

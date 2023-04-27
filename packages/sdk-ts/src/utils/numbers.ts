@@ -3,7 +3,7 @@ import {
   BigNumberInBase,
   getSignificantDecimalsFromNumber,
   getExactDecimalsFromNumber,
-} from '@injectivelabs/utils'
+} from '@thomasralee/utils'
 
 const $BigNumber = BigNumber.clone({ ROUNDING_MODE: BigNumber.ROUND_DOWN })
 
@@ -12,7 +12,7 @@ export const isNumber = (number: string | number) => {
     return true
   }
 
-  return !isNaN(parseFloat(number))
+  return !Number.isNaN(parseFloat(number))
 }
 
 export const formatNumberToAllowableDecimals = (
@@ -64,8 +64,8 @@ export const formatNumberToAllowableTensMultiplier = (
 export const formatAmountToAllowableAmount = (
   value: string | number,
   tensMultiplier: number,
-): string => {
-  return tensMultiplier < 0
+): string =>
+  tensMultiplier < 0
     ? formatNumberToAllowableDecimals(
         value,
         -tensMultiplier,
@@ -76,16 +76,14 @@ export const formatAmountToAllowableAmount = (
         tensMultiplier,
         BigNumberInBase.ROUND_DOWN,
       )
-}
 
 export const formatPriceToAllowablePrice = (
   value: string | number,
   tensMultiplier: number,
-): string => {
-  return tensMultiplier <= 0
+): string =>
+  tensMultiplier <= 0
     ? formatNumberToAllowableDecimals(value, -tensMultiplier)
     : formatNumberToAllowableTensMultiplier(value, tensMultiplier)
-}
 
 /**
  *
@@ -98,13 +96,12 @@ export const formatPriceToAllowablePrice = (
 export const formatAmountToAllowableDecimals = (
   value: string | number,
   allowableDecimals: number,
-): string => {
-  return formatNumberToAllowableDecimals(
+): string =>
+  formatNumberToAllowableDecimals(
     value,
     allowableDecimals,
     BigNumberInBase.ROUND_DOWN,
   )
-}
 
 /**
  *
@@ -117,9 +114,7 @@ export const formatAmountToAllowableDecimals = (
 export const formatPriceToAllowableDecimals = (
   value: string | number,
   allowableDecimals: number,
-): string => {
-  return formatNumberToAllowableDecimals(value, allowableDecimals)
-}
+): string => formatNumberToAllowableDecimals(value, allowableDecimals)
 
 /**
  * On chain amounts queried from a sentry using the
@@ -657,9 +652,7 @@ export const cosmosSdkDecToBigNumber = (
 
 export const numberToCosmosSdkDecString = (
   value: string | number | BigNumber,
-): string => {
-  return new BigNumber(value).toFixed(18)
-}
+): string => new BigNumber(value).toFixed(18)
 
 /**
  * This function returns a multiplier of 10
@@ -690,8 +683,7 @@ export const getTensMultiplier = (number: number | string): number => {
   return zerosInTheNumber.length
 }
 
-export const getTriggerPrice = (triggerPrice?: number | string) => {
-  return triggerPrice ? amountToCosmosSdkDecAmount(triggerPrice).toFixed() : ''
-}
+export const getTriggerPrice = (triggerPrice?: number | string) =>
+  triggerPrice ? amountToCosmosSdkDecAmount(triggerPrice).toFixed() : ''
 
 export { getSignificantDecimalsFromNumber, getExactDecimalsFromNumber }

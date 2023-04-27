@@ -1,5 +1,5 @@
-import { getNetworkEndpoints, Network } from '@injectivelabs/networks'
-import { mockFactory } from '@injectivelabs/test-utils'
+import { getNetworkEndpoints, Network } from '@thomasralee/networks'
+import { mockFactory } from '@thomasralee/test-utils'
 import { IndexerGrpcInsuranceFundTransformer } from '../transformers'
 import { IndexerGrpcInsuranceFundApi } from './IndexerGrpcInsuranceFundApi'
 
@@ -21,7 +21,7 @@ describe('IndexerGrpcInsuranceFundApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof IndexerGrpcInsuranceFundTransformer.redemptionsResponseToRedemptions
@@ -44,7 +44,7 @@ describe('IndexerGrpcInsuranceFundApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof IndexerGrpcInsuranceFundTransformer.insuranceFundsResponseToInsuranceFunds

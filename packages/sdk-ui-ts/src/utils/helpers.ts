@@ -1,11 +1,11 @@
 import path from 'path'
-import { TokenType } from '@injectivelabs/token-metadata'
+import { TokenType } from '@thomasralee/token-metadata'
 import { validatorAddressToPathMap } from './mappings'
 // @ts-ignore
 import validatorToAddressMapFromKeybase from '../validators-logo/mappings.json'
 
 export const getTokenLogoWithVendorPathPrefix = (image: string) => {
-  if (image.includes('@injectivelabs')) {
+  if (image.includes('@thomasralee')) {
     return image
   }
 
@@ -17,7 +17,7 @@ export const getTokenLogoWithVendorPathPrefix = (image: string) => {
     return image
   }
 
-  return path.join('/', 'vendor', '@injectivelabs', 'token-metadata', image)
+  return path.join('/', 'vendor', '@thomasralee', 'token-metadata', image)
 }
 
 export const getTokenLogoFromTokenType = (tokenType: TokenType) => {
@@ -49,7 +49,7 @@ export const getValidatorLogoWithVendorPathPrefix = (
   return path.join(
     '/',
     'vendor',
-    '@injectivelabs',
+    '@thomasralee',
     'sdk-ui-ts',
     validatorLogoPath ? validatorLogoPath : 'injective.webp',
   )

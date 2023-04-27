@@ -1,4 +1,4 @@
-import { WalletErrorActionModule } from '@injectivelabs/exceptions'
+import { WalletErrorActionModule } from '@thomasralee/exceptions'
 
 export enum Wallet {
   Metamask = 'metamask',

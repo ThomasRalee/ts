@@ -1,5 +1,5 @@
 import { InjectiveAccountRpc } from '@injectivelabs/indexer-proto-ts'
-import { Coin } from '@injectivelabs/ts-types'
+import { Coin } from '@thomasralee/ts-types'
 
 export enum TransferType {
   Internal = 'internal',

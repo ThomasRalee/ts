@@ -1,6 +1,6 @@
-import { Validator, ChainGrpcStakingApi } from '@injectivelabs/sdk-ts'
-import { Network, getNetworkEndpoints } from '@injectivelabs/networks'
-import { HttpRestClient } from '@injectivelabs/utils'
+import { Validator, ChainGrpcStakingApi } from '@thomasralee/sdk-ts'
+import { Network, getNetworkEndpoints } from '@thomasralee/networks'
+import { HttpRestClient } from '@thomasralee/utils'
 import path from 'path'
 import fs from 'fs'
 // @ts-ignore
@@ -68,9 +68,10 @@ const fetchLogoUrl = async (identity: string): Promise<string | undefined> => {
 
     return response.data?.them?.[0]?.pictures.primary.url
   } catch (e: unknown) {
+    // eslint-disable-next-line no-console
     console.log(e)
 
-    return
+    return undefined
   }
 }
 
@@ -121,12 +122,16 @@ const downloadImages = async (imageOrigin: string, imageFolderPath: string) => {
 
     stream.on('finish', () => {
       stream.close()
+      // eslint-disable-next-line no-console
       console.log('Image downloaded successfully')
     })
+
+    return undefined
   } catch (e) {
+    // eslint-disable-next-line no-console
     console.log(e)
 
-    return
+    return undefined
   }
 }
 
@@ -152,7 +157,7 @@ const queryAndMoveValidatorImages = async () => {
       const fileType = imageLogoPath.split('.').pop()
       const validatorFileName = `${validatorAddress}.${fileType}`
       const outputPath = path.resolve(
-        process.cwd() + `/src/validators-logo/images/${validatorFileName}`,
+        `${process.cwd()}/src/validators-logo/images/${validatorFileName}`,
       )
 
       downloadImages(imageLogoPath, outputPath)
@@ -224,7 +229,7 @@ async function handleSpecifiedValidatorUpdate() {
   const fileType = logoUrl.split('.').pop()
   const validatorFile = `${cliValidatorAddress}.${fileType}`
   const outputPath = path.resolve(
-    process.cwd() + `/src/validators-logo/images/${validatorFile}`,
+    `${process.cwd()}/src/validators-logo/images/${validatorFile}`,
   )
 
   downloadImages(logoUrl, outputPath)

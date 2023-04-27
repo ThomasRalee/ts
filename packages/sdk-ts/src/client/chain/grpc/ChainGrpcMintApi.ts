@@ -1,12 +1,12 @@
 import { getGrpcWebImpl } from '../../BaseGrpcWebConsumer'
 import { cosmosSdkDecToBigNumber, uint8ArrayToString } from '../../../utils'
-import { BigNumberInBase } from '@injectivelabs/utils'
+import { BigNumberInBase } from '@thomasralee/utils'
 import { ChainGrpcMintTransformer } from './../transformers/ChainGrpcMintTransformer'
 import { ChainModule } from '../types'
 import {
   GrpcUnaryRequestException,
   UnspecifiedErrorCode,
-} from '@injectivelabs/exceptions'
+} from '@thomasralee/exceptions'
 import { CosmosMintV1Beta1Query } from '@injectivelabs/core-proto-ts'
 
 /**

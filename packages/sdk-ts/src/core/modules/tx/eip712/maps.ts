@@ -1,4 +1,4 @@
-import { GeneralException } from '@injectivelabs/exceptions'
+import { GeneralException } from '@thomasralee/exceptions'
 import snakecaseKeys from 'snakecase-keys'
 import { snakeToPascal } from '../../../../utils/helpers'
 import { isNumber, numberToCosmosSdkDecString } from '../../../../utils/numbers'
@@ -241,7 +241,7 @@ export const mapValuesToProperValueType = <T extends Record<string, unknown>>(
       if (value instanceof Date) {
         return {
           ...result,
-          [key]: value.toJSON().split('.')[0] +  "Z",
+          [key]: value.toJSON().split('.')[0] + 'Z',
         }
       }
       if (Array.isArray(value)) {

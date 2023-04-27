@@ -1,4 +1,4 @@
-import { Coin } from '@injectivelabs/ts-types'
+import { Coin } from '@thomasralee/ts-types'
 import { BankBalances } from '../types'
 
 export class UiBankTransformer {

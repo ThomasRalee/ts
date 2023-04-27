@@ -2,12 +2,12 @@ import {
   AccountAddress,
   EthereumChainId,
   TransactionOptions,
-} from '@injectivelabs/ts-types'
+} from '@thomasralee/ts-types'
 import {
   Web3Exception,
   GeneralException,
   UnspecifiedErrorCode,
-} from '@injectivelabs/exceptions'
+} from '@thomasralee/exceptions'
 import abi from './abi/peggy'
 import { Contract, ContractTxFunctionObj } from '../types'
 import BaseContract from '../BaseContract'

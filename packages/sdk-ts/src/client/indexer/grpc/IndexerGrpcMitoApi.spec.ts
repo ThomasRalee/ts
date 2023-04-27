@@ -1,5 +1,5 @@
-import { getNetworkEndpoints, Network } from '@injectivelabs/networks'
-import { mockFactory } from '@injectivelabs/test-utils'
+import { getNetworkEndpoints, Network } from '@thomasralee/networks'
+import { mockFactory } from '@thomasralee/test-utils'
 import { IndexerGrpcMitoTransformer } from '../transformers'
 import { IndexerGrpcMitoApi } from './IndexerGrpcMitoApi'
 
@@ -16,7 +16,7 @@ describe('IndexerGrpcMitoApi', () => {
       })
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<typeof IndexerGrpcMitoTransformer.vaultResponseToVault>
         >(response),
@@ -35,7 +35,7 @@ describe('IndexerGrpcMitoApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<typeof IndexerGrpcMitoTransformer.vaultsResponseToVaults>
         >(response),
@@ -58,7 +58,7 @@ describe('IndexerGrpcMitoApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof IndexerGrpcMitoTransformer.LPTokenPriceChartResponseToLPTokenPriceChart
@@ -83,7 +83,7 @@ describe('IndexerGrpcMitoApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof IndexerGrpcMitoTransformer.LPTokenPriceChartResponseToLPTokenPriceChart
@@ -109,7 +109,7 @@ describe('IndexerGrpcMitoApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof IndexerGrpcMitoTransformer.VaultsByHolderAddressResponseToVaultsByHolderAddress
@@ -135,7 +135,7 @@ describe('IndexerGrpcMitoApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof IndexerGrpcMitoTransformer.LPHoldersResponseToLPHolders
@@ -160,7 +160,7 @@ describe('IndexerGrpcMitoApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof IndexerGrpcMitoTransformer.PortfolioResponseToPortfolio
@@ -183,7 +183,7 @@ describe('IndexerGrpcMitoApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof IndexerGrpcMitoTransformer.LeaderboardResponseToLeaderboard
@@ -206,7 +206,7 @@ describe('IndexerGrpcMitoApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof IndexerGrpcMitoTransformer.TransferHistoryResponseToTransfer
@@ -230,7 +230,7 @@ describe('IndexerGrpcMitoApi', () => {
       }
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof IndexerGrpcMitoTransformer.LeaderboardEpochsResponseToLeaderboardEpochs

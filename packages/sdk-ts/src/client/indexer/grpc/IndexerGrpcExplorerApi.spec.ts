@@ -1,5 +1,5 @@
-import { getNetworkEndpoints, Network } from '@injectivelabs/networks'
-import { mockFactory } from '@injectivelabs/test-utils'
+import { getNetworkEndpoints, Network } from '@thomasralee/networks'
+import { mockFactory } from '@thomasralee/test-utils'
 import { IndexerRestExplorerApi } from '../rest'
 import { IndexerGrpcExplorerTransformer } from '../transformers'
 import { ExplorerValidator } from '../types'
@@ -31,7 +31,7 @@ describe('IndexerGrpcExplorerApi', () => {
       )
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof IndexerGrpcExplorerTransformer.validatorResponseToValidator
@@ -52,7 +52,7 @@ describe('IndexerGrpcExplorerApi', () => {
       )
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof IndexerGrpcExplorerTransformer.getValidatorUptimeResponseToValidatorUptime
@@ -71,7 +71,7 @@ describe('IndexerGrpcExplorerApi', () => {
       const response = await indexerGrpcExplorerApi.fetchBlocks({ limit: 1 })
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<typeof response>(response),
       )
     } catch (e) {
@@ -90,7 +90,7 @@ describe('IndexerGrpcExplorerApi', () => {
       const response = await indexerGrpcExplorerApi.fetchBlock(block.height)
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<typeof response>(response),
       )
     } catch (e) {
@@ -105,7 +105,7 @@ describe('IndexerGrpcExplorerApi', () => {
       const response = await indexerGrpcExplorerApi.fetchTxs({ limit: 1 })
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<typeof response>(response),
       )
     } catch (e) {
@@ -123,7 +123,7 @@ describe('IndexerGrpcExplorerApi', () => {
       const response = await indexerGrpcExplorerApi.fetchTxByHash(tx.hash)
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof IndexerGrpcExplorerTransformer.getTxByTxHashResponseToTx
@@ -145,7 +145,7 @@ describe('IndexerGrpcExplorerApi', () => {
       })
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof IndexerGrpcExplorerTransformer.getAccountTxsResponseToAccountTxs
@@ -166,7 +166,7 @@ describe('IndexerGrpcExplorerApi', () => {
       })
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof IndexerGrpcExplorerTransformer.getIBCTransferTxsResponseToIBCTransferTxs
@@ -187,7 +187,7 @@ describe('IndexerGrpcExplorerApi', () => {
       })
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof IndexerGrpcExplorerTransformer.getPeggyDepositTxsResponseToPeggyDepositTxs
@@ -208,7 +208,7 @@ describe('IndexerGrpcExplorerApi', () => {
       })
 
       expect(response).toBeDefined()
-      expect(response).toEqual(
+      expect(response).toStrictEqual(
         expect.objectContaining<
           ReturnType<
             typeof IndexerGrpcExplorerTransformer.getPeggyWithdrawalTxsResponseToPeggyWithdrawalTxs

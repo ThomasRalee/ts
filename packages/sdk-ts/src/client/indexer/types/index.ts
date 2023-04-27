@@ -1,4 +1,4 @@
-import { IndexerErrorModule } from '@injectivelabs/exceptions'
+import { IndexerErrorModule } from '@thomasralee/exceptions'
 
 export * from './account'
 export * from './account-portfolio'

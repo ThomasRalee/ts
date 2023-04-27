@@ -6,12 +6,12 @@ import {
   EvmChain,
 } from '@axelar-network/axelarjs-sdk'
 import { providers, Contract } from 'ethers'
-import { BigNumberInWei } from '@injectivelabs/utils'
+import { BigNumberInWei } from '@thomasralee/utils'
 import {
   ErrorType,
   MetamaskException,
   UnspecifiedErrorCode,
-} from '@injectivelabs/exceptions'
+} from '@thomasralee/exceptions'
 import { MOONBEAM_MAINNET_CHAIN_ID } from './constants'
 import { erc20Abi } from './erc20Abi'
 

@@ -1,7 +1,7 @@
 {
   "name": "@thomasralee/exceptions",
   "description": "List of exceptions that can be reused throughout Injective's projects.",
-  "version": "1.10.8",
+  "version": "1.10.9",
   "sideEffects": "false",
   "license": "Apache-2.0",
   "main": "dist/cjs/index.js",
@@ -38,5 +38,5 @@
     "link-module-alias": "^1.2.0",
     "shx": "^0.3.2"
   },
-  "gitHead": "e564ae8ce90d378334ee881c2da997d883ba9827"
+  "gitHead": "5b070c1c0a0c62bf1b604f023dfebc2cdce7c20a"
 }

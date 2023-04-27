@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.10.6](https://github.com/ThomasRalee/ts/compare/@thomasralee/test-utils@1.10.5...@thomasralee/test-utils@1.10.6) (2023-04-27)
+
+**Note:** Version bump only for package @thomasralee/test-utils
+
 ## [1.10.5](https://github.com/ThomasRalee/ts/compare/@thomasralee/test-utils@1.10.4...@thomasralee/test-utils@1.10.5) (2023-04-27)
 
 **Note:** Version bump only for package @thomasralee/test-utils

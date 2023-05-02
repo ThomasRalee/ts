@@ -46,4 +46,4 @@ jobs:
       - name: 'Broadcast published versions on Slack'
         run: node etc/slack --api=$SLACK_API
         env:
-          NPM_TOKEN: ${{ secrets.SLACK_API }}
+          SLACK_API: ${{ secrets.SLACK_API }}

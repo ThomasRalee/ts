@@ -1,7 +1,7 @@
 {
   "name": "@thomasralee/wallet-ts",
   "description": "A convenient way to use and interact with different types of wallets on Injective.",
-  "version": "1.10.73-beta.15",
+  "version": "1.10.73-beta.16",
   "sideEffects": "false",
   "author": {
     "name": "Bojan Angjelkoski",
@@ -51,7 +51,7 @@
     "@solana/wallet-adapter-wallets": "^0.19.5",
     "@thomasralee/exceptions": "^1.10.12-beta.1",
     "@thomasralee/networks": "^1.10.14-beta.1",
-    "@thomasralee/sdk-ts": "^1.10.68-beta.15",
+    "@thomasralee/sdk-ts": "^1.10.68-beta.16",
     "@thomasralee/ts-types": "^1.10.11-beta.1",
     "@thomasralee/utils": "^1.10.12-beta.1",
     "@toruslabs/torus-embed": "^1.39.0",

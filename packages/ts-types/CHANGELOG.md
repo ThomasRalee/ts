@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.10.11-beta.1](https://github.com/ThomasRalee/ts/compare/@thomasralee/ts-types@1.11.0...@thomasralee/ts-types@1.10.11-beta.1) (2023-05-02)
+
+**Note:** Version bump only for package @thomasralee/ts-types
+
+
+
+
+
 ## [1.10.11-beta.0](https://github.com/ThomasRalee/ts/compare/@thomasralee/ts-types@1.11.0...@thomasralee/ts-types@1.10.11-beta.0) (2023-04-27)
 
 **Note:** Version bump only for package @thomasralee/ts-types

@@ -43,5 +43,7 @@ jobs:
           npx lerna version --conventional-commits --conventional-prerelease --preid beta --force-git-tag --yes
           npx lerna publish from-git --force-git-tag --dist-tag next --yes --summary-file
 
-      - name: 'Broadcast versions on Slack'
-        run: node etc/slack
+      - name: 'Broadcast published versions on Slack'
+        run: node etc/slack --api=$SLACK_API
+        env:
+          NPM_TOKEN: ${{ secrets.SLACK_API }}

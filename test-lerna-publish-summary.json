@@ -1,6 +1,0 @@
-[
-  { "packageName": "@thomasralee/bridge-ts", "version": "1.10.69-beta.14" },
-  { "packageName": "@thomasralee/sdk-ts", "version": "1.10.68-beta.14" },
-  { "packageName": "@thomasralee/sdk-ui-ts", "version": "1.10.80-beta.14" },
-  { "packageName": "@thomasralee/wallet-ts", "version": "1.10.73-beta.14" }
-]

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.10.68-beta.2](https://github.com/ThomasRalee/ts/compare/@thomasralee/sdk-ts@1.10.68-beta.1...@thomasralee/sdk-ts@1.10.68-beta.2) (2023-05-02)
+
+
+### Bug Fixes
+
+* minor ([8bca9e4](https://github.com/ThomasRalee/ts/commit/8bca9e4f56a00a97645ea209dbb20a3cad6c19c0))
+
+
+
+
+
 ## [1.10.68-beta.1](https://github.com/ThomasRalee/ts/compare/@thomasralee/sdk-ts@1.11.0...@thomasralee/sdk-ts@1.10.68-beta.1) (2023-05-02)
 
 **Note:** Version bump only for package @thomasralee/sdk-ts

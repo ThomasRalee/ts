@@ -1,7 +1,7 @@
 {
   "name": "@thomasralee/bridge-ts",
   "description": "Bridge utilities and abstractions in TypeScript to be used in Injective products",
-  "version": "1.10.69-beta.13",
+  "version": "1.10.69-beta.14",
   "sideEffects": "false",
   "author": {
     "name": "Bojan Angjelkoski",
@@ -41,7 +41,7 @@
     "@solana/web3.js": "^1.66.2",
     "@thomasralee/exceptions": "^1.10.12-beta.1",
     "@thomasralee/networks": "^1.10.14-beta.1",
-    "@thomasralee/sdk-ts": "^1.10.68-beta.13",
+    "@thomasralee/sdk-ts": "^1.10.68-beta.14",
     "@thomasralee/ts-types": "^1.10.11-beta.1",
     "@thomasralee/utils": "^1.10.12-beta.1",
     "bech32": "^2.0.0",

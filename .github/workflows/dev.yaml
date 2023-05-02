@@ -22,6 +22,7 @@ jobs:
 
       - name: Build dependencies
         run: |
+          node bootstrapEnv
           npx lerna bootstrap
           yarn build
 
@@ -38,4 +39,4 @@ jobs:
           git config user.email "${{ github.actor}}@users.noreply.github.com"
 
           npx lerna version --conventional-commits --conventional-prerelease --preid beta --force-git-tag --yes
-          npx lerna publish from-git --force-git-tag --dist-tag next --yes --no-verify-access
+          npx lerna publish from-git --force-git-tag --dist-tag next --no-verify-access --summary-file ./etc/lerna --yes

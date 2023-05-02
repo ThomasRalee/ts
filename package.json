@@ -13,7 +13,7 @@
   },
   "scripts": {
     "postinstall": "node bootstrapEnv",
-    "build": "lerna run --parallel build",
+    "build": "node bootstrapEnv && lerna run --parallel build",
     "build:docs": "yarn typedoc",
     "lerna:publish:prerelease": "lerna publish --conventional-commits --conventional-prerelease",
     "lerna:publish": "lerna publish patch --no-private",

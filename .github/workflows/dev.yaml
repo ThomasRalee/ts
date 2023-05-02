@@ -22,8 +22,10 @@ jobs:
 
       - name: Build dependencies
         run: |
+          npm cache clean --force
+          npx clear-npx-cache
           node bootstrapEnv
-          npx lerna bootstrap
+          npx lerna@latest bootstrap
           yarn build
 
       - name: 'Setup npm'

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.10.73-beta.4](https://github.com/ThomasRalee/ts/compare/@thomasralee/wallet-ts@1.10.73-beta.3...@thomasralee/wallet-ts@1.10.73-beta.4) (2023-05-02)
+
+**Note:** Version bump only for package @thomasralee/wallet-ts
+
+
+
+
+
 ## [1.10.73-beta.3](https://github.com/ThomasRalee/ts/compare/@thomasralee/wallet-ts@1.10.73-beta.2...@thomasralee/wallet-ts@1.10.73-beta.3) (2023-05-02)
 
 **Note:** Version bump only for package @thomasralee/wallet-ts

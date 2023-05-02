@@ -41,4 +41,4 @@ jobs:
           git config user.email "${{ github.actor}}@users.noreply.github.com"
 
           npx lerna version --conventional-commits --conventional-prerelease --preid beta --force-git-tag --yes
-          npx lerna publish from-git --force-git-tag --dist-tag next --yes --summary-file ./etc/lerna-package.json
+          npx lerna publish from-git --force-git-tag --dist-tag next --yes --summary-file

@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.10.68-beta.17](https://github.com/ThomasRalee/ts/compare/@thomasralee/sdk-ts@1.10.68-beta.16...@thomasralee/sdk-ts@1.10.68-beta.17) (2023-05-02)
+
+**Note:** Version bump only for package @thomasralee/sdk-ts
+
 ## [1.10.68-beta.16](https://github.com/ThomasRalee/ts/compare/@thomasralee/sdk-ts@1.10.68-beta.15...@thomasralee/sdk-ts@1.10.68-beta.16) (2023-05-02)
 
 **Note:** Version bump only for package @thomasralee/sdk-ts

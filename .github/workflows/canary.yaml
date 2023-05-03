@@ -39,7 +39,8 @@ jobs:
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor}}@users.noreply.github.com"
 
-          npx lerna publish --preid beta --dist-tag dev --canary --yes --summary-file
+          npx lerna version --conventional-commits --conventional-prerelease --preid dev --force-git-tag --yes
+          npx lerna publish from-git --force-git-tag --dist-tag dev --yes --summary-file
 
       - name: 'Broadcast published versions on Slack'
         run: node etc/slack --api=$SLACK_API

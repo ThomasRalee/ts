@@ -6,7 +6,7 @@ on:
       - dev
 
 jobs:
-  publish:
+  publish-dev:
     runs-on: ubuntu-latest
 
     steps:

@@ -7,7 +7,7 @@ on:
       - dev
 
 jobs:
-  publish:
+  publish-canary:
     runs-on: ubuntu-latest
     if: contains(github.ref_name, 'canary')
     steps:

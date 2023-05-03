@@ -1,7 +1,7 @@
 {
   "name": "@thomasralee/sdk-ui-ts",
   "description": "SDK in TypeScript for building Injective UI applications in a browser environment.",
-  "version": "1.10.80-beta.17",
+  "version": "1.10.80",
   "sideEffects": "false",
   "license": "Apache-2.0",
   "author": {
@@ -37,14 +37,14 @@
     "validators-logo:update-all": "ts-node-dev --ignore-watch=validators-logo ./src/validators-logo --update:all "
   },
   "dependencies": {
-    "@thomasralee/contracts": "^1.10.19-beta.1",
-    "@thomasralee/exceptions": "^1.10.12-beta.1",
-    "@thomasralee/networks": "^1.10.14-beta.1",
-    "@thomasralee/sdk-ts": "^1.10.68-beta.17",
-    "@thomasralee/token-metadata": "^1.10.41-beta.1",
-    "@thomasralee/token-utils": "^1.10.15-beta.1",
-    "@thomasralee/ts-types": "^1.10.11-beta.1",
-    "@thomasralee/utils": "^1.10.12-beta.1",
+    "@thomasralee/contracts": "^1.10.19",
+    "@thomasralee/exceptions": "^1.10.12",
+    "@thomasralee/networks": "^1.10.14",
+    "@thomasralee/sdk-ts": "^1.10.68",
+    "@thomasralee/token-metadata": "^1.10.41",
+    "@thomasralee/token-utils": "^1.10.15",
+    "@thomasralee/ts-types": "^1.10.11",
+    "@thomasralee/utils": "^1.10.12",
     "alchemy-sdk": "^2.6.3",
     "copyfiles": "^2.4.1",
     "link-module-alias": "^1.2.0",

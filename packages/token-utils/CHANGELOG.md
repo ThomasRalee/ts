@@ -3,21 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.10.15](https://github.com/ThomasRalee/ts/compare/@thomasralee/token-utils@1.10.14...@thomasralee/token-utils@1.10.15) (2023-05-03)
+
+**Note:** Version bump only for package @thomasralee/token-utils
+
 ## [1.10.15-beta.1](https://github.com/ThomasRalee/ts/compare/@thomasralee/token-utils@1.11.0...@thomasralee/token-utils@1.10.15-beta.1) (2023-05-02)
 
 **Note:** Version bump only for package @thomasralee/token-utils
 
-
-
-
-
 ## [1.10.15-beta.0](https://github.com/ThomasRalee/ts/compare/@thomasralee/token-utils@1.11.0...@thomasralee/token-utils@1.10.15-beta.0) (2023-04-27)
 
 **Note:** Version bump only for package @thomasralee/token-utils
-
-
-
-
 
 ## [1.10.14](https://github.com/ThomasRalee/ts/compare/@thomasralee/token-utils@1.10.13...@thomasralee/token-utils@1.10.14) (2023-04-27)
 
@@ -39,52 +35,52 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
-* asset service ([5968d23](https://github.com/ThomasRalee/ts/commit/5968d236efc2b98aecbde26a13823cb2fdad1dfe))
-* assset service exception handling ([236916c](https://github.com/ThomasRalee/ts/commit/236916c888d0abd09fe970a092c0e76172079755))
-* bridge utils ([0961fca](https://github.com/ThomasRalee/ts/commit/0961fca000f812aa1d0b045764fa9c7dd126187c))
-* build script ([6e8c15f](https://github.com/ThomasRalee/ts/commit/6e8c15f5d0c0d61e15766abb6217f3fa34cdf791))
-* coingecko api key ([1c770ce](https://github.com/ThomasRalee/ts/commit/1c770ce7399d8e59fb0c812a2440a6a040ca075a))
-* dependency cycle ([8567551](https://github.com/ThomasRalee/ts/commit/856755179ac526f415f108b90a7b6f58f3e3258d))
-* esm imports ([7ba5cf6](https://github.com/ThomasRalee/ts/commit/7ba5cf69a58a3d4bb677859737089592c081552a))
-* minor ([39b553b](https://github.com/ThomasRalee/ts/commit/39b553b40cd7623836268651e892e5ed10812828))
-* number formatting ([fb71ba9](https://github.com/ThomasRalee/ts/commit/fb71ba9559719bf67a73881e268a5b3cbdeb9fa3))
-* numbers converstion ([dcf9dfb](https://github.com/ThomasRalee/ts/commit/dcf9dfb14ce45486649915c061412ce32beb350c))
-* optional param for rounding ([bc0ec90](https://github.com/ThomasRalee/ts/commit/bc0ec90c28bdf3e990165c64af39a91b2895a3b0))
-* orderMask and twitter link ([0474569](https://github.com/ThomasRalee/ts/commit/047456994f5233ed099174cd7f96a34f29dfbce8))
-* price fetch from the asset service ([289b586](https://github.com/ThomasRalee/ts/commit/289b58667e3578c8b6bdae49d0d80f437bf0a48a))
-* redundant packages ([7e3f38e](https://github.com/ThomasRalee/ts/commit/7e3f38e9281c7d9eec7aeb9ba94e2fc48c70d52f))
-* rounding ([b269c9a](https://github.com/ThomasRalee/ts/commit/b269c9aec7048ce1ae4b7862ab2e88cb7c59e033))
-* script minor ([adb7c76](https://github.com/ThomasRalee/ts/commit/adb7c764ad00a0cfa38223cecf9b221873cd31b8))
-* timeout for coingecko ([a0a16c5](https://github.com/ThomasRalee/ts/commit/a0a16c5ca40d452cf50f9d6b2569df7810112054))
-* token utils coingecko api ([69c1533](https://github.com/ThomasRalee/ts/commit/69c15339bef85a9537a70ef1524debec413ddea2))
+- asset service ([5968d23](https://github.com/ThomasRalee/ts/commit/5968d236efc2b98aecbde26a13823cb2fdad1dfe))
+- assset service exception handling ([236916c](https://github.com/ThomasRalee/ts/commit/236916c888d0abd09fe970a092c0e76172079755))
+- bridge utils ([0961fca](https://github.com/ThomasRalee/ts/commit/0961fca000f812aa1d0b045764fa9c7dd126187c))
+- build script ([6e8c15f](https://github.com/ThomasRalee/ts/commit/6e8c15f5d0c0d61e15766abb6217f3fa34cdf791))
+- coingecko api key ([1c770ce](https://github.com/ThomasRalee/ts/commit/1c770ce7399d8e59fb0c812a2440a6a040ca075a))
+- dependency cycle ([8567551](https://github.com/ThomasRalee/ts/commit/856755179ac526f415f108b90a7b6f58f3e3258d))
+- esm imports ([7ba5cf6](https://github.com/ThomasRalee/ts/commit/7ba5cf69a58a3d4bb677859737089592c081552a))
+- minor ([39b553b](https://github.com/ThomasRalee/ts/commit/39b553b40cd7623836268651e892e5ed10812828))
+- number formatting ([fb71ba9](https://github.com/ThomasRalee/ts/commit/fb71ba9559719bf67a73881e268a5b3cbdeb9fa3))
+- numbers converstion ([dcf9dfb](https://github.com/ThomasRalee/ts/commit/dcf9dfb14ce45486649915c061412ce32beb350c))
+- optional param for rounding ([bc0ec90](https://github.com/ThomasRalee/ts/commit/bc0ec90c28bdf3e990165c64af39a91b2895a3b0))
+- orderMask and twitter link ([0474569](https://github.com/ThomasRalee/ts/commit/047456994f5233ed099174cd7f96a34f29dfbce8))
+- price fetch from the asset service ([289b586](https://github.com/ThomasRalee/ts/commit/289b58667e3578c8b6bdae49d0d80f437bf0a48a))
+- redundant packages ([7e3f38e](https://github.com/ThomasRalee/ts/commit/7e3f38e9281c7d9eec7aeb9ba94e2fc48c70d52f))
+- rounding ([b269c9a](https://github.com/ThomasRalee/ts/commit/b269c9aec7048ce1ae4b7862ab2e88cb7c59e033))
+- script minor ([adb7c76](https://github.com/ThomasRalee/ts/commit/adb7c764ad00a0cfa38223cecf9b221873cd31b8))
+- timeout for coingecko ([a0a16c5](https://github.com/ThomasRalee/ts/commit/a0a16c5ca40d452cf50f9d6b2569df7810112054))
+- token utils coingecko api ([69c1533](https://github.com/ThomasRalee/ts/commit/69c15339bef85a9537a70ef1524debec413ddea2))
 
 ### Features
 
-* add unit test coverage for eip712 messages ([#75](https://github.com/ThomasRalee/ts/issues/75)) ([cf7e2fd](https://github.com/ThomasRalee/ts/commit/cf7e2fde727979fcf2187385d72b96efbed6d61a))
-* added httpRestClient which handles timeout exceptions ([c200bc2](https://github.com/ThomasRalee/ts/commit/c200bc25fe67901ad80462166c5cc841449df6b8))
-* added new asset service ([59f846f](https://github.com/ThomasRalee/ts/commit/59f846fcd0939b8d2fd317773558681e2a8b424f))
-* added number conversion utils ([6912fb0](https://github.com/ThomasRalee/ts/commit/6912fb0ac1f5ffcfd11eff8980745593eabcd46f))
-* added toFixed variants ([f0194b4](https://github.com/ThomasRalee/ts/commit/f0194b496b04a65a6a1a479c74031ff1bbd83a7d))
-* bridge-ts initial ([4320b1c](https://github.com/ThomasRalee/ts/commit/4320b1c256b58caec7a08c33854f0bdde9681c3c))
-* chainConsumer add support for MsgInstantSpotMarketLaunch ([4bc6a49](https://github.com/ThomasRalee/ts/commit/4bc6a49a125e58f2dd5dce2d1e6da8557b64a976))
-* extended cg api ([1b4399f](https://github.com/ThomasRalee/ts/commit/1b4399f012fdf33e11825db7a62ba2d4240295c5))
-* funding payments, validator uptime, bridge txs ([e6265d4](https://github.com/ThomasRalee/ts/commit/e6265d4a1893701284c271e9e9715368a2cd1104))
-* initial exceptions setup ([6da9f2e](https://github.com/ThomasRalee/ts/commit/6da9f2eb2df2fcd2995fc9cd25a615dc607da253))
-* spot and derivative services and cleanup ([e638c67](https://github.com/ThomasRalee/ts/commit/e638c67db9ec2d8200aa0a9d47d458abb9e1ef46))
-* token price utils ([1d79620](https://github.com/ThomasRalee/ts/commit/1d796200d4f1fe0c09a71cd0318305983fdf44ad))
-* ui common services ([74f5099](https://github.com/ThomasRalee/ts/commit/74f5099cd603086a713d4fb436ad6a322e45ea25))
+- add unit test coverage for eip712 messages ([#75](https://github.com/ThomasRalee/ts/issues/75)) ([cf7e2fd](https://github.com/ThomasRalee/ts/commit/cf7e2fde727979fcf2187385d72b96efbed6d61a))
+- added httpRestClient which handles timeout exceptions ([c200bc2](https://github.com/ThomasRalee/ts/commit/c200bc25fe67901ad80462166c5cc841449df6b8))
+- added new asset service ([59f846f](https://github.com/ThomasRalee/ts/commit/59f846fcd0939b8d2fd317773558681e2a8b424f))
+- added number conversion utils ([6912fb0](https://github.com/ThomasRalee/ts/commit/6912fb0ac1f5ffcfd11eff8980745593eabcd46f))
+- added toFixed variants ([f0194b4](https://github.com/ThomasRalee/ts/commit/f0194b496b04a65a6a1a479c74031ff1bbd83a7d))
+- bridge-ts initial ([4320b1c](https://github.com/ThomasRalee/ts/commit/4320b1c256b58caec7a08c33854f0bdde9681c3c))
+- chainConsumer add support for MsgInstantSpotMarketLaunch ([4bc6a49](https://github.com/ThomasRalee/ts/commit/4bc6a49a125e58f2dd5dce2d1e6da8557b64a976))
+- extended cg api ([1b4399f](https://github.com/ThomasRalee/ts/commit/1b4399f012fdf33e11825db7a62ba2d4240295c5))
+- funding payments, validator uptime, bridge txs ([e6265d4](https://github.com/ThomasRalee/ts/commit/e6265d4a1893701284c271e9e9715368a2cd1104))
+- initial exceptions setup ([6da9f2e](https://github.com/ThomasRalee/ts/commit/6da9f2eb2df2fcd2995fc9cd25a615dc607da253))
+- spot and derivative services and cleanup ([e638c67](https://github.com/ThomasRalee/ts/commit/e638c67db9ec2d8200aa0a9d47d458abb9e1ef46))
+- token price utils ([1d79620](https://github.com/ThomasRalee/ts/commit/1d796200d4f1fe0c09a71cd0318305983fdf44ad))
+- ui common services ([74f5099](https://github.com/ThomasRalee/ts/commit/74f5099cd603086a713d4fb436ad6a322e45ea25))
 
 ## [1.10.9](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/token-utils@1.10.8...@injectivelabs/token-utils@1.10.9) (2023-04-18)
 
 ### Bug Fixes
 
-* build script ([6e8c15f](https://github.com/InjectiveLabs/injective-ts/commit/6e8c15f5d0c0d61e15766abb6217f3fa34cdf791))
+- build script ([6e8c15f](https://github.com/InjectiveLabs/injective-ts/commit/6e8c15f5d0c0d61e15766abb6217f3fa34cdf791))
 
 ## [1.10.8](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/token-utils@1.10.7...@injectivelabs/token-utils@1.10.8) (2023-04-15)
 
 ### Bug Fixes
 
-* script minor ([adb7c76](https://github.com/InjectiveLabs/injective-ts/commit/adb7c764ad00a0cfa38223cecf9b221873cd31b8))
+- script minor ([adb7c76](https://github.com/InjectiveLabs/injective-ts/commit/adb7c764ad00a0cfa38223cecf9b221873cd31b8))
 
 ## [1.10.7](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/token-utils@1.10.6...@injectivelabs/token-utils@1.10.7) (2023-04-12)
 
@@ -118,7 +114,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
-* timeout for coingecko ([a0a16c5](https://github.com/InjectiveLabs/injective-ts/commit/a0a16c5ca40d452cf50f9d6b2569df7810112054))
+- timeout for coingecko ([a0a16c5](https://github.com/InjectiveLabs/injective-ts/commit/a0a16c5ca40d452cf50f9d6b2569df7810112054))
 
 # [1.10.0](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/token-utils@1.10.0-alpha.4...@injectivelabs/token-utils@1.10.0) (2023-03-23)
 
@@ -244,7 +240,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
-* assset service exception handling ([236916c](https://github.com/InjectiveLabs/injective-ts/commit/236916c888d0abd09fe970a092c0e76172079755))
+- assset service exception handling ([236916c](https://github.com/InjectiveLabs/injective-ts/commit/236916c888d0abd09fe970a092c0e76172079755))
 
 ## [1.0.66](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/token-utils@1.0.65...@injectivelabs/token-utils@1.0.66) (2023-01-18)
 
@@ -254,7 +250,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
-* price fetch from the asset service ([289b586](https://github.com/InjectiveLabs/injective-ts/commit/289b58667e3578c8b6bdae49d0d80f437bf0a48a))
+- price fetch from the asset service ([289b586](https://github.com/InjectiveLabs/injective-ts/commit/289b58667e3578c8b6bdae49d0d80f437bf0a48a))
 
 ## [1.0.64](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/token-utils@1.0.63...@injectivelabs/token-utils@1.0.64) (2023-01-13)
 
@@ -312,7 +308,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* added httpRestClient which handles timeout exceptions ([c200bc2](https://github.com/InjectiveLabs/injective-ts/commit/c200bc25fe67901ad80462166c5cc841449df6b8))
+- added httpRestClient which handles timeout exceptions ([c200bc2](https://github.com/InjectiveLabs/injective-ts/commit/c200bc25fe67901ad80462166c5cc841449df6b8))
 
 ## [1.0.50](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/token-utils@1.0.49...@injectivelabs/token-utils@1.0.50) (2022-12-22)
 
@@ -378,7 +374,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* bridge-ts initial ([4320b1c](https://github.com/InjectiveLabs/injective-ts/commit/4320b1c256b58caec7a08c33854f0bdde9681c3c))
+- bridge-ts initial ([4320b1c](https://github.com/InjectiveLabs/injective-ts/commit/4320b1c256b58caec7a08c33854f0bdde9681c3c))
 
 ## [1.0.34](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/token-utils@1.0.33...@injectivelabs/token-utils@1.0.34) (2022-11-06)
 
@@ -392,13 +388,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
-* asset service ([5968d23](https://github.com/InjectiveLabs/injective-ts/commit/5968d236efc2b98aecbde26a13823cb2fdad1dfe))
+- asset service ([5968d23](https://github.com/InjectiveLabs/injective-ts/commit/5968d236efc2b98aecbde26a13823cb2fdad1dfe))
 
 ## [1.0.31](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/token-utils@1.0.30...@injectivelabs/token-utils@1.0.31) (2022-10-17)
 
 ### Features
 
-* added new asset service ([59f846f](https://github.com/InjectiveLabs/injective-ts/commit/59f846fcd0939b8d2fd317773558681e2a8b424f))
+- added new asset service ([59f846f](https://github.com/InjectiveLabs/injective-ts/commit/59f846fcd0939b8d2fd317773558681e2a8b424f))
 
 ## [1.0.30](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/token-utils@1.0.29...@injectivelabs/token-utils@1.0.30) (2022-09-28)
 
@@ -436,7 +432,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* initial exceptions setup ([6da9f2e](https://github.com/InjectiveLabs/injective-ts/commit/6da9f2eb2df2fcd2995fc9cd25a615dc607da253))
+- initial exceptions setup ([6da9f2e](https://github.com/InjectiveLabs/injective-ts/commit/6da9f2eb2df2fcd2995fc9cd25a615dc607da253))
 
 ## [1.0.21](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/token-utils@1.0.20...@injectivelabs/token-utils@1.0.21) (2022-09-15)
 
@@ -446,7 +442,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* add unit test coverage for eip712 messages ([#75](https://github.com/InjectiveLabs/injective-ts/issues/75)) ([cf7e2fd](https://github.com/InjectiveLabs/injective-ts/commit/cf7e2fde727979fcf2187385d72b96efbed6d61a))
+- add unit test coverage for eip712 messages ([#75](https://github.com/InjectiveLabs/injective-ts/issues/75)) ([cf7e2fd](https://github.com/InjectiveLabs/injective-ts/commit/cf7e2fde727979fcf2187385d72b96efbed6d61a))
 
 ## [1.0.19](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/token-utils@1.0.18...@injectivelabs/token-utils@1.0.19) (2022-09-14)
 
@@ -480,7 +476,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
-* orderMask and twitter link ([0474569](https://github.com/InjectiveLabs/injective-ts/commit/047456994f5233ed099174cd7f96a34f29dfbce8))
+- orderMask and twitter link ([0474569](https://github.com/InjectiveLabs/injective-ts/commit/047456994f5233ed099174cd7f96a34f29dfbce8))
 
 ## [1.0.11](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/token-utils@1.0.10...@injectivelabs/token-utils@1.0.11) (2022-08-05)
 
@@ -510,7 +506,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
-* token utils coingecko api ([69c1533](https://github.com/InjectiveLabs/injective-ts/commit/69c15339bef85a9537a70ef1524debec413ddea2))
+- token utils coingecko api ([69c1533](https://github.com/InjectiveLabs/injective-ts/commit/69c15339bef85a9537a70ef1524debec413ddea2))
 
 ## [1.0.4](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/token-utils@1.0.3...@injectivelabs/token-utils@1.0.4) (2022-06-15)
 
@@ -604,24 +600,24 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
-* coingecko api key ([1c770ce](https://github.com/InjectiveLabs/injective-ts/commit/1c770ce7399d8e59fb0c812a2440a6a040ca075a))
-* dependency cycle ([8567551](https://github.com/InjectiveLabs/injective-ts/commit/856755179ac526f415f108b90a7b6f58f3e3258d))
-* number formatting ([fb71ba9](https://github.com/InjectiveLabs/injective-ts/commit/fb71ba9559719bf67a73881e268a5b3cbdeb9fa3))
-* numbers converstion ([dcf9dfb](https://github.com/InjectiveLabs/injective-ts/commit/dcf9dfb14ce45486649915c061412ce32beb350c))
-* optional param for rounding ([bc0ec90](https://github.com/InjectiveLabs/injective-ts/commit/bc0ec90c28bdf3e990165c64af39a91b2895a3b0))
-* redundant packages ([7e3f38e](https://github.com/InjectiveLabs/injective-ts/commit/7e3f38e9281c7d9eec7aeb9ba94e2fc48c70d52f))
-* rounding ([b269c9a](https://github.com/InjectiveLabs/injective-ts/commit/b269c9aec7048ce1ae4b7862ab2e88cb7c59e033))
+- coingecko api key ([1c770ce](https://github.com/InjectiveLabs/injective-ts/commit/1c770ce7399d8e59fb0c812a2440a6a040ca075a))
+- dependency cycle ([8567551](https://github.com/InjectiveLabs/injective-ts/commit/856755179ac526f415f108b90a7b6f58f3e3258d))
+- number formatting ([fb71ba9](https://github.com/InjectiveLabs/injective-ts/commit/fb71ba9559719bf67a73881e268a5b3cbdeb9fa3))
+- numbers converstion ([dcf9dfb](https://github.com/InjectiveLabs/injective-ts/commit/dcf9dfb14ce45486649915c061412ce32beb350c))
+- optional param for rounding ([bc0ec90](https://github.com/InjectiveLabs/injective-ts/commit/bc0ec90c28bdf3e990165c64af39a91b2895a3b0))
+- redundant packages ([7e3f38e](https://github.com/InjectiveLabs/injective-ts/commit/7e3f38e9281c7d9eec7aeb9ba94e2fc48c70d52f))
+- rounding ([b269c9a](https://github.com/InjectiveLabs/injective-ts/commit/b269c9aec7048ce1ae4b7862ab2e88cb7c59e033))
 
 ### Features
 
-* added number conversion utils ([6912fb0](https://github.com/InjectiveLabs/injective-ts/commit/6912fb0ac1f5ffcfd11eff8980745593eabcd46f))
-* added toFixed variants ([f0194b4](https://github.com/InjectiveLabs/injective-ts/commit/f0194b496b04a65a6a1a479c74031ff1bbd83a7d))
-* chainConsumer add support for MsgInstantSpotMarketLaunch ([4bc6a49](https://github.com/InjectiveLabs/injective-ts/commit/4bc6a49a125e58f2dd5dce2d1e6da8557b64a976))
-* extended cg api ([1b4399f](https://github.com/InjectiveLabs/injective-ts/commit/1b4399f012fdf33e11825db7a62ba2d4240295c5))
-* funding payments, validator uptime, bridge txs ([e6265d4](https://github.com/InjectiveLabs/injective-ts/commit/e6265d4a1893701284c271e9e9715368a2cd1104))
-* spot and derivative services and cleanup ([e638c67](https://github.com/InjectiveLabs/injective-ts/commit/e638c67db9ec2d8200aa0a9d47d458abb9e1ef46))
-* token price utils ([1d79620](https://github.com/InjectiveLabs/injective-ts/commit/1d796200d4f1fe0c09a71cd0318305983fdf44ad))
-* ui common services ([74f5099](https://github.com/InjectiveLabs/injective-ts/commit/74f5099cd603086a713d4fb436ad6a322e45ea25))
+- added number conversion utils ([6912fb0](https://github.com/InjectiveLabs/injective-ts/commit/6912fb0ac1f5ffcfd11eff8980745593eabcd46f))
+- added toFixed variants ([f0194b4](https://github.com/InjectiveLabs/injective-ts/commit/f0194b496b04a65a6a1a479c74031ff1bbd83a7d))
+- chainConsumer add support for MsgInstantSpotMarketLaunch ([4bc6a49](https://github.com/InjectiveLabs/injective-ts/commit/4bc6a49a125e58f2dd5dce2d1e6da8557b64a976))
+- extended cg api ([1b4399f](https://github.com/InjectiveLabs/injective-ts/commit/1b4399f012fdf33e11825db7a62ba2d4240295c5))
+- funding payments, validator uptime, bridge txs ([e6265d4](https://github.com/InjectiveLabs/injective-ts/commit/e6265d4a1893701284c271e9e9715368a2cd1104))
+- spot and derivative services and cleanup ([e638c67](https://github.com/InjectiveLabs/injective-ts/commit/e638c67db9ec2d8200aa0a9d47d458abb9e1ef46))
+- token price utils ([1d79620](https://github.com/InjectiveLabs/injective-ts/commit/1d796200d4f1fe0c09a71cd0318305983fdf44ad))
+- ui common services ([74f5099](https://github.com/InjectiveLabs/injective-ts/commit/74f5099cd603086a713d4fb436ad6a322e45ea25))
 
 ## [0.0.23](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/token-utils@0.0.22...@injectivelabs/token-utils@0.0.23) (2022-02-15)
 
@@ -651,7 +647,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* spot and derivative services and cleanup ([e638c67](https://github.com/InjectiveLabs/injective-ts/commit/e638c67db9ec2d8200aa0a9d47d458abb9e1ef46))
+- spot and derivative services and cleanup ([e638c67](https://github.com/InjectiveLabs/injective-ts/commit/e638c67db9ec2d8200aa0a9d47d458abb9e1ef46))
 
 ## [0.0.16](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/token-utils@0.0.15...@injectivelabs/token-utils@0.0.16) (2022-02-09)
 
@@ -665,19 +661,19 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* ui common services ([6c95a68](https://github.com/InjectiveLabs/injective-ts/commit/6c95a68054efb165ea451b15b2466fa4478f9971))
+- ui common services ([6c95a68](https://github.com/InjectiveLabs/injective-ts/commit/6c95a68054efb165ea451b15b2466fa4478f9971))
 
 ## [0.0.13](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/token-utils@0.0.10...@injectivelabs/token-utils@0.0.13) (2022-02-04)
 
 ### Features
 
-* chainConsumer add support for MsgInstantSpotMarketLaunch ([4bc6a49](https://github.com/InjectiveLabs/injective-ts/commit/4bc6a49a125e58f2dd5dce2d1e6da8557b64a976))
+- chainConsumer add support for MsgInstantSpotMarketLaunch ([4bc6a49](https://github.com/InjectiveLabs/injective-ts/commit/4bc6a49a125e58f2dd5dce2d1e6da8557b64a976))
 
 ## [0.0.12](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/token-utils@0.0.9...@injectivelabs/token-utils@0.0.12) (2022-02-03)
 
 ### Features
 
-* chainConsumer add support for MsgInstantSpotMarketLaunch ([4dbe2eb](https://github.com/InjectiveLabs/injective-ts/commit/4dbe2eba654096e987cf04d88689423d2fb1d8d5))
+- chainConsumer add support for MsgInstantSpotMarketLaunch ([4dbe2eb](https://github.com/InjectiveLabs/injective-ts/commit/4dbe2eba654096e987cf04d88689423d2fb1d8d5))
 
 ## [0.0.11](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/token-utils@0.0.9...@injectivelabs/token-utils@0.0.11) (2022-02-03)
 
@@ -691,13 +687,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
-* coingecko api key ([1c770ce](https://github.com/InjectiveLabs/injective-ts/commit/1c770ce7399d8e59fb0c812a2440a6a040ca075a))
+- coingecko api key ([1c770ce](https://github.com/InjectiveLabs/injective-ts/commit/1c770ce7399d8e59fb0c812a2440a6a040ca075a))
 
 ### Features
 
-* extended cg api ([1b4399f](https://github.com/InjectiveLabs/injective-ts/commit/1b4399f012fdf33e11825db7a62ba2d4240295c5))
-* funding payments, validator uptime, bridge txs ([e6265d4](https://github.com/InjectiveLabs/injective-ts/commit/e6265d4a1893701284c271e9e9715368a2cd1104))
-* token price utils ([1d79620](https://github.com/InjectiveLabs/injective-ts/commit/1d796200d4f1fe0c09a71cd0318305983fdf44ad))
+- extended cg api ([1b4399f](https://github.com/InjectiveLabs/injective-ts/commit/1b4399f012fdf33e11825db7a62ba2d4240295c5))
+- funding payments, validator uptime, bridge txs ([e6265d4](https://github.com/InjectiveLabs/injective-ts/commit/e6265d4a1893701284c271e9e9715368a2cd1104))
+- token price utils ([1d79620](https://github.com/InjectiveLabs/injective-ts/commit/1d796200d4f1fe0c09a71cd0318305983fdf44ad))
 
 ## [0.0.8](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/token-utils@0.0.7...@injectivelabs/token-utils@0.0.8) (2022-01-24)
 
@@ -711,38 +707,38 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
-* coingecko api key ([1c770ce](https://github.com/InjectiveLabs/injective-ts/commit/1c770ce7399d8e59fb0c812a2440a6a040ca075a))
+- coingecko api key ([1c770ce](https://github.com/InjectiveLabs/injective-ts/commit/1c770ce7399d8e59fb0c812a2440a6a040ca075a))
 
 ### Features
 
-* extended cg api ([1b4399f](https://github.com/InjectiveLabs/injective-ts/commit/1b4399f012fdf33e11825db7a62ba2d4240295c5))
-* token price utils ([1d79620](https://github.com/InjectiveLabs/injective-ts/commit/1d796200d4f1fe0c09a71cd0318305983fdf44ad))
+- extended cg api ([1b4399f](https://github.com/InjectiveLabs/injective-ts/commit/1b4399f012fdf33e11825db7a62ba2d4240295c5))
+- token price utils ([1d79620](https://github.com/InjectiveLabs/injective-ts/commit/1d796200d4f1fe0c09a71cd0318305983fdf44ad))
 
 ## 0.0.5 (2022-01-21)
 
 ### Bug Fixes
 
-* coingecko api key ([1c770ce](https://github.com/InjectiveLabs/injective-ts/commit/1c770ce7399d8e59fb0c812a2440a6a040ca075a))
+- coingecko api key ([1c770ce](https://github.com/InjectiveLabs/injective-ts/commit/1c770ce7399d8e59fb0c812a2440a6a040ca075a))
 
 ### Features
 
-* extended cg api ([1b4399f](https://github.com/InjectiveLabs/injective-ts/commit/1b4399f012fdf33e11825db7a62ba2d4240295c5))
-* token price utils ([1d79620](https://github.com/InjectiveLabs/injective-ts/commit/1d796200d4f1fe0c09a71cd0318305983fdf44ad))
+- extended cg api ([1b4399f](https://github.com/InjectiveLabs/injective-ts/commit/1b4399f012fdf33e11825db7a62ba2d4240295c5))
+- token price utils ([1d79620](https://github.com/InjectiveLabs/injective-ts/commit/1d796200d4f1fe0c09a71cd0318305983fdf44ad))
 
 ## [0.0.4](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/token-utils@0.0.3...@injectivelabs/token-utils@0.0.4) (2022-01-06)
 
 ### Bug Fixes
 
-* coingecko api key ([c11b0c0](https://github.com/InjectiveLabs/injective-ts/commit/c11b0c00c26a22ffc14389233886591860d966a6))
+- coingecko api key ([c11b0c0](https://github.com/InjectiveLabs/injective-ts/commit/c11b0c00c26a22ffc14389233886591860d966a6))
 
 ## [0.0.3](https://github.com/InjectiveLabs/injective-ts/compare/@injectivelabs/token-utils@0.0.2...@injectivelabs/token-utils@0.0.3) (2022-01-06)
 
 ### Features
 
-* extended cg api ([631684c](https://github.com/InjectiveLabs/injective-ts/commit/631684c4bd89da5aa85db336ae26f35140a4a796))
+- extended cg api ([631684c](https://github.com/InjectiveLabs/injective-ts/commit/631684c4bd89da5aa85db336ae26f35140a4a796))
 
 ## 0.0.2 (2022-01-06)
 
 ### Features
 
-* token price utils ([1ada376](https://github.com/InjectiveLabs/injective-ts/commit/1ada3769e90593d6c4e5adde661b4646e9af2ac9))
+- token price utils ([1ada376](https://github.com/InjectiveLabs/injective-ts/commit/1ada3769e90593d6c4e5adde661b4646e9af2ac9))

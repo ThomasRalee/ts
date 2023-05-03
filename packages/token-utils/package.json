@@ -1,6 +1,6 @@
 {
   "name": "@thomasralee/token-utils",
-  "version": "1.10.14",
+  "version": "1.10.15-beta.1",
   "description": "Token Utils is a package for querying different data about tokens",
   "sideEffects": "false",
   "author": {
@@ -20,7 +20,6 @@
   },
   "scripts": {
     "postinstall": "link-module-alias",
-    "prepublish": "shx mkdir -p dist",
     "build": "tsc --build tsconfig.build.json && tsc --build tsconfig.build.esm.json && yarn build:post && link-module-alias",
     "build:watch": "tsc --build -w tsconfig.build.json && tsc -w --build tsconfig.build.esm.json && yarn build:post && link-module-alias",
     "build:post": "shx cp ../../etc/stub/package.json.stub dist/cjs/package.json && shx cp ../../etc/stub/package.esm.json.stub dist/esm/package.json",
@@ -34,8 +33,8 @@
     "start": "node dist/index.js"
   },
   "dependencies": {
-    "@thomasralee/exceptions": "^1.10.6",
-    "@thomasralee/utils": "^1.10.6",
+    "@thomasralee/exceptions": "^1.10.12-beta.1",
+    "@thomasralee/utils": "^1.10.12-beta.1",
     "link-module-alias": "^1.2.0",
     "shx": "^0.3.2"
   },

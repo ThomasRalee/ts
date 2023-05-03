@@ -1,7 +1,7 @@
 {
   "name": "@thomasralee/contracts",
   "description": "Contracts wrapper that can be reused throughout Injective's projects.",
-  "version": "1.10.18",
+  "version": "1.10.19-beta.1",
   "sideEffects": "false",
   "license": "Apache-2.0",
   "main": "dist/cjs/index.js",
@@ -21,7 +21,6 @@
   },
   "scripts": {
     "postinstall": "link-module-alias",
-    "prepublish": "shx mkdir -p dist",
     "build": "tsc --build tsconfig.build.json && tsc --build tsconfig.build.esm.json && yarn build:post && link-module-alias",
     "build:watch": "tsc --build -w tsconfig.build.json && tsc -w --build tsconfig.build.esm.json && yarn build:post && link-module-alias",
     "build:post": "shx cp ../../etc/stub/package.json.stub dist/cjs/package.json && shx cp ../../etc/stub/package.esm.json.stub dist/esm/package.json",
@@ -35,10 +34,10 @@
     "start": "node dist/index.js"
   },
   "dependencies": {
-    "@thomasralee/exceptions": "^1.10.6",
-    "@thomasralee/networks": "^1.10.8",
-    "@thomasralee/ts-types": "^1.10.5",
-    "@thomasralee/utils": "^1.10.6",
+    "@thomasralee/exceptions": "^1.10.12-beta.1",
+    "@thomasralee/networks": "^1.10.14-beta.1",
+    "@thomasralee/ts-types": "^1.10.11-beta.1",
+    "@thomasralee/utils": "^1.10.12-beta.1",
     "ethers": "^5.7.2",
     "link-module-alias": "^1.2.0",
     "shx": "^0.3.3"

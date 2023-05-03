@@ -1,7 +1,7 @@
 {
   "name": "@thomasralee/bridge-ts",
   "description": "Bridge utilities and abstractions in TypeScript to be used in Injective products",
-  "version": "1.10.68",
+  "version": "1.10.69-beta.17",
   "sideEffects": "false",
   "author": {
     "name": "Bojan Angjelkoski",
@@ -21,7 +21,6 @@
   },
   "scripts": {
     "postinstall": "link-module-alias",
-    "prepublish": "shx mkdir -p dist",
     "build": "tsc --build tsconfig.build.json && tsc --build tsconfig.build.esm.json && yarn build:post && link-module-alias",
     "build:watch": "tsc --build -w tsconfig.build.json && tsc -w --build tsconfig.build.esm.json && yarn build:post && link-module-alias",
     "build:post": "shx cp ../../etc/stub/package.json.stub dist/cjs/package.json && shx cp ../../etc/stub/package.esm.json.stub dist/esm/package.json",
@@ -36,20 +35,20 @@
   },
   "dependencies": {
     "@axelar-network/axelarjs-sdk": "^0.11.7",
-    "@thomasralee/exceptions": "^1.10.6",
-    "@thomasralee/networks": "^1.10.8",
-    "@thomasralee/sdk-ts": "^1.10.62",
-    "@thomasralee/ts-types": "^1.10.5",
-    "@thomasralee/utils": "^1.10.6",
     "@injectivelabs/wormhole-sdk": "^1.10.0",
     "@solana/spl-token": "^0.3.6",
     "@solana/wallet-adapter-base": "^0.9.18",
     "@solana/web3.js": "^1.66.2",
+    "@thomasralee/exceptions": "^1.10.12-beta.1",
+    "@thomasralee/networks": "^1.10.14-beta.1",
+    "@thomasralee/sdk-ts": "^1.10.68-beta.17",
+    "@thomasralee/ts-types": "^1.10.11-beta.1",
+    "@thomasralee/utils": "^1.10.12-beta.1",
     "bech32": "^2.0.0",
     "ethers": "^5.7.2",
     "js-base64": "^3.7.5",
     "link-module-alias": "^1.2.0",
     "shx": "^0.3.2"
   },
-  "gitHead": "c804a4ab91bdf44745930fb4578c4ddd4d11fb14"
+  "gitHead": "60e0d11923868ac6615073f3b2dcea0a42fce8b5"
 }

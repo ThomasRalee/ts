@@ -1,7 +1,7 @@
 {
   "name": "@thomasralee/wallet-ts",
   "description": "A convenient way to use and interact with different types of wallets on Injective.",
-  "version": "1.10.72",
+  "version": "1.10.73-beta.17",
   "sideEffects": "false",
   "author": {
     "name": "Bojan Angjelkoski",
@@ -21,7 +21,6 @@
   },
   "scripts": {
     "postinstall": "link-module-alias",
-    "prepublish": "shx mkdir -p dist",
     "build": "tsc --build tsconfig.build.json && tsc --build tsconfig.build.esm.json && yarn build:post && link-module-alias",
     "build:watch": "tsc --build -w tsconfig.build.json && tsc -w --build tsconfig.build.esm.json && yarn build:post && link-module-alias",
     "build:post": "shx cp ../../etc/stub/package.json.stub dist/cjs/package.json && shx cp ../../etc/stub/package.esm.json.stub dist/esm/package.json",
@@ -41,11 +40,6 @@
     "@cosmostation/extension-client": "^0.1.15",
     "@ethereumjs/common": "^3.1.1",
     "@ethereumjs/tx": "^4.1.1",
-    "@thomasralee/exceptions": "^1.10.6",
-    "@thomasralee/networks": "^1.10.8",
-    "@thomasralee/sdk-ts": "^1.10.62",
-    "@thomasralee/ts-types": "^1.10.5",
-    "@thomasralee/utils": "^1.10.6",
     "@keplr-wallet/cosmos": "^0.11.58",
     "@keplr-wallet/types": "^0.11.58",
     "@ledgerhq/hw-app-eth": "6.32.2",
@@ -55,6 +49,11 @@
     "@metamask/detect-provider": "^2.0.0",
     "@metamask/eth-sig-util": "^4.0.0",
     "@solana/wallet-adapter-wallets": "^0.19.5",
+    "@thomasralee/exceptions": "^1.10.12-beta.1",
+    "@thomasralee/networks": "^1.10.14-beta.1",
+    "@thomasralee/sdk-ts": "^1.10.68-beta.17",
+    "@thomasralee/ts-types": "^1.10.11-beta.1",
+    "@thomasralee/utils": "^1.10.12-beta.1",
     "@toruslabs/torus-embed": "^1.39.0",
     "@trezor/connect-web": "^9.0.6",
     "alchemy-sdk": "^2.6.3",
@@ -73,7 +72,7 @@
     "@types/hdkey": "^2.0.1",
     "@types/ledgerhq__hw-transport-webusb": "^4.70.1"
   },
-  "gitHead": "c804a4ab91bdf44745930fb4578c4ddd4d11fb14",
+  "gitHead": "60e0d11923868ac6615073f3b2dcea0a42fce8b5",
   "typedoc": {
     "entryPoint": "./src/index.ts",
     "readmeFile": "./README.md",

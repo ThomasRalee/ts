@@ -12,8 +12,8 @@
     ]
   },
   "scripts": {
-    "prepare": "husky install",
-    "build": "lerna run --parallel build",
+    "postinstall": "node bootstrapEnv",
+    "build": "node bootstrapEnv && lerna run --parallel build",
     "build:docs": "yarn typedoc",
     "lerna:publish:prerelease": "lerna publish --conventional-commits --conventional-prerelease",
     "lerna:publish": "lerna publish patch --no-private",
@@ -24,7 +24,7 @@
     "build:patch:publish": "yarn build:fresh && yarn patch && yarn lerna:publish",
     "patch": "lerna version patch",
     "clean-up": "lerna run --parallel clean && shx rm -rf .build-cache *.log coverage junit.xml",
-    "bootstrap": "yarn clean-up && lerna bootstrap",
+    "bootstrap": "node init && yarn clean-up && lerna bootstrap",
     "test": "jest",
     "test:sdk-ts:client": "jest ./packages/sdk-ts/src/client",
     "test:sdk-ts:core": "jest ./packages/sdk-ts/src/core",
@@ -77,7 +77,7 @@
     "husky": "^7.0.2",
     "jest": "^29.4.3",
     "jest-junit": "^15.0.0",
-    "lerna": "^4.0.0",
+    "lerna": "6.6.1",
     "lint-staged": "^11.1.2",
     "live-server": "^1.2.1",
     "markdownlint-cli": "^0.28.1",

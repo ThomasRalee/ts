@@ -52,4 +52,5 @@ jobs:
           type: now
           from_branch: master
           target_branch: dev
+          message: Merge master into dev
           github_token: ${{ secrets.GH_TOKEN }}

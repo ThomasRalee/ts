@@ -26,11 +26,6 @@ jobs:
           npx lerna bootstrap
           yarn build
 
-      - name: Get PR Info
-        uses: minhchienwikipedia/get-pr-info@master
-        with:
-          token: ${{ secrets.GH_TOKEN }}
-
       - name: 'Setup npm'
         run: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc
         env:
@@ -50,3 +45,4 @@ jobs:
         run: node etc/slack --api=$SLACK_API --commit-message=$GIT_LATEST_COMMIT_MESSAGE
         env:
           SLACK_API: ${{ secrets.SLACK_API }}
+          GIT_LATEST_COMMIT_MESSAGE: ${{ github.event.head_commit.message }}

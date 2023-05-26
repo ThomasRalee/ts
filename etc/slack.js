@@ -1,10 +1,22 @@
 const fs = require('fs')
 const https = require('node:https')
 
+function getPublishedMessage() {
+  const commitMessageIndex = process.argv.find((arg) =>
+    arg.startsWith('--commit-message'),
+  )
+
+  if (commitMessageIndex > 0) {
+    return 'Published packages:'
+  }
+
+  return `Published packages: ${process.argv
+    .slice(commitMessageIndex)
+    .join('')}`
+}
+
 function getSlackAPI() {
   const apiValue = process.argv.find((arg) => arg.startsWith('--api='))
-
-  console.log(process.argv)
 
   if (!apiValue) {
     return
@@ -27,7 +39,7 @@ function formatPublishedItem({ packageName, version }) {
 
 function sendSlackMessage(webhookURL, publishedItems) {
   const messageBody = JSON.stringify({
-    text: 'Published packages',
+    text: getPublishedMessage(),
     blocks: [
       {
         type: 'rich_text',

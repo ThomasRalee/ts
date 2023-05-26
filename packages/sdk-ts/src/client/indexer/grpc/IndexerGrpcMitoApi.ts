@@ -67,16 +67,16 @@ export class IndexerGrpcMitoApi {
   }) {
     const request = MitoApi.GetVaultsRequest.create()
 
+    if (codeId) {
+      request.codeId = codeId
+    }
+
     if (pageIndex) {
       request.pageIndex = pageIndex
     }
 
     if (pageSize) {
       request.pageSize = pageSize
-    }
-
-    if (codeId) {
-      request.codeId = codeId
     }
 
     try {

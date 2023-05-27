@@ -9,15 +9,19 @@ function getActor() {
 
 function getPublishedMessage() {
   const actor = getActor()
-  const commitMessageIndex = process.argv.find((arg) =>
+  const commitMessageIndex = process.argv.findIndex((arg) =>
     arg.startsWith('--commit-message'),
   )
 
-  if (commitMessageIndex > 0) {
+  if (commitMessageIndex === -1) {
     return `Published packages: ${actor}`
   }
 
-  return `${process.argv.slice(commitMessageIndex).join('')} (${actor})`
+  return `${process.argv
+    .slice(commitMessageIndex)
+    .join(' ')
+    .split('=')
+    .pop()} (${actor})`
 }
 
 function getSlackAPI() {

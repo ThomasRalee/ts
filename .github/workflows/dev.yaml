@@ -42,7 +42,8 @@ jobs:
           npx lerna publish from-git --force-git-tag --dist-tag next --yes --summary-file
 
       - name: 'Broadcast published versions on Slack'
-        run: node etc/slack --api=$SLACK_API --commit-message=$GIT_LATEST_COMMIT_MESSAGE
+        run: node etc/slack --api=$SLACK_API --actor=$GIT_ACTOR --commit-message=$GIT_LATEST_COMMIT_MESSAGE
         env:
+          GIT_ACTOR: ${{ github.actor }}
           SLACK_API: ${{ secrets.SLACK_API }}
           GIT_LATEST_COMMIT_MESSAGE: ${{ github.event.head_commit.message }}

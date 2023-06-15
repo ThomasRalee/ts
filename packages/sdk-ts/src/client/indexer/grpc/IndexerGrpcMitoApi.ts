@@ -201,12 +201,12 @@ export class IndexerGrpcMitoApi {
       request.pageSize = pageSize
     }
 
-    if (vaultAddress) {
-      request.vaultAddress = vaultAddress
-    }
-
     if (pageIndex) {
       request.pageIndex = pageIndex
+    }
+
+    if (vaultAddress) {
+      request.vaultAddress = vaultAddress
     }
 
     try {

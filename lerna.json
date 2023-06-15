@@ -3,6 +3,7 @@
   "name": "injective-ts",
   "packages": ["packages/*"],
   "version": "independent",
+  "useWorkspaces": true,
   "command": {
     "version": {
       "message": "chore(release): publish"

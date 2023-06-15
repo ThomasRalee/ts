@@ -197,12 +197,12 @@ export class IndexerGrpcMitoApi {
 
     request.holderAddress = holderAddress
 
-    if (pageSize) {
-      request.pageSize = pageSize
-    }
-
     if (pageIndex) {
       request.pageIndex = pageIndex
+    }
+
+    if (pageSize) {
+      request.pageSize = pageSize
     }
 
     if (vaultAddress) {

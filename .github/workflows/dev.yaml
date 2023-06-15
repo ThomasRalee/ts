@@ -20,6 +20,9 @@ jobs:
         with:
           node-version: '16.18.1'
 
+      - name: 'Use Lerna 6.6.1'
+        run: yarn global add lerna@6.6.1
+
       - name: Build dependencies
         run: |
           node bootstrapEnv
@@ -38,8 +41,10 @@ jobs:
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor}}@users.noreply.github.com"
 
-          npx lerna version --conventional-commits --conventional-prerelease --preid beta --force-git-tag --yes
-          npx lerna publish from-git --force-git-tag --dist-tag next --yes --summary-file
+          yarn list --pattern="lerna"
+
+          lerna version --conventional-commits --conventional-prerelease --preid beta --force-git-tag --yes
+          lerna publish from-git --force-git-tag --dist-tag next --yes --summary-file
 
       - name: 'Broadcast published versions on Slack'
         run: node etc/slack --api=$SLACK_API --actor=$GIT_ACTOR --commit-message=$GIT_LATEST_COMMIT_MESSAGE

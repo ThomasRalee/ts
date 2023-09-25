@@ -3,6 +3,44 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.11.0-beta.0](https://github.com/ThomasRalee/ts/compare/@thomasralee/sdk-ts@1.10.72-beta.7...@thomasralee/sdk-ts@1.11.0-beta.0) (2023-09-25)
+
+### Features
+
+- test ([fddca77](https://github.com/ThomasRalee/ts/commit/fddca77c04c17465702cb77291e15c87712f9f27))
+
+## [1.10.72-beta.7](https://github.com/ThomasRalee/ts/compare/@thomasralee/sdk-ts@1.10.72-beta.6...@thomasralee/sdk-ts@1.10.72-beta.7) (2023-05-27)
+
+**Note:** Version bump only for package @thomasralee/sdk-ts
+
+## [1.10.72-beta.6](https://github.com/ThomasRalee/ts/compare/@thomasralee/sdk-ts@1.10.72-beta.5...@thomasralee/sdk-ts@1.10.72-beta.6) (2023-05-27)
+
+**Note:** Version bump only for package @thomasralee/sdk-ts
+
+## [1.10.72-beta.5](https://github.com/ThomasRalee/ts/compare/@thomasralee/sdk-ts@1.10.72-beta.4...@thomasralee/sdk-ts@1.10.72-beta.5) (2023-05-27)
+
+**Note:** Version bump only for package @thomasralee/sdk-ts
+
+## [1.10.72-beta.4](https://github.com/ThomasRalee/ts/compare/@thomasralee/sdk-ts@1.10.72-beta.3...@thomasralee/sdk-ts@1.10.72-beta.4) (2023-05-26)
+
+**Note:** Version bump only for package @thomasralee/sdk-ts
+
+## [1.10.72-beta.3](https://github.com/ThomasRalee/ts/compare/@thomasralee/sdk-ts@1.10.72-beta.0...@thomasralee/sdk-ts@1.10.72-beta.3) (2023-05-26)
+
+**Note:** Version bump only for package @thomasralee/sdk-ts
+
+## [1.10.72-beta.2](https://github.com/ThomasRalee/ts/compare/@thomasralee/sdk-ts@1.10.72-beta.0...@thomasralee/sdk-ts@1.10.72-beta.2) (2023-05-26)
+
+**Note:** Version bump only for package @thomasralee/sdk-ts
+
+## [1.10.72-beta.1](https://github.com/ThomasRalee/ts/compare/@thomasralee/sdk-ts@1.10.72-beta.0...@thomasralee/sdk-ts@1.10.72-beta.1) (2023-05-26)
+
+**Note:** Version bump only for package @thomasralee/sdk-ts
+
+## [1.10.72-beta.0](https://github.com/ThomasRalee/ts/compare/@thomasralee/sdk-ts@1.10.71...@thomasralee/sdk-ts@1.10.72-beta.0) (2023-05-03)
+
+**Note:** Version bump only for package @thomasralee/sdk-ts
+
 ## [1.10.71](https://github.com/ThomasRalee/ts/compare/@thomasralee/sdk-ts@1.10.71-beta.0...@thomasralee/sdk-ts@1.10.71) (2023-05-03)
 
 **Note:** Version bump only for package @thomasralee/sdk-ts

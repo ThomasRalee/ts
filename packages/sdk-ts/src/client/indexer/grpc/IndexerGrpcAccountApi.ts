@@ -1,13 +1,13 @@
-import { PaginationOption } from '../../../types/pagination'
-import { IndexerGrpcAccountTransformer } from '../transformers'
-import { IndexerModule } from '../types'
 import {
   GeneralException,
   UnspecifiedErrorCode,
   GrpcUnaryRequestException,
 } from '@thomasralee/exceptions'
-import { getGrpcIndexerWebImpl } from '../../BaseIndexerGrpcWebConsumer'
 import { InjectiveAccountRpc } from '@injectivelabs/indexer-proto-ts'
+import { PaginationOption } from '../../../types/pagination'
+import { IndexerGrpcAccountTransformer } from '../transformers'
+import { IndexerModule } from '../types'
+import { getGrpcIndexerWebImpl } from '../../BaseIndexerGrpcWebConsumer'
 
 /**
  * @category Indexer Grpc API
@@ -26,7 +26,8 @@ export class IndexerGrpcAccountApi {
   /**
    * @deprecated - use IndexerGrpcAccountPortfolioApi.fetchPortfolio instead
    */
-  async fetchPortfolio(_address: string) {
+  fetchPortfolio(_address: string) {
+    console.log(this.client)
     throw new GeneralException(
       new Error(
         'deprecated - use IndexerGrpcAccountPortfolioApi.fetchPortfolio',

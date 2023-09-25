@@ -21,7 +21,7 @@ jobs:
           node-version: '16.18.1'
 
       - name: 'Use Lerna 6.6.1'
-        run: yarn global add lerna@6.6.1
+        run: yarn global add lerna@6.6.1 --ignore-engines
 
       - name: Build dependencies
         run: |

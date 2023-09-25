@@ -24,12 +24,12 @@ export class DenomClientSync {
     this.tokenMetaUtils = TokenMetaUtilsFactory.make(network)
   }
 
-  getDenomTokenInfo(denom: string): TokenInfo | undefined {
-    return this.tokenFactory.toTokenInfo(denom)
-  }
-
   getDenomToken(denom: string): Token | undefined {
     return this.tokenFactory.toToken(denom)
+  }
+
+  getDenomTokenInfo(denom: string): TokenInfo | undefined {
+    return this.tokenFactory.toTokenInfo(denom)
   }
 
   getTokenMetaDataBySymbol(symbol: string): TokenMeta | undefined {

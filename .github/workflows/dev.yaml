@@ -25,7 +25,6 @@ jobs:
 
       - name: Build dependencies
         run: |
-          yarn list --pattern="lerna"
           node bootstrapEnv
           lerna bootstrap
           yarn build

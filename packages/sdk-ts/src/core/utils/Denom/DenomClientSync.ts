@@ -28,12 +28,12 @@ export class DenomClientSync {
     return this.tokenFactory.toToken(denom)
   }
 
-  getDenomTokenInfo(denom: string): TokenInfo | undefined {
-    return this.tokenFactory.toTokenInfo(denom)
-  }
-
   getTokenMetaDataBySymbol(symbol: string): TokenMeta | undefined {
     return this.tokenMetaUtils.getMetaBySymbol(symbol)
+  }
+
+  getDenomTokenInfo(denom: string): TokenInfo | undefined {
+    return this.tokenFactory.toTokenInfo(denom)
   }
 
   getTokenMetaDataByAddress(address: string): TokenMeta | undefined {
